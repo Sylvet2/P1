@@ -9,7 +9,7 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class TempCasualH extends Hombre{
+public class PrendasBasicasH extends Hombre{
     @Override
     public double descuentoNumPrendas(){
     return 0.0;
