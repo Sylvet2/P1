@@ -99,7 +99,7 @@ public class InterfazHombre extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:2345678
     }//GEN-LAST:event_jButton6ActionPerformed
 
 
