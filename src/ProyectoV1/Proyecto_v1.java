@@ -7,7 +7,7 @@ package ProyectoV1;
 
 /**
  *
- * @author Richard
+ * @author Elisa
  */
 public class Proyecto_v1 {
 
@@ -22,7 +22,7 @@ public class Proyecto_v1 {
         System.out.println("asdasdasdasdasdasd");
         System.out.println("ya valio");
         System.out.println("ya valio x2");
-        System.out.println("ya valio x2");
+       // System.out.println("ya valio x2");
     }
 
     
