@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_v1;
+package ProyectoV1;
 
 /**
  *
  * @author Richard
  */
-public class TempVeranoH extends Hombre{
-    
+public class TempCasualH extends Hombre{
     @Override
     public double descuentoNumPrendas(){
     return 0.0;

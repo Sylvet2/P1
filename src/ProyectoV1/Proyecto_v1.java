@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_v1;
+package ProyectoV1;
 
 /**
  *
@@ -16,8 +16,8 @@ public class Proyecto_v1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //System.out.println("ola");
         
+        System.out.println("Jai jitler");
     }
 
     

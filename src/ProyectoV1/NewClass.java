@@ -3,21 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_v1;
+package ProyectoV1;
 
 /**
  *
  * @author Richard
  */
-public class TempVeranoM extends Mujer{
-    
-    @Override
-    public double descuentoNumPrendas(){
-    return 0.0;
-    }
-    @Override
-    public double descuenoPorTemporadas(){
-    return 0.0;
-    }
+public class NewClass {
     
 }

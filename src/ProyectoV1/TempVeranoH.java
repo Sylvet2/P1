@@ -3,22 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_v1;
+package ProyectoV1;
 
 /**
  *
  * @author Richard
  */
-public abstract class Mujer extends Tienda {
+public class TempVeranoH extends Hombre{
     
     @Override
-    public double calcularPago(){
+    public double descuentoNumPrendas(){
     return 0.0;
     }
-    
-    public abstract double descuentoNumPrendas();
-    public abstract double descuenoPorTemporadas();
-    
-   
-    
+    @Override
+    public double descuenoPorTemporadas(){
+    return 0.0;
+    }
 }
