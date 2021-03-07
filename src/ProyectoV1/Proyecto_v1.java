@@ -22,6 +22,7 @@ public class Proyecto_v1 {
         System.out.println("asdasdasdasdasdasd");
         System.out.println("ya valio");
         System.out.println("ya valio x2");
+        System.out.println("ya valio x2");
     }
 
     
