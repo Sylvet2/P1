@@ -104,6 +104,9 @@ public class Usuarios extends javax.swing.JPanel {
         DatosUsuario Regresar = new DatosUsuario();
         Regresar.setVisible(true);
         
+        //ver si esta bien
+        
+        
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
