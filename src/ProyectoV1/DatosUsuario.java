@@ -20,8 +20,8 @@ public class DatosUsuario extends javax.swing.JFrame {
      */
     public DatosUsuario() {
         initComponents();
-    InterfazHombre hombre = new InterfazHombre();
-    InterfazMujer mujer= new InterfazMujer();
+   // InterfazHombre hombre = new InterfazHombre();
+   // InterfazMujer mujer= new InterfazMujer();
 
     
     }
