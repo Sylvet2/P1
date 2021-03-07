@@ -100,6 +100,7 @@ public class InterfazHombre extends javax.swing.JPanel {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:2345678
+    
     }//GEN-LAST:event_jButton6ActionPerformed
 
 
@@ -112,4 +113,6 @@ public class InterfazHombre extends javax.swing.JPanel {
     private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     // End of variables declaration//GEN-END:variables
+
+   
 }
