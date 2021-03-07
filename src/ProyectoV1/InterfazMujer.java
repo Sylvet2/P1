@@ -111,4 +111,6 @@ public class InterfazMujer extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    
 }
