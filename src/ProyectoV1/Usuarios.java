@@ -104,7 +104,7 @@ public class Usuarios extends javax.swing.JPanel {
         DatosUsuario Regresar = new DatosUsuario();
         Regresar.setVisible(true);
         
-       //jdjfsfsfhdsskg
+      
         
         
     }//GEN-LAST:event_btnAtrasActionPerformed
