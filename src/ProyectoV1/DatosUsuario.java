@@ -18,6 +18,7 @@ public class DatosUsuario extends javax.swing.JFrame {
         initComponents();
         Usuarios abrir = new Usuarios();
         abrir.setVisible (true);
+        this.getContentPane().add(abrir);
     }
 
     /**
@@ -167,7 +168,9 @@ public class DatosUsuario extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        this.setVisible(false);
+      //  this.setVisible(false);
+       
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
