@@ -8,6 +8,10 @@ package ProyectoV1;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.SwingUtilities;
+import java.awt.Component;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+/**
 
 /**
  *
@@ -35,7 +39,7 @@ public class DatosUsuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btgGenero = new javax.swing.ButtonGroup();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         PanelPrincipal = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -53,9 +57,8 @@ public class DatosUsuario extends javax.swing.JFrame {
         pnlGenero = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        btnIr = new javax.swing.JButton();
-        rbtHombre = new javax.swing.JRadioButton();
-        rbtMujer = new javax.swing.JRadioButton();
+        btnHombre = new javax.swing.JButton();
+        btnMujer = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInformacionCompra = new javax.swing.JTable();
@@ -99,18 +102,14 @@ public class DatosUsuario extends javax.swing.JFrame {
 
         jLabel8.setText("Seleccione que tipo de ropa que desee ver");
 
-        btnIr.setText("IR");
-        btnIr.addActionListener(new java.awt.event.ActionListener() {
+        btnHombre.setText("HOMBRE");
+        btnHombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIrActionPerformed(evt);
+                btnHombreActionPerformed(evt);
             }
         });
 
-        btgGenero.add(rbtHombre);
-        rbtHombre.setText("Hombre");
-
-        btgGenero.add(rbtMujer);
-        rbtMujer.setText("Mujer");
+        btnMujer.setText("MUJER");
 
         javax.swing.GroupLayout pnlGeneroLayout = new javax.swing.GroupLayout(pnlGenero);
         pnlGenero.setLayout(pnlGeneroLayout);
@@ -118,16 +117,14 @@ public class DatosUsuario extends javax.swing.JFrame {
             pnlGeneroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlGeneroLayout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rbtHombre, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(89, 89, 89)
-                .addComponent(rbtMujer, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(117, 117, 117)
-                .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(117, 117, 117))
+                .addGap(18, 18, 18)
+                .addComponent(btnHombre, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(btnMujer, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(296, 296, 296))
             .addGroup(pnlGeneroLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlGeneroLayout.setVerticalGroup(
@@ -138,9 +135,8 @@ public class DatosUsuario extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addGroup(pnlGeneroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(btnIr)
-                    .addComponent(rbtHombre)
-                    .addComponent(rbtMujer))
+                    .addComponent(btnHombre)
+                    .addComponent(btnMujer))
                 .addContainerGap(54, Short.MAX_VALUE))
         );
 
@@ -253,21 +249,40 @@ public class DatosUsuario extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jDesktopPane1.setLayer(PanelPrincipal, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(PanelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(PanelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(PanelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
-                .addComponent(PanelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -288,19 +303,20 @@ public class DatosUsuario extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btnIrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrActionPerformed
+    private void btnHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHombreActionPerformed
         // TODO add your handling code here:
-        
-          if (rbtHombre.isSelected()){ 
+       
     InterfazHombre hombre = new InterfazHombre();
-        }
-        if (rbtMujer.isSelected()){
-              InterfazMujer mujer = new InterfazMujer();
-     mujer.setVisible(true);
-           
-        }
+    jDesktopPane1.add(hombre);
+    hombre.show();
+    
+   /*  InterfazHombre abrir = new InterfazHombre();
+     abrir.setVisible(true);
+     this.setVisible(false);*/
+        
+        
              
-    }//GEN-LAST:event_btnIrActionPerformed
+    }//GEN-LAST:event_btnHombreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -340,9 +356,10 @@ public class DatosUsuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelPrincipal;
-    private javax.swing.ButtonGroup btgGenero;
-    private javax.swing.JButton btnIr;
+    private javax.swing.JButton btnHombre;
+    private javax.swing.JButton btnMujer;
     private javax.swing.JButton jButton1;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -354,8 +371,6 @@ public class DatosUsuario extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel pnlGenero;
-    private javax.swing.JRadioButton rbtHombre;
-    private javax.swing.JRadioButton rbtMujer;
     private javax.swing.JTable tblInformacionCompra;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCedula;
