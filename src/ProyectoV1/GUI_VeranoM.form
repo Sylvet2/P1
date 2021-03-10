@@ -46,7 +46,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/InviernoMujer/vestido.png"/>
+                  <Image iconType="3" name="/Imagenes/Verano/vestido.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -58,7 +58,7 @@
             <Component class="javax.swing.JLabel" name="jLabel7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/InviernoMujer/vestido con abertura.png"/>
+                  <Image iconType="3" name="/Imagenes/Verano/vestido con abertura.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -70,7 +70,7 @@
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/InviernoMujer/vestido dos partes.png"/>
+                  <Image iconType="3" name="/Imagenes/Verano/vestido dos partes.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -154,12 +154,12 @@
             <Component class="javax.swing.JLabel" name="jLabel5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Imagenes/Bikini.png"/>
+                  <Image iconType="3" name="/Imagenes/Verano/Bikini.png"/>
                 </Property>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="30" y="100" width="-1" height="190"/>
+                  <AbsoluteConstraints x="30" y="100" width="110" height="190"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -426,7 +426,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagenes/FondoVeranoMujerF.png"/>
+              <Image iconType="3" name="/Imagenes/Verano/FondoVeranoMujerF.png"/>
             </Property>
           </Properties>
           <Constraints>
