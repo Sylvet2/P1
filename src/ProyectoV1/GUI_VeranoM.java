@@ -64,11 +64,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         cmbBikini = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnGuardarBikini = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        rbtSBikini = new javax.swing.JRadioButton();
+        rbtMBikini = new javax.swing.JRadioButton();
+        rbtLBikini = new javax.swing.JRadioButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -298,15 +298,20 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel22.setText("Talla:");
 
-        jButton1.setText("Guardar");
+        btnGuardarBikini.setText("Guardar");
+        btnGuardarBikini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarBikiniActionPerformed(evt);
+            }
+        });
 
         jLabel23.setText("Color:");
 
-        jRadioButton1.setText("S");
+        rbtSBikini.setText("S");
 
-        jRadioButton2.setText("M");
+        rbtMBikini.setText("M");
 
-        jRadioButton3.setText("L");
+        rbtLBikini.setText("L");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -328,16 +333,16 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel22)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jRadioButton1)
+                                .addComponent(rbtSBikini)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton2)
+                                .addComponent(rbtMBikini)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jRadioButton3))
+                                .addComponent(rbtLBikini))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                                 .addComponent(jLabel23)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1)
+                                    .addComponent(btnGuardarBikini)
                                     .addComponent(cmbBikini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(24, 24, 24))))))
         );
@@ -357,15 +362,15 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel22)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2)
-                            .addComponent(jRadioButton3))
+                            .addComponent(rbtSBikini)
+                            .addComponent(rbtMBikini)
+                            .addComponent(rbtLBikini))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cmbBikini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel23))
                         .addGap(23, 23, 23)
-                        .addComponent(jButton1))
+                        .addComponent(btnGuardarBikini))
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -502,6 +507,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbBikiniActionPerformed
 
+    private void btnGuardarBikiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikiniActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btnGuardarBikiniActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -538,11 +548,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGuardarBikini;
     private javax.swing.JComboBox<String> cmbBikini;
     private javax.swing.JComboBox<String> cmbConjuntoPliegues;
     private javax.swing.JComboBox<String> cmbVestidoCorto;
     private javax.swing.JComboBox<String> cmbVestidoLargo;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -579,16 +589,16 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
+    private javax.swing.JRadioButton rbtLBikini;
+    private javax.swing.JRadioButton rbtMBikini;
+    private javax.swing.JRadioButton rbtSBikini;
     private javax.swing.JSpinner spnBikini;
     private javax.swing.JSpinner spnConjuntoPliegues;
     private javax.swing.JSpinner spnVestidoCorto;
