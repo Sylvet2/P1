@@ -31,6 +31,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        chkBikini3 = new javax.swing.JCheckBox();
+        chkBikini2 = new javax.swing.JCheckBox();
+        chkBikini1 = new javax.swing.JCheckBox();
+        chkBikini = new javax.swing.JCheckBox();
         jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -55,6 +59,18 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        chkBikini3.setText("¿Desea adquirilo?");
+        jPanel3.add(chkBikini3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 170, -1, -1));
+
+        chkBikini2.setText("¿Desea adquirilo?");
+        jPanel3.add(chkBikini2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, -1, -1));
+
+        chkBikini1.setText("¿Desea adquirilo?");
+        jPanel3.add(chkBikini1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 390, -1, -1));
+
+        chkBikini.setText("¿Desea adquirilo?");
+        jPanel3.add(chkBikini, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, -1, -1));
+
         jLabel18.setText("Precio:");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
 
@@ -68,20 +84,20 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel12.setText("Bikini de una pieza");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
+        jLabel12.setText("Conjunto de lana");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel10.setText("Bikini de una pieza");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, -1, -1));
+        jLabel10.setText("Chaleco con textura");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel11.setText("Bikini de una pieza");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, -1, -1));
+        jLabel11.setText("G");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 140, 10));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("Bikini de una pieza");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 330, -1, -1));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/saco blanco.png"))); // NOI18N
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 130, 190));
@@ -196,6 +212,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox chkBikini;
+    private javax.swing.JCheckBox chkBikini1;
+    private javax.swing.JCheckBox chkBikini2;
+    private javax.swing.JCheckBox chkBikini3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
