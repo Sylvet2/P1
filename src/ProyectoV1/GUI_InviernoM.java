@@ -103,6 +103,11 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         btnAtrasInviernoMujer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnAtrasInviernoMujer.setText("Atrás");
+        btnAtrasInviernoMujer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasInviernoMujerActionPerformed(evt);
+            }
+        });
         jPanel4.add(btnAtrasInviernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 620, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -759,6 +764,13 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     private void cmbAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoPlieguesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbAbrigoPlieguesActionPerformed
+
+    private void btnAtrasInviernoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasInviernoMujerActionPerformed
+        // TODO add your handling code here:
+        InterfazMujer atras = new InterfazMujer();
+        atras.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnAtrasInviernoMujerActionPerformed
 
     /**
      * @param args the command line arguments
