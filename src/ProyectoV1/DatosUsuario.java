@@ -110,6 +110,11 @@ public class DatosUsuario extends javax.swing.JFrame {
         });
 
         btnMujer.setText("MUJER");
+        btnMujer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMujerActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlGeneroLayout = new javax.swing.GroupLayout(pnlGenero);
         pnlGenero.setLayout(pnlGeneroLayout);
@@ -305,7 +310,9 @@ public class DatosUsuario extends javax.swing.JFrame {
 
     private void btnHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHombreActionPerformed
         // TODO add your handling code here:
-       
+       this.setVisible(false);
+        InterfazHombre unir = new InterfazHombre ();
+        unir.setVisible(true);
     InterfazHombre hombre = new InterfazHombre();
     jDesktopPane1.add(hombre);
     hombre.show();
@@ -317,6 +324,10 @@ public class DatosUsuario extends javax.swing.JFrame {
         
              
     }//GEN-LAST:event_btnHombreActionPerformed
+
+    private void btnMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMujerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMujerActionPerformed
 
     /**
      * @param args the command line arguments

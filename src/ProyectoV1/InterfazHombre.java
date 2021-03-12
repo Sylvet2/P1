@@ -29,8 +29,8 @@ public class InterfazHombre extends javax.swing.JFrame {
 
         btnPrendasBásicasHombre1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        btnPrendasBásicasHombre = new javax.swing.JButton();
         btnAtrasHombre = new javax.swing.JButton();
+        btnPrendasBasicasHombre = new javax.swing.JButton();
         btnInviernoHombre1 = new javax.swing.JButton();
         btnVeranoHombre1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -44,28 +44,48 @@ public class InterfazHombre extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnPrendasBásicasHombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnPrendasBásicasHombre.setForeground(new java.awt.Color(51, 51, 51));
-        btnPrendasBásicasHombre.setText("Atrás");
-        btnPrendasBásicasHombre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btnPrendasBásicasHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 80, 30));
-
-        btnAtrasHombre.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnAtrasHombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnAtrasHombre.setForeground(new java.awt.Color(51, 51, 51));
-        btnAtrasHombre.setText("PRENDAS BÁSICAS");
+        btnAtrasHombre.setText("Atrás");
         btnAtrasHombre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btnAtrasHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 140, 30));
+        btnAtrasHombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasHombreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnAtrasHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 80, 30));
+
+        btnPrendasBasicasHombre.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnPrendasBasicasHombre.setForeground(new java.awt.Color(51, 51, 51));
+        btnPrendasBasicasHombre.setText("PRENDAS BÁSICAS");
+        btnPrendasBasicasHombre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPrendasBasicasHombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrendasBasicasHombreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPrendasBasicasHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 140, 30));
 
         btnInviernoHombre1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btnInviernoHombre1.setForeground(new java.awt.Color(51, 51, 51));
         btnInviernoHombre1.setText("INVIERNO");
         btnInviernoHombre1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnInviernoHombre1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInviernoHombre1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnInviernoHombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 100, 30));
 
         btnVeranoHombre1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btnVeranoHombre1.setForeground(new java.awt.Color(51, 51, 51));
         btnVeranoHombre1.setText("VERANO");
         btnVeranoHombre1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnVeranoHombre1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVeranoHombre1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnVeranoHombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 100, 30));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -90,6 +110,35 @@ public class InterfazHombre extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAtrasHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasHombreActionPerformed
+        // TODO add your handling code here:
+       DatosUsuario atras = new DatosUsuario();
+        atras.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnAtrasHombreActionPerformed
+
+    private void btnInviernoHombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInviernoHombre1ActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        GU_InviernoH unir = new GU_InviernoH ();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnInviernoHombre1ActionPerformed
+
+    private void btnPrendasBasicasHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrendasBasicasHombreActionPerformed
+        // TODO add your handling code here:
+        
+         this.setVisible(false);
+        GUI_PrendasBasicasH unir = new GUI_PrendasBasicasH ();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnPrendasBasicasHombreActionPerformed
+
+    private void btnVeranoHombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVeranoHombre1ActionPerformed
+        // TODO add your handling code here:
+         this.setVisible(false);
+        GUI_VeranoH unir = new GUI_VeranoH ();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnVeranoHombre1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,7 +181,7 @@ public class InterfazHombre extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtrasHombre;
     private javax.swing.JButton btnInviernoHombre1;
-    private javax.swing.JButton btnPrendasBásicasHombre;
+    private javax.swing.JButton btnPrendasBasicasHombre;
     private javax.swing.JButton btnPrendasBásicasHombre1;
     private javax.swing.JButton btnVeranoHombre1;
     private javax.swing.JLabel jLabel1;
