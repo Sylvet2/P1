@@ -7,17 +7,26 @@ package ProyectoV1;
 
 import java.util.ArrayList;
 
+
 /**
  *
  * @author Richard
  */
 public class Prenda {
     
-    private String modelo;
+    private String nombre;
+    private double precio;
+    private int cantidad;
+    private char talla;
     private String color;
-    private int numPrendas;
-    private double precioUnitario;
     
+    public Prenda (String nombre, double precio, int cantidad, char talla, String color){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.talla = talla;
+        this.color = color;
+    }
     
     //ArrayList <Hombre> prendaHombres = new ArrayList<>();
     //ArrayList <Mujer> prendasMujeres = new ArrayList<>();      

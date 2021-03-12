@@ -5,12 +5,15 @@
  */
 package ProyectoV1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USUARIO
  */
 public class GUI_VeranoM extends javax.swing.JFrame {
-
+    
+    Prenda prenda;
     /**
      * Creates new form GUI_VeranoM
      */
@@ -552,6 +555,44 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
     private void btnGuardarBikiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikiniActionPerformed
         // TODO add your handling code here:
+            
+    String nombre = "Bikini de una pieza";
+    double precio = 15;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnBikini.getValue().toString());
+    
+    
+    if(rbtSBikini.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMBikini.isSelected()){
+            talla = 'M';
+        }
+        else{
+            talla = 'L';
+        }
+    }
+    
+    color = cmbBikini.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+    
+    
+    
         
     }//GEN-LAST:event_btnGuardarBikiniActionPerformed
 
