@@ -5,11 +5,15 @@
  */
 package ProyectoV1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USUARIO
  */
 public class GU_InviernoH extends javax.swing.JFrame {
+    Prenda prenda;
+
 
     /**
      * Creates new form GU_InviernoH
@@ -27,61 +31,65 @@ public class GU_InviernoH extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btgAbrigoHombre = new javax.swing.ButtonGroup();
+        btgBuzo = new javax.swing.ButtonGroup();
+        btgBuzoFino = new javax.swing.ButtonGroup();
+        btgChaqueta = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        spnCamiseta = new javax.swing.JSpinner();
+        spnAbrigoHombre = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
-        cmbConjuntoLana3 = new javax.swing.JComboBox<>();
+        cmbAbrigoHombre = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana3 = new javax.swing.JButton();
+        btnGuardarAbrigoHombre = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        rbtSCamiseta = new javax.swing.JRadioButton();
-        rbtMConjuntoLana3 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana3 = new javax.swing.JRadioButton();
+        rbtSAbrigoHombre = new javax.swing.JRadioButton();
+        rbtMAbrigoHombre = new javax.swing.JRadioButton();
+        rbtLAbrigoHombre = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        spnCamiseta3 = new javax.swing.JSpinner();
+        spnBuzo = new javax.swing.JSpinner();
         jLabel43 = new javax.swing.JLabel();
-        cmbConjuntoLana6 = new javax.swing.JComboBox<>();
+        cmbBuzo = new javax.swing.JComboBox<>();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana6 = new javax.swing.JButton();
+        btnGuardarBuzo = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
-        rbtSCamiseta3 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana6 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana6 = new javax.swing.JRadioButton();
+        rbtSBuzo = new javax.swing.JRadioButton();
+        rbtMBuzo = new javax.swing.JRadioButton();
+        rbtLBuzo = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        spnCamiseta2 = new javax.swing.JSpinner();
+        spnBuzoFino = new javax.swing.JSpinner();
         jLabel39 = new javax.swing.JLabel();
-        cmbConjuntoLana5 = new javax.swing.JComboBox<>();
+        cmbBuzoFino = new javax.swing.JComboBox<>();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana5 = new javax.swing.JButton();
+        btnGuardarBuzoFino = new javax.swing.JButton();
         jLabel42 = new javax.swing.JLabel();
-        rbtSCamiseta2 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana5 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana5 = new javax.swing.JRadioButton();
+        rbtSBuzoFino = new javax.swing.JRadioButton();
+        rbtMBuzoFino = new javax.swing.JRadioButton();
+        rbtLBuzoFino = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        spnCamiseta1 = new javax.swing.JSpinner();
+        spnChaqueta = new javax.swing.JSpinner();
         jLabel35 = new javax.swing.JLabel();
-        cmbConjuntoLana4 = new javax.swing.JComboBox<>();
+        cmbChaqueta = new javax.swing.JComboBox<>();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana4 = new javax.swing.JButton();
+        btnGuardarChaqueta = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
-        rbtSCamiseta1 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana4 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana4 = new javax.swing.JRadioButton();
+        rbtSChaqueta = new javax.swing.JRadioButton();
+        rbtMChaqueta = new javax.swing.JRadioButton();
+        rbtLChaqueta = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -103,11 +111,11 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel31.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana3.setSelectedIndex(-1);
-        cmbConjuntoLana3.addActionListener(new java.awt.event.ActionListener() {
+        cmbAbrigoHombre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbAbrigoHombre.setSelectedIndex(-1);
+        cmbAbrigoHombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana3ActionPerformed(evt);
+                cmbAbrigoHombreActionPerformed(evt);
             }
         });
 
@@ -115,20 +123,23 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel33.setText("Talla:");
 
-        btnGuardarConjuntoLana3.setText("Guardar");
-        btnGuardarConjuntoLana3.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarAbrigoHombre.setText("Guardar");
+        btnGuardarAbrigoHombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana3ActionPerformed(evt);
+                btnGuardarAbrigoHombreActionPerformed(evt);
             }
         });
 
         jLabel34.setText("Color:");
 
-        rbtSCamiseta.setText("S");
+        btgAbrigoHombre.add(rbtSAbrigoHombre);
+        rbtSAbrigoHombre.setText("S");
 
-        rbtMConjuntoLana3.setText("M");
+        btgAbrigoHombre.add(rbtMAbrigoHombre);
+        rbtMAbrigoHombre.setText("M");
 
-        rbtLConjuntoLana3.setText("L");
+        btgAbrigoHombre.add(rbtLAbrigoHombre);
+        rbtLAbrigoHombre.setText("L");
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/Abrigo.png"))); // NOI18N
 
@@ -144,24 +155,30 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel32)
-                    .addComponent(spnCamiseta, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jLabel33)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana3))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel34)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana3)
-                            .addComponent(cmbConjuntoLana3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarAbrigoHombre)
+                            .addComponent(cmbAbrigoHombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(jLabel33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSAbrigoHombre)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMAbrigoHombre)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLAbrigoHombre))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel32)
+                                    .addComponent(spnAbrigoHombre, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel31))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel15)
@@ -179,19 +196,19 @@ public class GU_InviernoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnAbrigoHombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel33)
-                            .addComponent(rbtSCamiseta)
-                            .addComponent(rbtMConjuntoLana3)
-                            .addComponent(rbtLConjuntoLana3))
+                            .addComponent(rbtSAbrigoHombre)
+                            .addComponent(rbtMAbrigoHombre)
+                            .addComponent(rbtLAbrigoHombre))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbAbrigoHombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel34))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana3))
+                        .addComponent(btnGuardarAbrigoHombre))
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -202,11 +219,11 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel43.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana6.setSelectedIndex(-1);
-        cmbConjuntoLana6.addActionListener(new java.awt.event.ActionListener() {
+        cmbBuzo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbBuzo.setSelectedIndex(-1);
+        cmbBuzo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana6ActionPerformed(evt);
+                cmbBuzoActionPerformed(evt);
             }
         });
 
@@ -214,20 +231,23 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel45.setText("Talla:");
 
-        btnGuardarConjuntoLana6.setText("Guardar");
-        btnGuardarConjuntoLana6.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarBuzo.setText("Guardar");
+        btnGuardarBuzo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana6ActionPerformed(evt);
+                btnGuardarBuzoActionPerformed(evt);
             }
         });
 
         jLabel46.setText("Color:");
 
-        rbtSCamiseta3.setText("S");
+        btgBuzo.add(rbtSBuzo);
+        rbtSBuzo.setText("S");
 
-        rbtMConjuntoLana6.setText("M");
+        btgBuzo.add(rbtMBuzo);
+        rbtMBuzo.setText("M");
 
-        rbtLConjuntoLana6.setText("L");
+        btgBuzo.add(rbtLBuzo);
+        rbtLBuzo.setText("L");
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/Buzo de lana.png"))); // NOI18N
 
@@ -243,24 +263,30 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel44)
-                    .addComponent(spnCamiseta3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel43)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jLabel45)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana6))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel46)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana6)
-                            .addComponent(cmbConjuntoLana6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarBuzo)
+                            .addComponent(cmbBuzo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSBuzo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMBuzo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLBuzo))
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel44)
+                                    .addComponent(spnBuzo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel43))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel18)
@@ -278,19 +304,19 @@ public class GU_InviernoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel43)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnBuzo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel45)
-                            .addComponent(rbtSCamiseta3)
-                            .addComponent(rbtMConjuntoLana6)
-                            .addComponent(rbtLConjuntoLana6))
+                            .addComponent(rbtSBuzo)
+                            .addComponent(rbtMBuzo)
+                            .addComponent(rbtLBuzo))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbBuzo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel46))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana6))
+                        .addComponent(btnGuardarBuzo))
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -301,11 +327,11 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel39.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana5.setSelectedIndex(-1);
-        cmbConjuntoLana5.addActionListener(new java.awt.event.ActionListener() {
+        cmbBuzoFino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbBuzoFino.setSelectedIndex(-1);
+        cmbBuzoFino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana5ActionPerformed(evt);
+                cmbBuzoFinoActionPerformed(evt);
             }
         });
 
@@ -313,20 +339,23 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel41.setText("Talla:");
 
-        btnGuardarConjuntoLana5.setText("Guardar");
-        btnGuardarConjuntoLana5.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarBuzoFino.setText("Guardar");
+        btnGuardarBuzoFino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana5ActionPerformed(evt);
+                btnGuardarBuzoFinoActionPerformed(evt);
             }
         });
 
         jLabel42.setText("Color:");
 
-        rbtSCamiseta2.setText("S");
+        btgBuzoFino.add(rbtSBuzoFino);
+        rbtSBuzoFino.setText("S");
 
-        rbtMConjuntoLana5.setText("M");
+        btgBuzoFino.add(rbtMBuzoFino);
+        rbtMBuzoFino.setText("M");
 
-        rbtLConjuntoLana5.setText("L");
+        btgBuzoFino.add(rbtLBuzoFino);
+        rbtLBuzoFino.setText("L");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/Buzo fino de algodon.png"))); // NOI18N
 
@@ -342,24 +371,30 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(spnCamiseta2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel39)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel41)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana5))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel42)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana5)
-                            .addComponent(cmbConjuntoLana5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarBuzoFino)
+                            .addComponent(cmbBuzoFino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSBuzoFino)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMBuzoFino)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLBuzoFino))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel40)
+                                    .addComponent(spnBuzoFino, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel39))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel17)
@@ -377,19 +412,19 @@ public class GU_InviernoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel39)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnBuzoFino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel41)
-                            .addComponent(rbtSCamiseta2)
-                            .addComponent(rbtMConjuntoLana5)
-                            .addComponent(rbtLConjuntoLana5))
+                            .addComponent(rbtSBuzoFino)
+                            .addComponent(rbtMBuzoFino)
+                            .addComponent(rbtLBuzoFino))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbBuzoFino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel42))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana5))
+                        .addComponent(btnGuardarBuzoFino))
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -400,11 +435,11 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel35.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana4.setSelectedIndex(-1);
-        cmbConjuntoLana4.addActionListener(new java.awt.event.ActionListener() {
+        cmbChaqueta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbChaqueta.setSelectedIndex(-1);
+        cmbChaqueta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana4ActionPerformed(evt);
+                cmbChaquetaActionPerformed(evt);
             }
         });
 
@@ -412,20 +447,23 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jLabel37.setText("Talla:");
 
-        btnGuardarConjuntoLana4.setText("Guardar");
-        btnGuardarConjuntoLana4.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarChaqueta.setText("Guardar");
+        btnGuardarChaqueta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana4ActionPerformed(evt);
+                btnGuardarChaquetaActionPerformed(evt);
             }
         });
 
         jLabel38.setText("Color:");
 
-        rbtSCamiseta1.setText("S");
+        btgChaqueta.add(rbtSChaqueta);
+        rbtSChaqueta.setText("S");
 
-        rbtMConjuntoLana4.setText("M");
+        btgChaqueta.add(rbtMChaqueta);
+        rbtMChaqueta.setText("M");
 
-        rbtLConjuntoLana4.setText("L");
+        btgChaqueta.add(rbtLChaqueta);
+        rbtLChaqueta.setText("L");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/Chaqueta de gamuza.png"))); // NOI18N
 
@@ -442,22 +480,22 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel36)
-                    .addComponent(spnCamiseta1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnChaqueta, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta1)
+                        .addComponent(rbtSChaqueta)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana4)
+                        .addComponent(rbtMChaqueta)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana4))
+                        .addComponent(rbtLChaqueta))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel38)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana4)
-                            .addComponent(cmbConjuntoLana4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnGuardarChaqueta)
+                            .addComponent(cmbChaqueta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(24, 24, 24))))
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
@@ -476,19 +514,19 @@ public class GU_InviernoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnChaqueta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel37)
-                            .addComponent(rbtSCamiseta1)
-                            .addComponent(rbtMConjuntoLana4)
-                            .addComponent(rbtLConjuntoLana4))
+                            .addComponent(rbtSChaqueta)
+                            .addComponent(rbtMChaqueta)
+                            .addComponent(rbtLChaqueta))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbChaqueta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel38))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana4))
+                        .addComponent(btnGuardarChaqueta))
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
@@ -559,153 +597,181 @@ public class GU_InviernoH extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbConjuntoLana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana3ActionPerformed
+    private void cmbAbrigoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoHombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana3ActionPerformed
+    }//GEN-LAST:event_cmbAbrigoHombreActionPerformed
 
-    private void btnGuardarConjuntoLana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana3ActionPerformed
+    private void btnGuardarAbrigoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAbrigoHombreActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
-        int cantidad;
-        char talla;
-        String color;
-
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+       String nombre = "Abrigo tres cuartos";
+    double precio = 35;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSAbrigoHombre.isSelected() == false && rbtMAbrigoHombre.isSelected() == false && rbtLAbrigoHombre.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnAbrigoHombre.getValue().toString());
+    
+    
+    if(rbtSAbrigoHombre.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMAbrigoHombre.isSelected()){
+            talla = 'M';
         }
         else{
+            talla = 'L';
+        }
+    }
+    
+    color = cmbAbrigoHombre.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+     }
+    }//GEN-LAST:event_btnGuardarAbrigoHombreActionPerformed
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
-
-            if(rbtSConjuntoLana.isSelected()){
-                talla = 'S';
-            }
-            else{
-                if(rbtMConjuntoLana.isSelected()){
-                    talla = 'M';
-                }
-                else{
-                    talla = 'L';
-                }
-            }
-
-            color = cmbConjuntoLana.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana3ActionPerformed
-
-    private void cmbConjuntoLana4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana4ActionPerformed
+    private void cmbChaquetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChaquetaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana4ActionPerformed
+    }//GEN-LAST:event_cmbChaquetaActionPerformed
 
-    private void btnGuardarConjuntoLana4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana4ActionPerformed
+    private void btnGuardarChaquetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarChaquetaActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
-        int cantidad;
-        char talla;
-        String color;
-
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        String nombre = "Chaqueta de gamuza";
+    double precio = 28;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSChaqueta.isSelected() == false && rbtMChaqueta.isSelected() == false && rbtLChaqueta.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnChaqueta.getValue().toString());
+    
+    
+    if(rbtSChaqueta.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMChaqueta.isSelected()){
+            talla = 'M';
         }
         else{
+            talla = 'L';
+        }
+    }
+    
+    color = cmbChaqueta.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+     }
+    }//GEN-LAST:event_btnGuardarChaquetaActionPerformed
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
-
-            if(rbtSConjuntoLana.isSelected()){
-                talla = 'S';
-            }
-            else{
-                if(rbtMConjuntoLana.isSelected()){
-                    talla = 'M';
-                }
-                else{
-                    talla = 'L';
-                }
-            }
-
-            color = cmbConjuntoLana.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana4ActionPerformed
-
-    private void cmbConjuntoLana5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana5ActionPerformed
+    private void cmbBuzoFinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBuzoFinoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana5ActionPerformed
+    }//GEN-LAST:event_cmbBuzoFinoActionPerformed
 
-    private void btnGuardarConjuntoLana5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana5ActionPerformed
+    private void btnGuardarBuzoFinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBuzoFinoActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
-        int cantidad;
-        char talla;
-        String color;
-
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+       String nombre = "Buzo fino de Algodón";
+    double precio = 15;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSBuzoFino.isSelected() == false && rbtMBuzoFino.isSelected() == false && rbtLBuzoFino.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnBuzoFino.getValue().toString());
+    
+    
+    if(rbtSBuzoFino.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMBuzoFino.isSelected()){
+            talla = 'M';
         }
         else{
+            talla = 'L';
+        }
+    }
+    
+    color = cmbBuzoFino.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+     }
+    }//GEN-LAST:event_btnGuardarBuzoFinoActionPerformed
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
-
-            if(rbtSConjuntoLana.isSelected()){
-                talla = 'S';
-            }
-            else{
-                if(rbtMConjuntoLana.isSelected()){
-                    talla = 'M';
-                }
-                else{
-                    talla = 'L';
-                }
-            }
-
-            color = cmbConjuntoLana.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana5ActionPerformed
-
-    private void cmbConjuntoLana6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana6ActionPerformed
+    private void cmbBuzoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBuzoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana6ActionPerformed
+    }//GEN-LAST:event_cmbBuzoActionPerformed
 
-    private void btnGuardarConjuntoLana6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana6ActionPerformed
+    private void btnGuardarBuzoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBuzoActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
-        int cantidad;
-        char talla;
-        String color;
-
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+          String nombre = "Buzo de lana";
+    double precio = 25;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSBuzo.isSelected() == false && rbtMBuzo.isSelected() == false && rbtLBuzo.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnBuzo.getValue().toString());
+    
+    
+    if(rbtSBuzo.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMBuzo.isSelected()){
+            talla = 'M';
         }
         else{
-
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
-
-            if(rbtSConjuntoLana.isSelected()){
-                talla = 'S';
-            }
-            else{
-                if(rbtMConjuntoLana.isSelected()){
-                    talla = 'M';
-                }
-                else{
-                    talla = 'L';
-                }
-            }
-
-            color = cmbConjuntoLana.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana6ActionPerformed
+            talla = 'L';
+        }
+    }
+    
+    color = cmbBuzo.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+     }
+    }//GEN-LAST:event_btnGuardarBuzoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -743,14 +809,18 @@ public class GU_InviernoH extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGuardarConjuntoLana3;
-    private javax.swing.JButton btnGuardarConjuntoLana4;
-    private javax.swing.JButton btnGuardarConjuntoLana5;
-    private javax.swing.JButton btnGuardarConjuntoLana6;
-    private javax.swing.JComboBox<String> cmbConjuntoLana3;
-    private javax.swing.JComboBox<String> cmbConjuntoLana4;
-    private javax.swing.JComboBox<String> cmbConjuntoLana5;
-    private javax.swing.JComboBox<String> cmbConjuntoLana6;
+    private javax.swing.ButtonGroup btgAbrigoHombre;
+    private javax.swing.ButtonGroup btgBuzo;
+    private javax.swing.ButtonGroup btgBuzoFino;
+    private javax.swing.ButtonGroup btgChaqueta;
+    private javax.swing.JButton btnGuardarAbrigoHombre;
+    private javax.swing.JButton btnGuardarBuzo;
+    private javax.swing.JButton btnGuardarBuzoFino;
+    private javax.swing.JButton btnGuardarChaqueta;
+    private javax.swing.JComboBox<String> cmbAbrigoHombre;
+    private javax.swing.JComboBox<String> cmbBuzo;
+    private javax.swing.JComboBox<String> cmbBuzoFino;
+    private javax.swing.JComboBox<String> cmbChaqueta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
@@ -786,21 +856,21 @@ public class GU_InviernoH extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton rbtLConjuntoLana3;
-    private javax.swing.JRadioButton rbtLConjuntoLana4;
-    private javax.swing.JRadioButton rbtLConjuntoLana5;
-    private javax.swing.JRadioButton rbtLConjuntoLana6;
-    private javax.swing.JRadioButton rbtMConjuntoLana3;
-    private javax.swing.JRadioButton rbtMConjuntoLana4;
-    private javax.swing.JRadioButton rbtMConjuntoLana5;
-    private javax.swing.JRadioButton rbtMConjuntoLana6;
-    private javax.swing.JRadioButton rbtSCamiseta;
-    private javax.swing.JRadioButton rbtSCamiseta1;
-    private javax.swing.JRadioButton rbtSCamiseta2;
-    private javax.swing.JRadioButton rbtSCamiseta3;
-    private javax.swing.JSpinner spnCamiseta;
-    private javax.swing.JSpinner spnCamiseta1;
-    private javax.swing.JSpinner spnCamiseta2;
-    private javax.swing.JSpinner spnCamiseta3;
+    private javax.swing.JRadioButton rbtLAbrigoHombre;
+    private javax.swing.JRadioButton rbtLBuzo;
+    private javax.swing.JRadioButton rbtLBuzoFino;
+    private javax.swing.JRadioButton rbtLChaqueta;
+    private javax.swing.JRadioButton rbtMAbrigoHombre;
+    private javax.swing.JRadioButton rbtMBuzo;
+    private javax.swing.JRadioButton rbtMBuzoFino;
+    private javax.swing.JRadioButton rbtMChaqueta;
+    private javax.swing.JRadioButton rbtSAbrigoHombre;
+    private javax.swing.JRadioButton rbtSBuzo;
+    private javax.swing.JRadioButton rbtSBuzoFino;
+    private javax.swing.JRadioButton rbtSChaqueta;
+    private javax.swing.JSpinner spnAbrigoHombre;
+    private javax.swing.JSpinner spnBuzo;
+    private javax.swing.JSpinner spnBuzoFino;
+    private javax.swing.JSpinner spnChaqueta;
     // End of variables declaration//GEN-END:variables
 }
