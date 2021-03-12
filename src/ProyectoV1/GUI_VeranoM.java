@@ -228,6 +228,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel29.setText("Color:");
 
         btnVestidoLargo.setText("Guardar");
+        btnVestidoLargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVestidoLargoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -442,6 +447,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel14.setText("Color:");
 
         btnVestidoCorto.setText("Guardar");
+        btnVestidoCorto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVestidoCortoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -569,7 +579,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     String color;
     
     
-    if (rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false){
+    if (rbtSBikini.isSelected() == false && rbtMBikini.isSelected() == false && rbtLBikini.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
     }
     else{
@@ -608,27 +618,25 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
     private void btnConjuntoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConjuntoPlieguesActionPerformed
         // TODO add your handling code here:
-           String nombre = "Bikini de una pieza";
-    double precio = 15;
+           String nombre = "Conjunto con Pliegues";
+    double precio = 18;
     int cantidad;
     char talla;
     String color;
-    
-    
-    if (rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false){
+
+    if (rbtSConjuntoPliegues.isSelected() == false && rbtMConjuntoPliegues.isSelected() == false && rbtLConjuntoPliegues.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
     }
     else{
+ 
+    cantidad = Integer.parseInt(spnConjuntoPliegues.getValue().toString());
     
     
-    cantidad = Integer.parseInt(spnBikini.getValue().toString());
-    
-    
-    if(rbtSBikini.isSelected()){
+    if(rbtSConjuntoPliegues.isSelected()){
         talla = 'S';
     }
     else{
-        if(rbtMBikini.isSelected()){
+        if(rbtMConjuntoPliegues.isSelected()){
             talla = 'M';
         }
         else{
@@ -636,14 +644,80 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         }
     }
     
-    color = cmbBikini.getSelectedItem().toString();
+    color = cmbConjuntoPliegues.getSelectedItem().toString();
+
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+
+     }
+    }//GEN-LAST:event_btnConjuntoPlieguesActionPerformed
+
+    private void btnVestidoLargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVestidoLargoActionPerformed
+        // TODO add your handling code here:
+    String nombre = "Vestido largo con transparencia";
+    double precio = 25;
+    int cantidad;
+    char talla;
+    String color;
+  
+    if (rbtSVestidoLargo.isSelected() == false && rbtMVestidoLargo.isSelected() == false && rbtLVestidoLargo.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+ 
+    cantidad = Integer.parseInt(spnVestidoLargo.getValue().toString());
+
+    if(rbtSVestidoLargo.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMVestidoLargo.isSelected()){
+            talla = 'M';
+        }
+        else{
+            talla = 'L';
+        }
+    }
+    color = cmbVestidoLargo.getSelectedItem().toString();
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+     }
+    }//GEN-LAST:event_btnVestidoLargoActionPerformed
+
+    private void btnVestidoCortoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVestidoCortoActionPerformed
+        // TODO add your handling code here:
+    String nombre = "Vestido corto vaporoso";
+    double precio = 22.50;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSVestidoCorto.isSelected() == false && rbtMVestidoCorto.isSelected() == false && rbtLVestidoCorto.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+  
+    cantidad = Integer.parseInt(spnVestidoCorto.getValue().toString());
+  
+    if(rbtSVestidoCorto.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMVestidoCorto.isSelected()){
+            talla = 'M';
+        }
+        else{
+            talla = 'L';
+        }
+    }
+ 
+    color = cmbVestidoCorto.getSelectedItem().toString();
     
     
     prenda = new Prenda (nombre, precio, cantidad, talla, color);
     
     
      }
-    }//GEN-LAST:event_btnConjuntoPlieguesActionPerformed
+    }//GEN-LAST:event_btnVestidoCortoActionPerformed
 
     /**
      * @param args the command line arguments
