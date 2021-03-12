@@ -42,7 +42,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         spnConjuntoLana = new javax.swing.JSpinner();
         jLabel20 = new javax.swing.JLabel();
-        cmbConjuntoLana = new javax.swing.JComboBox<>();
         jLabel19 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         btnGuardarConjuntoLana = new javax.swing.JButton();
@@ -52,10 +51,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         rbtLConjuntoLana = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        cmbConjuntoLana = new javax.swing.JComboBox<>();
         jPanel7 = new javax.swing.JPanel();
         spnAbrigo = new javax.swing.JSpinner();
         jLabel27 = new javax.swing.JLabel();
-        cmbAbrigo = new javax.swing.JComboBox<>();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         btnGuardarAbrigo = new javax.swing.JButton();
@@ -65,10 +64,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         rbtLAbrigo = new javax.swing.JRadioButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        cmbAbrigo = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
         spnChaleco = new javax.swing.JSpinner();
         jLabel21 = new javax.swing.JLabel();
-        cmbChaleco = new javax.swing.JComboBox<>();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         btnGuardarChaleco = new javax.swing.JButton();
@@ -78,10 +77,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         rbtLChaleco = new javax.swing.JRadioButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        cmbChaleco = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         spnAbrigoPliegues = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
-        cmbAbrigoPliegues = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         btnGuardarAbrigoPliegues = new javax.swing.JButton();
@@ -91,6 +90,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         rbtLAbrigoPliegues = new javax.swing.JRadioButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        cmbAbrigoPliegues = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -106,14 +106,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel20.setText("¿Cuántos desea adquirir?");
-
-        cmbConjuntoLana.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana.setSelectedIndex(-1);
-        cmbConjuntoLana.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLanaActionPerformed(evt);
-            }
-        });
 
         jLabel19.setText("Precio:   $ 29.99 c/u");
 
@@ -142,6 +134,14 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel12.setText("Conjunto de lana");
 
+        cmbConjuntoLana.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbConjuntoLana.setSelectedIndex(-1);
+        cmbConjuntoLana.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbConjuntoLanaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -162,11 +162,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(rbtLConjuntoLana))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel23)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana)
-                            .addComponent(cmbConjuntoLana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addComponent(btnGuardarConjuntoLana)
+                                .addGap(24, 24, 24))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(cmbConjuntoLana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel20, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -195,13 +199,13 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                             .addComponent(rbtMConjuntoLana)
                             .addComponent(rbtLConjuntoLana))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23))
-                        .addGap(23, 23, 23)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel23)
+                            .addComponent(cmbConjuntoLana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
                         .addComponent(btnGuardarConjuntoLana))
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 300, 250));
@@ -209,14 +213,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel27.setText("¿Cuántos desea adquirir?");
-
-        cmbAbrigo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbAbrigo.setSelectedIndex(-1);
-        cmbAbrigo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbAbrigoActionPerformed(evt);
-            }
-        });
 
         jLabel28.setText("Precio:   $ 60.00 c/u");
 
@@ -245,6 +241,14 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/saco firme.png"))); // NOI18N
 
+        cmbAbrigo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbAbrigo.setSelectedIndex(-1);
+        cmbAbrigo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbAbrigoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -265,11 +269,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(rbtLAbrigo))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel30)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarAbrigo)
-                            .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                .addComponent(btnGuardarAbrigo)
+                                .addGap(24, 24, 24))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -299,8 +307,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                             .addComponent(rbtLAbrigo))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel30))
+                            .addComponent(jLabel30)
+                            .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarAbrigo))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -312,14 +320,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel21.setText("¿Cuántos desea adquirir?");
-
-        cmbChaleco.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbChaleco.setSelectedIndex(-1);
-        cmbChaleco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbChalecoActionPerformed(evt);
-            }
-        });
 
         jLabel24.setText("Precio:   $ 20.00 c/u");
 
@@ -348,6 +348,14 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel10.setText("Chaleco con textura");
 
+        cmbChaleco.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbChaleco.setSelectedIndex(-1);
+        cmbChaleco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbChalecoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -368,11 +376,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(rbtLChaleco))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarChaleco)
-                            .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                                .addComponent(btnGuardarChaleco)
+                                .addGap(24, 24, 24))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel21, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -400,8 +412,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                             .addComponent(rbtLChaleco))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel26))
+                            .addComponent(jLabel26)
+                            .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarChaleco))
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -417,14 +429,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         jLabel31.setText("¿Cuántos desea adquirir?");
-
-        cmbAbrigoPliegues.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbAbrigoPliegues.setSelectedIndex(-1);
-        cmbAbrigoPliegues.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbAbrigoPlieguesActionPerformed(evt);
-            }
-        });
 
         jLabel32.setText("Precio:   $ 40.00 c/u");
 
@@ -453,6 +457,14 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/saco blanco.png"))); // NOI18N
 
+        cmbAbrigoPliegues.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbAbrigoPliegues.setSelectedIndex(-1);
+        cmbAbrigoPliegues.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbAbrigoPlieguesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -473,11 +485,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(rbtLAbrigoPliegues))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel34)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarAbrigoPliegues)
-                            .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                                .addComponent(btnGuardarAbrigoPliegues)
+                                .addGap(24, 24, 24))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -507,14 +523,14 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                             .addComponent(rbtLAbrigoPliegues))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel34))
+                            .addComponent(jLabel34)
+                            .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarAbrigoPliegues))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, -1));
@@ -583,10 +599,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLanaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLanaActionPerformed
-
     private void btnGuardarConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLanaActionPerformed
         // TODO add your handling code here:
 
@@ -621,10 +633,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
               }
 
     }//GEN-LAST:event_btnGuardarConjuntoLanaActionPerformed
-
-    private void cmbChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChalecoActionPerformed
-     
-    }//GEN-LAST:event_cmbChalecoActionPerformed
 
     private void btnGuardarChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarChalecoActionPerformed
         // TODO add your handling code here:
@@ -661,10 +669,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnGuardarChalecoActionPerformed
 
-    private void cmbAbrigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbAbrigoActionPerformed
-
     private void btnGuardarAbrigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAbrigoActionPerformed
         // TODO add your handling code here:
            // TODO add your handling code here:
@@ -700,12 +704,6 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnGuardarAbrigoActionPerformed
 
-    private void cmbAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoPlieguesActionPerformed
-        // TODO add your handling code here:
-       
-
-    }//GEN-LAST:event_cmbAbrigoPlieguesActionPerformed
-
     private void btnGuardarAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAbrigoPlieguesActionPerformed
         // TODO add your handling code here:
             // TODO add your handling code here:
@@ -740,6 +738,22 @@ public class GUI_InviernoM extends javax.swing.JFrame {
               }
 
     }//GEN-LAST:event_btnGuardarAbrigoPlieguesActionPerformed
+
+    private void cmbConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLanaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbConjuntoLanaActionPerformed
+
+    private void cmbChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChalecoActionPerformed
+
+    }//GEN-LAST:event_cmbChalecoActionPerformed
+
+    private void cmbAbrigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbAbrigoActionPerformed
+
+    private void cmbAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoPlieguesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbAbrigoPlieguesActionPerformed
 
     /**
      * @param args the command line arguments

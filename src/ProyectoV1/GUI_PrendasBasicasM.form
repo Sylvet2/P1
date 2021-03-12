@@ -141,12 +141,18 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="21" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarCamiseta" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbCamiseta" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarCamiseta" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbCamiseta" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -198,8 +204,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbCamiseta" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbCamiseta" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarCamiseta" min="-2" max="-2" attributes="0"/>
@@ -218,26 +224,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbCamiseta">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisetaActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel32">
                           <Properties>
@@ -301,6 +287,26 @@
                             <Property name="text" type="java.lang.String" value="Camiseta sin estampado"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbCamiseta">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisetaActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel7">
@@ -327,12 +333,18 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="21" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarLapiz" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbLapiz" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarLapiz" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbLapiz" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -384,8 +396,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbLapiz" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbLapiz" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarLapiz" min="-2" max="-2" attributes="0"/>
@@ -404,26 +416,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbLapiz">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbLapizActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel28">
                           <Properties>
@@ -487,6 +479,26 @@
                             <Property name="text" type="java.lang.String" value="Falda l&#xe1;piz"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbLapiz">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbLapizActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel6">
@@ -513,12 +525,18 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="21" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarPantalon" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbPantalon" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarPantalon" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbPantalon" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -570,8 +588,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbPantalon" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbPantalon" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarPantalon" min="-2" max="-2" attributes="0"/>
@@ -590,26 +608,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbPantalon">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbPantalonActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel24">
                           <Properties>
@@ -673,6 +671,26 @@
                             <Property name="text" type="java.lang.String" value="Pantal&#xf3;n de tela"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbPantalon">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbPantalonActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel5">
@@ -699,12 +717,18 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardaCamisaManga" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbCamisaManga" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="btnGuardaCamisaManga" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="cmbCamisaManga" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
@@ -717,15 +741,13 @@
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="rbtLCamisaManga" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
-                                                  <Group type="102" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="spnCamisaManga" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                                                          <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="spnCamisaManga" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                                      <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
@@ -761,8 +783,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbCamisaManga" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbCamisaManga" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardaCamisaManga" min="-2" max="-2" attributes="0"/>
@@ -781,26 +803,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbCamisaManga">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisaMangaActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel19">
                           <Properties>
@@ -863,6 +865,26 @@
                             </Property>
                             <Property name="text" type="java.lang.String" value="Camisa con mangas"/>
                           </Properties>
+                        </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbCamisaManga">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisaMangaActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
                         </Component>
                       </SubComponents>
                     </Container>

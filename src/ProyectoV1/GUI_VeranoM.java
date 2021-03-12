@@ -44,19 +44,18 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         spnConjuntoPliegues = new javax.swing.JSpinner();
-        cmbConjuntoPliegues = new javax.swing.JComboBox<>();
         jLabel24 = new javax.swing.JLabel();
         rbtSConjuntoPliegues = new javax.swing.JRadioButton();
         rbtMConjuntoPliegues = new javax.swing.JRadioButton();
         rbtLConjuntoPliegues = new javax.swing.JRadioButton();
         jLabel27 = new javax.swing.JLabel();
         btnConjuntoPliegues = new javax.swing.JButton();
+        cmbConjuntoPliegues = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         spnVestidoLargo = new javax.swing.JSpinner();
-        cmbVestidoLargo = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         rbtMVestidoLargo = new javax.swing.JRadioButton();
@@ -64,12 +63,12 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         rbtLVestidoLargo = new javax.swing.JRadioButton();
         jLabel29 = new javax.swing.JLabel();
         btnVestidoLargo = new javax.swing.JButton();
+        cmbVestidoLargo = new javax.swing.JComboBox<>();
         jPanel4 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         spnBikini = new javax.swing.JSpinner();
         jLabel20 = new javax.swing.JLabel();
-        cmbBikini = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         btnGuardarBikini = new javax.swing.JButton();
@@ -77,19 +76,20 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         rbtSBikini = new javax.swing.JRadioButton();
         rbtMBikini = new javax.swing.JRadioButton();
         rbtLBikini = new javax.swing.JRadioButton();
+        cmbBikini = new javax.swing.JComboBox<>();
         jPanel7 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         spnVestidoCorto = new javax.swing.JSpinner();
-        cmbVestidoCorto = new javax.swing.JComboBox<>();
         rbtMVestidoCorto = new javax.swing.JRadioButton();
         jLabel28 = new javax.swing.JLabel();
         rbtSVestidoCorto = new javax.swing.JRadioButton();
         rbtLVestidoCorto = new javax.swing.JRadioButton();
         jLabel14 = new javax.swing.JLabel();
         btnVestidoCorto = new javax.swing.JButton();
+        cmbVestidoCorto = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -116,9 +116,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel19.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoPliegues.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
-        cmbConjuntoPliegues.setSelectedIndex(-1);
-
         jLabel24.setText("Talla:");
 
         btgVestidoPliegues.add(rbtSConjuntoPliegues);
@@ -139,6 +136,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
             }
         });
 
+        cmbConjuntoPliegues.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
+        cmbConjuntoPliegues.setSelectedIndex(-1);
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -149,7 +149,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                     .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(spnConjuntoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel24)
@@ -165,10 +165,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnConjuntoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cmbConjuntoPliegues, 0, 1, Short.MAX_VALUE)))
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(0, 6, Short.MAX_VALUE))
+                    .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 5, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,7 +195,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnConjuntoPliegues))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 290, 250));
@@ -209,9 +208,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/vestido.png"))); // NOI18N
 
         jLabel18.setText("¿Cuántos desea adquirir?");
-
-        cmbVestidoLargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
-        cmbVestidoLargo.setSelectedIndex(-1);
 
         jLabel17.setText("Precio:   $ 25.00 c/u");
 
@@ -235,6 +231,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
             }
         });
 
+        cmbVestidoLargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
+        cmbVestidoLargo.setSelectedIndex(-1);
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -243,42 +242,38 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(126, 126, 126)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel18)
+                                .addContainerGap(29, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnVestidoLargo)
+                                    .addComponent(cmbVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel6Layout.createSequentialGroup()
-                                    .addGap(126, 126, 126)
-                                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel6Layout.createSequentialGroup()
-                                            .addComponent(jLabel18)
-                                            .addGap(0, 0, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                            .addGap(0, 1, Short.MAX_VALUE)
-                                            .addComponent(jLabel29)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btnVestidoLargo)
-                                                .addComponent(cmbVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                .addGroup(jPanel6Layout.createSequentialGroup()
-                                    .addGap(125, 125, 125)
-                                    .addComponent(jLabel25)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(rbtSVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(rbtMVestidoLargo)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(rbtLVestidoLargo)
-                                    .addGap(0, 0, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                                    .addGap(0, 0, Short.MAX_VALUE)
-                                    .addComponent(spnVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(17, 17, 17)))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(spnVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(125, 125, 125)
+                                .addComponent(jLabel25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMVestidoLargo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtLVestidoLargo))
                             .addComponent(jLabel12))
-                        .addContainerGap(11, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -301,12 +296,12 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                             .addComponent(rbtMVestidoLargo)
                             .addComponent(rbtLVestidoLargo))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel29))
-                        .addGap(18, 18, 18)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel29)
+                            .addComponent(cmbVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21)
                         .addComponent(btnVestidoLargo)))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 290, 250));
@@ -320,14 +315,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel9.setText("Bikini de una pieza");
 
         jLabel20.setText("¿Cuántos desea adquirir?");
-
-        cmbBikini.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
-        cmbBikini.setSelectedIndex(-1);
-        cmbBikini.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbBikiniActionPerformed(evt);
-            }
-        });
 
         jLabel15.setText("Precio:   $ 15.00 c/u");
 
@@ -350,6 +337,14 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         btgBikini.add(rbtLBikini);
         rbtLBikini.setText("L");
+
+        cmbBikini.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
+        cmbBikini.setSelectedIndex(-1);
+        cmbBikini.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbBikiniActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -406,8 +401,8 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                             .addComponent(rbtLBikini))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbBikini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23))
+                            .addComponent(jLabel23)
+                            .addComponent(cmbBikini, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarBikini))
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -426,9 +421,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel13.setText("Precio:");
 
         jLabel21.setText("¿Cuántos desea adquirir?");
-
-        cmbVestidoCorto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
-        cmbVestidoCorto.setSelectedIndex(-1);
 
         btgVestidoCorto.add(rbtMVestidoCorto);
         rbtMVestidoCorto.setText("M");
@@ -455,6 +447,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
             }
         });
 
+        cmbVestidoCorto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
+        cmbVestidoCorto.setSelectedIndex(-1);
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -462,12 +457,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbVestidoCorto, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnVestidoCorto, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 244, Short.MAX_VALUE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -486,7 +475,13 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                                     .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(spnVestidoCorto, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(0, 0, Short.MAX_VALUE))))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cmbVestidoCorto, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnVestidoCorto, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel10)
@@ -521,7 +516,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, 250));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 300, 250));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
@@ -566,10 +561,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cmbBikiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBikiniActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbBikiniActionPerformed
 
     private void btnGuardarBikiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikiniActionPerformed
         // TODO add your handling code here:
@@ -717,6 +708,10 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     prenda = new Prenda (nombre, precio, cantidad, talla, color);
      }
     }//GEN-LAST:event_btnVestidoCortoActionPerformed
+
+    private void cmbBikiniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBikiniActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbBikiniActionPerformed
 
     /**
      * @param args the command line arguments

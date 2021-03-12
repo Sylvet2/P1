@@ -164,12 +164,18 @@
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="26" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarConjuntoLana" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbConjuntoLana" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarConjuntoLana" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="cmbConjuntoLana" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="jLabel19" alignment="0" max="32767" attributes="0"/>
@@ -205,16 +211,16 @@
                                               <Component id="rbtLConjuntoLana" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbConjuntoLana" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbConjuntoLana" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                           <Component id="btnGuardarConjuntoLana" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jLabel4" min="-2" pref="190" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                                  <EmptySpace pref="14" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -226,26 +232,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbConjuntoLana">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLanaActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel19">
                           <Properties>
@@ -309,6 +295,26 @@
                             <Property name="text" type="java.lang.String" value="Conjunto de lana"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbConjuntoLana">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLanaActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel7">
@@ -345,12 +351,18 @@
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="20" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarAbrigo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbAbrigo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarAbrigo" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbAbrigo" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="jLabel28" alignment="0" max="32767" attributes="0"/>
@@ -387,8 +399,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarAbrigo" min="-2" max="-2" attributes="0"/>
@@ -407,26 +419,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbAbrigo">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel28">
                           <Properties>
@@ -490,6 +482,26 @@
                             </Property>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbAbrigo">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel6">
@@ -526,12 +538,18 @@
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="16" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarChaleco" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbChaleco" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarChaleco" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbChaleco" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="jLabel24" alignment="0" max="32767" attributes="0"/>
@@ -566,8 +584,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarChaleco" min="-2" max="-2" attributes="0"/>
@@ -591,26 +609,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbChaleco">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChalecoActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel24">
                           <Properties>
@@ -674,6 +672,26 @@
                             <Property name="text" type="java.lang.String" value="Chaleco con textura"/>
                           </Properties>
                         </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbChaleco">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChalecoActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel8">
@@ -710,12 +728,18 @@
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace pref="16" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarAbrigoPliegues" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbAbrigoPliegues" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                                                  <Component id="btnGuardarAbrigoPliegues" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="cmbAbrigoPliegues" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="jLabel32" alignment="0" max="32767" attributes="0"/>
@@ -752,8 +776,8 @@
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                                           <Component id="btnGuardarAbrigoPliegues" min="-2" max="-2" attributes="0"/>
@@ -763,7 +787,7 @@
                                           <Component id="jLabel8" min="-2" pref="190" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                                  <EmptySpace pref="20" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -775,26 +799,6 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
-                        </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbAbrigoPliegues">
-                          <Properties>
-                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                              <StringArray count="5">
-                                <StringItem index="0" value="Blanco"/>
-                                <StringItem index="1" value="Negro "/>
-                                <StringItem index="2" value="Vino"/>
-                                <StringItem index="3" value=" "/>
-                                <StringItem index="4" value=" "/>
-                              </StringArray>
-                            </Property>
-                            <Property name="selectedIndex" type="int" value="-1"/>
-                          </Properties>
-                          <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoPlieguesActionPerformed"/>
-                          </Events>
-                          <AuxValues>
-                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel32">
                           <Properties>
@@ -857,6 +861,26 @@
                               <Image iconType="3" name="/Imagenes/Invierno/saco blanco.png"/>
                             </Property>
                           </Properties>
+                        </Component>
+                        <Component class="javax.swing.JComboBox" name="cmbAbrigoPliegues">
+                          <Properties>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="5">
+                                <StringItem index="0" value="Blanco"/>
+                                <StringItem index="1" value="Negro "/>
+                                <StringItem index="2" value="Vino"/>
+                                <StringItem index="3" value=" "/>
+                                <StringItem index="4" value=" "/>
+                              </StringArray>
+                            </Property>
+                            <Property name="selectedIndex" type="int" value="-1"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoPlieguesActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
                         </Component>
                       </SubComponents>
                     </Container>

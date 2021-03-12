@@ -210,7 +210,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarAbrigoHombre))
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, 250));
