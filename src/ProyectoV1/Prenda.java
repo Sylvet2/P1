@@ -18,6 +18,7 @@ public class Prenda {
     private int numPrendas;
     private double precioUnitario;
     
+    
     //ArrayList <Hombre> prendaHombres = new ArrayList<>();
     //ArrayList <Mujer> prendasMujeres = new ArrayList<>();      
  
