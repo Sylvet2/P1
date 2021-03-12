@@ -36,8 +36,8 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         btgVestidoCorto = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        btnAtrasVeranoMujer = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -99,11 +99,16 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnAtrasVeranoMujer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAtrasVeranoMujer.setText("Atrás");
+        btnAtrasVeranoMujer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasVeranoMujerActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnAtrasVeranoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel8.setText("Verano");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -198,7 +203,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 290, 250));
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 290, 250));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -304,7 +309,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 290, 250));
+        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 290, 250));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -409,7 +414,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 290, 250));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 290, 250));
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -516,16 +521,16 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 300, 250));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 300, 250));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 570));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 570));
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 600));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 570));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/FondoVeranoMujerF.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 830, 660));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 830, 670));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -551,7 +556,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
+            .addGap(0, 670, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -713,6 +718,13 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbBikiniActionPerformed
 
+    private void btnAtrasVeranoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVeranoMujerActionPerformed
+        // TODO add your handling code here:
+        InterfazMujer atras = new InterfazMujer();
+        atras.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnAtrasVeranoMujerActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -753,6 +765,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btgVestidoCorto;
     private javax.swing.ButtonGroup btgVestidoLargo;
     private javax.swing.ButtonGroup btgVestidoPliegues;
+    private javax.swing.JButton btnAtrasVeranoMujer;
     private javax.swing.JButton btnConjuntoPliegues;
     private javax.swing.JButton btnGuardarBikini;
     private javax.swing.JButton btnVestidoCorto;
@@ -787,7 +800,6 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
