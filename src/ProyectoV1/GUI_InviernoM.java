@@ -5,6 +5,8 @@
  */
 package ProyectoV1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USUARIO
