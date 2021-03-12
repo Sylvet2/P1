@@ -4,6 +4,12 @@
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="btgBikini">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgVestidoPliegues">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgVestidoLargo">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgVestidoCorto">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -238,16 +244,25 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtSConjuntoPliegues">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoPliegues"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtMConjuntoPliegues">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoPliegues"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtLConjuntoPliegues">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoPliegues"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -424,16 +439,25 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtMVestidoLargo">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoLargo"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtSVestidoLargo">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoLargo"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtLVestidoLargo">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoLargo"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -609,16 +633,25 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtSBikini">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgBikini"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtMBikini">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgBikini"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtLBikini">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgBikini"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -769,6 +802,9 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtMVestidoCorto">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoCorto"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                       <Events>
@@ -782,11 +818,17 @@
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtSVestidoCorto">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoCorto"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtLVestidoCorto">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgVestidoCorto"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>

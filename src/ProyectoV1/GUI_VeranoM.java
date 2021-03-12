@@ -28,6 +28,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private void initComponents() {
 
         btgBikini = new javax.swing.ButtonGroup();
+        btgVestidoPliegues = new javax.swing.ButtonGroup();
+        btgVestidoLargo = new javax.swing.ButtonGroup();
+        btgVestidoCorto = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -115,10 +118,13 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel24.setText("Talla:");
 
+        btgVestidoPliegues.add(rbtSConjuntoPliegues);
         rbtSConjuntoPliegues.setText("S");
 
+        btgVestidoPliegues.add(rbtMConjuntoPliegues);
         rbtMConjuntoPliegues.setText("M");
 
+        btgVestidoPliegues.add(rbtLConjuntoPliegues);
         rbtLConjuntoPliegues.setText("L");
 
         jLabel27.setText("Color:");
@@ -202,10 +208,13 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel25.setText("Talla:");
 
+        btgVestidoLargo.add(rbtMVestidoLargo);
         rbtMVestidoLargo.setText("M");
 
+        btgVestidoLargo.add(rbtSVestidoLargo);
         rbtSVestidoLargo.setText("S");
 
+        btgVestidoLargo.add(rbtLVestidoLargo);
         rbtLVestidoLargo.setText("L");
 
         jLabel29.setText("Color:");
@@ -318,10 +327,13 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel23.setText("Color:");
 
+        btgBikini.add(rbtSBikini);
         rbtSBikini.setText("S");
 
+        btgBikini.add(rbtMBikini);
         rbtMBikini.setText("M");
 
+        btgBikini.add(rbtLBikini);
         rbtLBikini.setText("L");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -402,6 +414,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         cmbVestidoCorto.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Negro azabache", "Azul marino", "Rojo ", "Verde botella", "Vino", "Blanco", "Amarillo" }));
         cmbVestidoCorto.setSelectedIndex(-1);
 
+        btgVestidoCorto.add(rbtMVestidoCorto);
         rbtMVestidoCorto.setText("M");
         rbtMVestidoCorto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -411,8 +424,10 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jLabel28.setText("Talla:");
 
+        btgVestidoCorto.add(rbtSVestidoCorto);
         rbtSVestidoCorto.setText("S");
 
+        btgVestidoCorto.add(rbtLVestidoCorto);
         rbtLVestidoCorto.setText("L");
 
         jLabel14.setText("Color:");
@@ -581,6 +596,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup btgBikini;
+    private javax.swing.ButtonGroup btgVestidoCorto;
+    private javax.swing.ButtonGroup btgVestidoLargo;
+    private javax.swing.ButtonGroup btgVestidoPliegues;
     private javax.swing.JButton btnConjuntoPliegues;
     private javax.swing.JButton btnGuardarBikini;
     private javax.swing.JButton btnVestidoCorto;
