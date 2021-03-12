@@ -5,11 +5,15 @@
  */
 package ProyectoV1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USUARIO
  */
 public class GUI_VeranoH extends javax.swing.JFrame {
+    Prenda prenda;
+
 
     /**
      * Creates new form GUI_VeranoH
@@ -27,59 +31,63 @@ public class GUI_VeranoH extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btgCamisaCorta = new javax.swing.ButtonGroup();
+        btgPescador = new javax.swing.ButtonGroup();
+        btgShort = new javax.swing.ButtonGroup();
+        btgCamisaLarga = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
-        spnCamiseta = new javax.swing.JSpinner();
+        spnCamisetaCorta = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
-        cmbConjuntoLana3 = new javax.swing.JComboBox<>();
+        cmbCamisetaCorta = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana3 = new javax.swing.JButton();
+        btnGuardarCamisetaCorta = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        rbtSCamiseta = new javax.swing.JRadioButton();
-        rbtMConjuntoLana3 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana3 = new javax.swing.JRadioButton();
+        rbtSCamisetaCorta = new javax.swing.JRadioButton();
+        rbtMCamisetaCorta = new javax.swing.JRadioButton();
+        rbtLCamisetaCorta = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        spnCamiseta3 = new javax.swing.JSpinner();
+        spnPescador = new javax.swing.JSpinner();
         jLabel43 = new javax.swing.JLabel();
-        cmbConjuntoLana6 = new javax.swing.JComboBox<>();
+        cmbPescador = new javax.swing.JComboBox<>();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana6 = new javax.swing.JButton();
+        btnGuardarPescador = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
-        rbtSCamiseta3 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana6 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana6 = new javax.swing.JRadioButton();
+        rbtSPescador = new javax.swing.JRadioButton();
+        rbtMPescador = new javax.swing.JRadioButton();
+        rbtLPescador = new javax.swing.JRadioButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        spnCamiseta2 = new javax.swing.JSpinner();
+        spnShort = new javax.swing.JSpinner();
         jLabel39 = new javax.swing.JLabel();
-        cmbConjuntoLana5 = new javax.swing.JComboBox<>();
+        cmbShort = new javax.swing.JComboBox<>();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana5 = new javax.swing.JButton();
+        btnGuardarShort = new javax.swing.JButton();
         jLabel42 = new javax.swing.JLabel();
-        rbtSCamiseta2 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana5 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana5 = new javax.swing.JRadioButton();
+        rbtSShort = new javax.swing.JRadioButton();
+        rbtMShort = new javax.swing.JRadioButton();
+        rbtLShort = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        spnCamiseta1 = new javax.swing.JSpinner();
+        spnCamisetaLarga = new javax.swing.JSpinner();
         jLabel35 = new javax.swing.JLabel();
-        cmbConjuntoLana4 = new javax.swing.JComboBox<>();
+        cmbCamisetaLarga = new javax.swing.JComboBox<>();
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
-        btnGuardarConjuntoLana4 = new javax.swing.JButton();
+        btnGuardarCamisetaLarga = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
-        rbtSCamiseta1 = new javax.swing.JRadioButton();
-        rbtMConjuntoLana4 = new javax.swing.JRadioButton();
-        rbtLConjuntoLana4 = new javax.swing.JRadioButton();
+        rbtSCamisetaLarga = new javax.swing.JRadioButton();
+        rbtMCamisetaLarga = new javax.swing.JRadioButton();
+        rbtLCamisetaLarga = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -97,32 +105,35 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jLabel31.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana3.setSelectedIndex(-1);
-        cmbConjuntoLana3.addActionListener(new java.awt.event.ActionListener() {
+        cmbCamisetaCorta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbCamisetaCorta.setSelectedIndex(-1);
+        cmbCamisetaCorta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana3ActionPerformed(evt);
+                cmbCamisetaCortaActionPerformed(evt);
             }
         });
 
-        jLabel32.setText("Precio:");
+        jLabel32.setText("Precio:   $ 15.50 c/u");
 
         jLabel33.setText("Talla:");
 
-        btnGuardarConjuntoLana3.setText("Guardar");
-        btnGuardarConjuntoLana3.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarCamisetaCorta.setText("Guardar");
+        btnGuardarCamisetaCorta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana3ActionPerformed(evt);
+                btnGuardarCamisetaCortaActionPerformed(evt);
             }
         });
 
         jLabel34.setText("Color:");
 
-        rbtSCamiseta.setText("S");
+        btgCamisaCorta.add(rbtSCamisetaCorta);
+        rbtSCamisetaCorta.setText("S");
 
-        rbtMConjuntoLana3.setText("M");
+        btgCamisaCorta.add(rbtMCamisetaCorta);
+        rbtMCamisetaCorta.setText("M");
 
-        rbtLConjuntoLana3.setText("L");
+        btgCamisaCorta.add(rbtLCamisetaCorta);
+        rbtLCamisetaCorta.setText("L");
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/camisa de manga corta.png"))); // NOI18N
 
@@ -138,24 +149,30 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel32)
-                    .addComponent(spnCamiseta, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel31)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jLabel33)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana3))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel34)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana3)
-                            .addComponent(cmbConjuntoLana3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarCamisetaCorta)
+                            .addComponent(cmbCamisetaCorta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(jLabel33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSCamisetaCorta)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMCamisetaCorta)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLCamisetaCorta))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(spnCamisetaCorta, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel31)
+                                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel15)
@@ -173,19 +190,19 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnCamisetaCorta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel33)
-                            .addComponent(rbtSCamiseta)
-                            .addComponent(rbtMConjuntoLana3)
-                            .addComponent(rbtLConjuntoLana3))
+                            .addComponent(rbtSCamisetaCorta)
+                            .addComponent(rbtMCamisetaCorta)
+                            .addComponent(rbtLCamisetaCorta))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbCamisetaCorta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel34))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana3))
+                        .addComponent(btnGuardarCamisetaCorta))
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -196,32 +213,35 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jLabel43.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana6.setSelectedIndex(-1);
-        cmbConjuntoLana6.addActionListener(new java.awt.event.ActionListener() {
+        cmbPescador.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbPescador.setSelectedIndex(-1);
+        cmbPescador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana6ActionPerformed(evt);
+                cmbPescadorActionPerformed(evt);
             }
         });
 
-        jLabel44.setText("Precio:");
+        jLabel44.setText("Precio:     $ 12.00 c/u");
 
         jLabel45.setText("Talla:");
 
-        btnGuardarConjuntoLana6.setText("Guardar");
-        btnGuardarConjuntoLana6.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarPescador.setText("Guardar");
+        btnGuardarPescador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana6ActionPerformed(evt);
+                btnGuardarPescadorActionPerformed(evt);
             }
         });
 
         jLabel46.setText("Color:");
 
-        rbtSCamiseta3.setText("S");
+        btgPescador.add(rbtSPescador);
+        rbtSPescador.setText("S");
 
-        rbtMConjuntoLana6.setText("M");
+        btgPescador.add(rbtMPescador);
+        rbtMPescador.setText("M");
 
-        rbtLConjuntoLana6.setText("L");
+        btgPescador.add(rbtLPescador);
+        rbtLPescador.setText("L");
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/pescadores.png"))); // NOI18N
 
@@ -237,24 +257,30 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel44)
-                    .addComponent(spnCamiseta3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel43)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addComponent(jLabel45)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana6))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                         .addComponent(jLabel46)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana6)
-                            .addComponent(cmbConjuntoLana6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarPescador)
+                            .addComponent(cmbPescador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addComponent(jLabel45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSPescador)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMPescador)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLPescador))
+                            .addGroup(jPanel11Layout.createSequentialGroup()
+                                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(spnPescador, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel43)
+                                    .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel18)
@@ -272,19 +298,19 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel43)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnPescador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel45)
-                            .addComponent(rbtSCamiseta3)
-                            .addComponent(rbtMConjuntoLana6)
-                            .addComponent(rbtLConjuntoLana6))
+                            .addComponent(rbtSPescador)
+                            .addComponent(rbtMPescador)
+                            .addComponent(rbtLPescador))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbPescador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel46))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana6))
+                        .addComponent(btnGuardarPescador))
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -295,32 +321,35 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jLabel39.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana5.setSelectedIndex(-1);
-        cmbConjuntoLana5.addActionListener(new java.awt.event.ActionListener() {
+        cmbShort.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbShort.setSelectedIndex(-1);
+        cmbShort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana5ActionPerformed(evt);
+                cmbShortActionPerformed(evt);
             }
         });
 
-        jLabel40.setText("Precio:");
+        jLabel40.setText("Precio:      $ 7.00 c/u");
 
         jLabel41.setText("Talla:");
 
-        btnGuardarConjuntoLana5.setText("Guardar");
-        btnGuardarConjuntoLana5.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarShort.setText("Guardar");
+        btnGuardarShort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana5ActionPerformed(evt);
+                btnGuardarShortActionPerformed(evt);
             }
         });
 
         jLabel42.setText("Color:");
 
-        rbtSCamiseta2.setText("S");
+        btgShort.add(rbtSShort);
+        rbtSShort.setText("S");
 
-        rbtMConjuntoLana5.setText("M");
+        btgShort.add(rbtMShort);
+        rbtMShort.setText("M");
 
-        rbtLConjuntoLana5.setText("L");
+        btgShort.add(rbtLShort);
+        rbtLShort.setText("L");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/short.png"))); // NOI18N
 
@@ -336,24 +365,30 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel40)
-                    .addComponent(spnCamiseta2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel39)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel41)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana5))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                         .addComponent(jLabel42)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana5)
-                            .addComponent(cmbConjuntoLana5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarShort)
+                            .addComponent(cmbShort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(rbtSShort)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(rbtMShort)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rbtLShort))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(spnShort, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel17)
@@ -371,19 +406,19 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel39)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnShort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel41)
-                            .addComponent(rbtSCamiseta2)
-                            .addComponent(rbtMConjuntoLana5)
-                            .addComponent(rbtLConjuntoLana5))
+                            .addComponent(rbtSShort)
+                            .addComponent(rbtMShort)
+                            .addComponent(rbtLShort))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbShort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel42))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana5))
+                        .addComponent(btnGuardarShort))
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -394,11 +429,11 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jLabel35.setText("¿Cuántos desea adquirir?");
 
-        cmbConjuntoLana4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbConjuntoLana4.setSelectedIndex(-1);
-        cmbConjuntoLana4.addActionListener(new java.awt.event.ActionListener() {
+        cmbCamisetaLarga.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbCamisetaLarga.setSelectedIndex(-1);
+        cmbCamisetaLarga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbConjuntoLana4ActionPerformed(evt);
+                cmbCamisetaLargaActionPerformed(evt);
             }
         });
 
@@ -406,20 +441,23 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jLabel37.setText("Talla:");
 
-        btnGuardarConjuntoLana4.setText("Guardar");
-        btnGuardarConjuntoLana4.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarCamisetaLarga.setText("Guardar");
+        btnGuardarCamisetaLarga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarConjuntoLana4ActionPerformed(evt);
+                btnGuardarCamisetaLargaActionPerformed(evt);
             }
         });
 
         jLabel38.setText("Color:");
 
-        rbtSCamiseta1.setText("S");
+        btgCamisaLarga.add(rbtSCamisetaLarga);
+        rbtSCamisetaLarga.setText("S");
 
-        rbtMConjuntoLana4.setText("M");
+        btgCamisaLarga.add(rbtMCamisetaLarga);
+        rbtMCamisetaLarga.setText("M");
 
-        rbtLConjuntoLana4.setText("L");
+        btgCamisaLarga.add(rbtLCamisetaLarga);
+        rbtLCamisetaLarga.setText("L");
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/camisa de manga larga.png"))); // NOI18N
 
@@ -435,24 +473,25 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel36)
-                    .addComponent(spnCamiseta1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel35)
+                    .addComponent(spnCamisetaLarga, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSCamiseta1)
+                        .addComponent(rbtSCamisetaLarga)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMConjuntoLana4)
+                        .addComponent(rbtMCamisetaLarga)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLConjuntoLana4))
+                        .addComponent(rbtLCamisetaLarga))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel38)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarConjuntoLana4)
-                            .addComponent(cmbConjuntoLana4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(24, 24, 24))))
+                            .addComponent(btnGuardarCamisetaLarga)
+                            .addComponent(cmbCamisetaLarga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(24, 24, 24))
+                    .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel16)
@@ -470,19 +509,19 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnCamiseta1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnCamisetaLarga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel37)
-                            .addComponent(rbtSCamiseta1)
-                            .addComponent(rbtMConjuntoLana4)
-                            .addComponent(rbtLConjuntoLana4))
+                            .addComponent(rbtSCamisetaLarga)
+                            .addComponent(rbtMCamisetaLarga)
+                            .addComponent(rbtLCamisetaLarga))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbConjuntoLana4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbCamisetaLarga, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel38))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarConjuntoLana4))
+                        .addComponent(btnGuardarCamisetaLarga))
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
@@ -532,31 +571,31 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbConjuntoLana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana3ActionPerformed
+    private void cmbCamisetaCortaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCamisetaCortaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana3ActionPerformed
+    }//GEN-LAST:event_cmbCamisetaCortaActionPerformed
 
-    private void btnGuardarConjuntoLana3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana3ActionPerformed
+    private void btnGuardarCamisetaCortaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCamisetaCortaActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
+        String nombre = "Camisa de camisa corta";
+        double precio = 15.50;
         int cantidad;
         char talla;
         String color;
 
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        if (rbtSCamisetaCorta.isSelected() == false && rbtMCamisetaCorta.isSelected() == false && rbtLCamisetaCorta.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
         }
         else{
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
+            cantidad = Integer.parseInt(spnCamisetaCorta.getValue().toString());
 
-            if(rbtSConjuntoLana.isSelected()){
+            if(rbtSCamisetaCorta.isSelected()){
                 talla = 'S';
             }
             else{
-                if(rbtMConjuntoLana.isSelected()){
+                if(rbtMCamisetaCorta.isSelected()){
                     talla = 'M';
                 }
                 else{
@@ -564,36 +603,37 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 }
             }
 
-            color = cmbConjuntoLana.getSelectedItem().toString();
+            color = cmbCamisetaCorta.getSelectedItem().toString();
 
             prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana3ActionPerformed
+             }
+    }//GEN-LAST:event_btnGuardarCamisetaCortaActionPerformed
 
-    private void cmbConjuntoLana4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana4ActionPerformed
+    private void cmbCamisetaLargaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbCamisetaLargaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana4ActionPerformed
+    }//GEN-LAST:event_cmbCamisetaLargaActionPerformed
 
-    private void btnGuardarConjuntoLana4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana4ActionPerformed
+    private void btnGuardarCamisetaLargaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCamisetaLargaActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
+      String nombre = "Camiseta de manga Larga";
+        double precio = 18;
         int cantidad;
         char talla;
         String color;
 
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        if (rbtSCamisetaLarga.isSelected() == false && rbtMCamisetaLarga.isSelected() == false && rbtLCamisetaLarga.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
         }
         else{
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
+            cantidad = Integer.parseInt(spnCamisetaLarga.getValue().toString());
 
-            if(rbtSConjuntoLana.isSelected()){
+            if(rbtSCamisetaLarga.isSelected()){
                 talla = 'S';
             }
             else{
-                if(rbtMConjuntoLana.isSelected()){
+                if(rbtMCamisetaLarga.isSelected()){
                     talla = 'M';
                 }
                 else{
@@ -601,36 +641,37 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 }
             }
 
-            color = cmbConjuntoLana.getSelectedItem().toString();
+            color = cmbCamisetaLarga.getSelectedItem().toString();
 
             prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana4ActionPerformed
+             }
+    }//GEN-LAST:event_btnGuardarCamisetaLargaActionPerformed
 
-    private void cmbConjuntoLana5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana5ActionPerformed
+    private void cmbShortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbShortActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana5ActionPerformed
+    }//GEN-LAST:event_cmbShortActionPerformed
 
-    private void btnGuardarConjuntoLana5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana5ActionPerformed
+    private void btnGuardarShortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarShortActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
+     String nombre = "Short";
+        double precio = 7;
         int cantidad;
         char talla;
         String color;
 
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        if (rbtSShort.isSelected() == false && rbtMShort.isSelected() == false && rbtLShort.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
         }
         else{
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
+            cantidad = Integer.parseInt(spnShort.getValue().toString());
 
-            if(rbtSConjuntoLana.isSelected()){
+            if(rbtSShort.isSelected()){
                 talla = 'S';
             }
             else{
-                if(rbtMConjuntoLana.isSelected()){
+                if(rbtMShort.isSelected()){
                     talla = 'M';
                 }
                 else{
@@ -638,36 +679,37 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 }
             }
 
-            color = cmbConjuntoLana.getSelectedItem().toString();
+            color = cmbShort.getSelectedItem().toString();
 
             prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana5ActionPerformed
+             }
+    }//GEN-LAST:event_btnGuardarShortActionPerformed
 
-    private void cmbConjuntoLana6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLana6ActionPerformed
+    private void cmbPescadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbPescadorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cmbConjuntoLana6ActionPerformed
+    }//GEN-LAST:event_cmbPescadorActionPerformed
 
-    private void btnGuardarConjuntoLana6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLana6ActionPerformed
+    private void btnGuardarPescadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarPescadorActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
+     String nombre = "Pescador";
+        double precio = 12;
         int cantidad;
         char talla;
         String color;
 
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        if (rbtSPescador.isSelected() == false && rbtMPescador.isSelected() == false && rbtLPescador.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
         }
         else{
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
+            cantidad = Integer.parseInt(spnPescador.getValue().toString());
 
-            if(rbtSConjuntoLana.isSelected()){
+            if(rbtSPescador.isSelected()){
                 talla = 'S';
             }
             else{
-                if(rbtMConjuntoLana.isSelected()){
+                if(rbtMPescador.isSelected()){
                     talla = 'M';
                 }
                 else{
@@ -675,10 +717,11 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 }
             }
 
-            color = cmbConjuntoLana.getSelectedItem().toString();
+            color = cmbPescador.getSelectedItem().toString();
 
             prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    }//GEN-LAST:event_btnGuardarConjuntoLana6ActionPerformed
+             }
+    }//GEN-LAST:event_btnGuardarPescadorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -716,14 +759,18 @@ public class GUI_VeranoH extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGuardarConjuntoLana3;
-    private javax.swing.JButton btnGuardarConjuntoLana4;
-    private javax.swing.JButton btnGuardarConjuntoLana5;
-    private javax.swing.JButton btnGuardarConjuntoLana6;
-    private javax.swing.JComboBox<String> cmbConjuntoLana3;
-    private javax.swing.JComboBox<String> cmbConjuntoLana4;
-    private javax.swing.JComboBox<String> cmbConjuntoLana5;
-    private javax.swing.JComboBox<String> cmbConjuntoLana6;
+    private javax.swing.ButtonGroup btgCamisaCorta;
+    private javax.swing.ButtonGroup btgCamisaLarga;
+    private javax.swing.ButtonGroup btgPescador;
+    private javax.swing.ButtonGroup btgShort;
+    private javax.swing.JButton btnGuardarCamisetaCorta;
+    private javax.swing.JButton btnGuardarCamisetaLarga;
+    private javax.swing.JButton btnGuardarPescador;
+    private javax.swing.JButton btnGuardarShort;
+    private javax.swing.JComboBox<String> cmbCamisetaCorta;
+    private javax.swing.JComboBox<String> cmbCamisetaLarga;
+    private javax.swing.JComboBox<String> cmbPescador;
+    private javax.swing.JComboBox<String> cmbShort;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;
@@ -757,21 +804,21 @@ public class GUI_VeranoH extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JRadioButton rbtLConjuntoLana3;
-    private javax.swing.JRadioButton rbtLConjuntoLana4;
-    private javax.swing.JRadioButton rbtLConjuntoLana5;
-    private javax.swing.JRadioButton rbtLConjuntoLana6;
-    private javax.swing.JRadioButton rbtMConjuntoLana3;
-    private javax.swing.JRadioButton rbtMConjuntoLana4;
-    private javax.swing.JRadioButton rbtMConjuntoLana5;
-    private javax.swing.JRadioButton rbtMConjuntoLana6;
-    private javax.swing.JRadioButton rbtSCamiseta;
-    private javax.swing.JRadioButton rbtSCamiseta1;
-    private javax.swing.JRadioButton rbtSCamiseta2;
-    private javax.swing.JRadioButton rbtSCamiseta3;
-    private javax.swing.JSpinner spnCamiseta;
-    private javax.swing.JSpinner spnCamiseta1;
-    private javax.swing.JSpinner spnCamiseta2;
-    private javax.swing.JSpinner spnCamiseta3;
+    private javax.swing.JRadioButton rbtLCamisetaCorta;
+    private javax.swing.JRadioButton rbtLCamisetaLarga;
+    private javax.swing.JRadioButton rbtLPescador;
+    private javax.swing.JRadioButton rbtLShort;
+    private javax.swing.JRadioButton rbtMCamisetaCorta;
+    private javax.swing.JRadioButton rbtMCamisetaLarga;
+    private javax.swing.JRadioButton rbtMPescador;
+    private javax.swing.JRadioButton rbtMShort;
+    private javax.swing.JRadioButton rbtSCamisetaCorta;
+    private javax.swing.JRadioButton rbtSCamisetaLarga;
+    private javax.swing.JRadioButton rbtSPescador;
+    private javax.swing.JRadioButton rbtSShort;
+    private javax.swing.JSpinner spnCamisetaCorta;
+    private javax.swing.JSpinner spnCamisetaLarga;
+    private javax.swing.JSpinner spnPescador;
+    private javax.swing.JSpinner spnShort;
     // End of variables declaration//GEN-END:variables
 }

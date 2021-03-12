@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="btgCamisaCorta">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgPescador">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgShort">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgCamisaLarga">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -106,26 +116,36 @@
                               <Component id="jLabel7" min="-2" pref="145" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spnCamiseta" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                                  <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="rbtSCamiseta" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtMConjuntoLana3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtLConjuntoLana3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnGuardarConjuntoLana3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="cmbConjuntoLana3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarCamisetaCorta" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbCamisetaCorta" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="rbtSCamisetaCorta" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="rbtMCamisetaCorta" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="rbtLCamisetaCorta" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="spnCamisetaCorta" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel32" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -148,21 +168,21 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnCamiseta" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spnCamisetaCorta" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtSCamiseta" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtMConjuntoLana3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtLConjuntoLana3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSCamisetaCorta" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMCamisetaCorta" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLCamisetaCorta" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cmbConjuntoLana3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbCamisetaCorta" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="btnGuardarConjuntoLana3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnGuardarCamisetaCorta" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel7" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
                               </Group>
@@ -172,14 +192,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="spnCamiseta">
+                    <Component class="javax.swing.JSpinner" name="spnCamisetaCorta">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel31">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cmbConjuntoLana3">
+                    <Component class="javax.swing.JComboBox" name="cmbCamisetaCorta">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="5">
@@ -193,7 +213,7 @@
                         <Property name="selectedIndex" type="int" value="-1"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLana3ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisetaCortaActionPerformed"/>
                       </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -201,7 +221,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel32">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Precio:"/>
+                        <Property name="text" type="java.lang.String" value="Precio:   $ 15.50 c/u"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel33">
@@ -209,12 +229,12 @@
                         <Property name="text" type="java.lang.String" value="Talla:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnGuardarConjuntoLana3">
+                    <Component class="javax.swing.JButton" name="btnGuardarCamisetaCorta">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Guardar"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarConjuntoLana3ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarCamisetaCortaActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel34">
@@ -222,18 +242,27 @@
                         <Property name="text" type="java.lang.String" value="Color:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtSCamiseta">
+                    <Component class="javax.swing.JRadioButton" name="rbtSCamisetaCorta">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaCorta"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtMConjuntoLana3">
+                    <Component class="javax.swing.JRadioButton" name="rbtMCamisetaCorta">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaCorta"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtLConjuntoLana3">
+                    <Component class="javax.swing.JRadioButton" name="rbtLCamisetaCorta">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaCorta"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -276,26 +305,36 @@
                               <Component id="jLabel10" min="-2" pref="144" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spnCamiseta3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                                  <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="rbtSCamiseta3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtMConjuntoLana6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtLConjuntoLana6" min="-2" max="-2" attributes="0"/>
-                                  </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel46" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnGuardarConjuntoLana6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="cmbConjuntoLana6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarPescador" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbPescador" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel45" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="rbtSPescador" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="rbtMPescador" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="rbtLPescador" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="spnPescador" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <Component id="jLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel44" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -318,21 +357,21 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jLabel43" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnCamiseta3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spnPescador" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel45" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtSCamiseta3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtMConjuntoLana6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtLConjuntoLana6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSPescador" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMPescador" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLPescador" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cmbConjuntoLana6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbPescador" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel46" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="btnGuardarConjuntoLana6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnGuardarPescador" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel10" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
                               </Group>
@@ -342,14 +381,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="spnCamiseta3">
+                    <Component class="javax.swing.JSpinner" name="spnPescador">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel43">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cmbConjuntoLana6">
+                    <Component class="javax.swing.JComboBox" name="cmbPescador">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="5">
@@ -363,7 +402,7 @@
                         <Property name="selectedIndex" type="int" value="-1"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLana6ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbPescadorActionPerformed"/>
                       </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -371,7 +410,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel44">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Precio:"/>
+                        <Property name="text" type="java.lang.String" value="Precio:     $ 12.00 c/u"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel45">
@@ -379,12 +418,12 @@
                         <Property name="text" type="java.lang.String" value="Talla:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnGuardarConjuntoLana6">
+                    <Component class="javax.swing.JButton" name="btnGuardarPescador">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Guardar"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarConjuntoLana6ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarPescadorActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel46">
@@ -392,18 +431,27 @@
                         <Property name="text" type="java.lang.String" value="Color:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtSCamiseta3">
+                    <Component class="javax.swing.JRadioButton" name="rbtSPescador">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgPescador"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtMConjuntoLana6">
+                    <Component class="javax.swing.JRadioButton" name="rbtMPescador">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgPescador"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtLConjuntoLana6">
+                    <Component class="javax.swing.JRadioButton" name="rbtLPescador">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgPescador"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -446,26 +494,36 @@
                               <Component id="jLabel9" min="-2" pref="148" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel40" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spnCamiseta2" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                                  <Component id="jLabel39" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="rbtSCamiseta2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtMConjuntoLana5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtLConjuntoLana5" min="-2" max="-2" attributes="0"/>
-                                  </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel42" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnGuardarConjuntoLana5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="cmbConjuntoLana5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarShort" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbShort" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel41" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="rbtSShort" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="rbtMShort" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="rbtLShort" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="spnShort" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <Component id="jLabel39" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="jLabel40" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -488,21 +546,21 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jLabel39" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnCamiseta2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spnShort" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel41" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtSCamiseta2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtMConjuntoLana5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtLConjuntoLana5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSShort" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMShort" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLShort" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cmbConjuntoLana5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbShort" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel42" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="btnGuardarConjuntoLana5" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnGuardarShort" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel9" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
                               </Group>
@@ -512,14 +570,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="spnCamiseta2">
+                    <Component class="javax.swing.JSpinner" name="spnShort">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel39">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cmbConjuntoLana5">
+                    <Component class="javax.swing.JComboBox" name="cmbShort">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="5">
@@ -533,7 +591,7 @@
                         <Property name="selectedIndex" type="int" value="-1"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLana5ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbShortActionPerformed"/>
                       </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -541,7 +599,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel40">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Precio:"/>
+                        <Property name="text" type="java.lang.String" value="Precio:      $ 7.00 c/u"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel41">
@@ -549,12 +607,12 @@
                         <Property name="text" type="java.lang.String" value="Talla:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnGuardarConjuntoLana5">
+                    <Component class="javax.swing.JButton" name="btnGuardarShort">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Guardar"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarConjuntoLana5ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarShortActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel42">
@@ -562,18 +620,27 @@
                         <Property name="text" type="java.lang.String" value="Color:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtSCamiseta2">
+                    <Component class="javax.swing.JRadioButton" name="rbtSShort">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgShort"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtMConjuntoLana5">
+                    <Component class="javax.swing.JRadioButton" name="rbtMShort">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgShort"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtLConjuntoLana5">
+                    <Component class="javax.swing.JRadioButton" name="rbtLShort">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgShort"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
@@ -616,26 +683,28 @@
                               <Component id="jLabel8" min="-2" pref="142" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="spnCamiseta1" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                                  <Component id="jLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="spnCamisetaLarga" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="rbtSCamiseta1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtSCamisetaLarga" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtMConjuntoLana4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtMCamisetaLarga" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtLConjuntoLana4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtLCamisetaLarga" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <Component id="jLabel38" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="12" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="btnGuardarConjuntoLana4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="cmbConjuntoLana4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarCamisetaLarga" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbCamisetaLarga" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jLabel36" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jLabel35" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -658,21 +727,21 @@
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="spnCamiseta1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="spnCamisetaLarga" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtSCamiseta1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtMConjuntoLana4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtLConjuntoLana4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSCamisetaLarga" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMCamisetaLarga" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLCamisetaLarga" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="cmbConjuntoLana4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cmbCamisetaLarga" alignment="3" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel38" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="btnGuardarConjuntoLana4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnGuardarCamisetaLarga" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel8" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
                               </Group>
@@ -682,14 +751,14 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JSpinner" name="spnCamiseta1">
+                    <Component class="javax.swing.JSpinner" name="spnCamisetaLarga">
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel35">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JComboBox" name="cmbConjuntoLana4">
+                    <Component class="javax.swing.JComboBox" name="cmbCamisetaLarga">
                       <Properties>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="5">
@@ -703,7 +772,7 @@
                         <Property name="selectedIndex" type="int" value="-1"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbConjuntoLana4ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbCamisetaLargaActionPerformed"/>
                       </Events>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -719,12 +788,12 @@
                         <Property name="text" type="java.lang.String" value="Talla:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnGuardarConjuntoLana4">
+                    <Component class="javax.swing.JButton" name="btnGuardarCamisetaLarga">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Guardar"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarConjuntoLana4ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarCamisetaLargaActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel38">
@@ -732,18 +801,27 @@
                         <Property name="text" type="java.lang.String" value="Color:"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtSCamiseta1">
+                    <Component class="javax.swing.JRadioButton" name="rbtSCamisetaLarga">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaLarga"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="S"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtMConjuntoLana4">
+                    <Component class="javax.swing.JRadioButton" name="rbtMCamisetaLarga">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaLarga"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="M"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JRadioButton" name="rbtLConjuntoLana4">
+                    <Component class="javax.swing.JRadioButton" name="rbtLCamisetaLarga">
                       <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="btgCamisaLarga"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="L"/>
                       </Properties>
                     </Component>
