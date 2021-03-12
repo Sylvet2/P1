@@ -133,6 +133,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel27.setText("Color:");
 
         btnConjuntoPliegues.setText("Guardar");
+        btnConjuntoPliegues.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConjuntoPlieguesActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -150,9 +155,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                     .addComponent(spnConjuntoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSConjuntoPliegues)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rbtSConjuntoPliegues)
+                        .addGap(6, 6, 6)
                         .addComponent(rbtMConjuntoPliegues)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(rbtLConjuntoPliegues))
@@ -162,7 +167,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnConjuntoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cmbConjuntoPliegues, 0, 1, Short.MAX_VALUE))))
-                .addGap(0, 5, Short.MAX_VALUE))
+                .addGap(0, 6, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -301,6 +306,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 290, 250));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/Bikini.png"))); // NOI18N
 
@@ -590,7 +596,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     prenda = new Prenda (nombre, precio, cantidad, talla, color);
     
     
-    
+     }
     
     
         
@@ -599,6 +605,45 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private void rbtMVestidoCortoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtMVestidoCortoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rbtMVestidoCortoActionPerformed
+
+    private void btnConjuntoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConjuntoPlieguesActionPerformed
+        // TODO add your handling code here:
+           String nombre = "Bikini de una pieza";
+    double precio = 15;
+    int cantidad;
+    char talla;
+    String color;
+    
+    
+    if (rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false && rbtSBikini.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+    }
+    else{
+    
+    
+    cantidad = Integer.parseInt(spnBikini.getValue().toString());
+    
+    
+    if(rbtSBikini.isSelected()){
+        talla = 'S';
+    }
+    else{
+        if(rbtMBikini.isSelected()){
+            talla = 'M';
+        }
+        else{
+            talla = 'L';
+        }
+    }
+    
+    color = cmbBikini.getSelectedItem().toString();
+    
+    
+    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    
+    
+     }
+    }//GEN-LAST:event_btnConjuntoPlieguesActionPerformed
 
     /**
      * @param args the command line arguments
