@@ -37,6 +37,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         btgCamisaLarga = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        btnAtrasVeranoHombre = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         spnCamisetaCorta = new javax.swing.JSpinner();
@@ -98,6 +99,15 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(750, 660));
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAtrasVeranoHombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAtrasVeranoHombre.setText("Atrás");
+        btnAtrasVeranoHombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasVeranoHombreActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnAtrasVeranoHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 610, -1, -1));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -207,7 +217,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 290, 250));
+        jPanel2.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 290, 250));
 
         jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -315,7 +325,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
+        jPanel2.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, 250));
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -423,7 +433,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+        jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -526,25 +536,27 @@ public class GUI_VeranoH extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, 250));
+        jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, 250));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 650, 560));
 
-        jPanel4.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 600));
+        jPanel4.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/FondoVeranoHombreF.png"))); // NOI18N
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 680));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -560,12 +572,12 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
+            .addGap(0, 679, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 9, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 10, Short.MAX_VALUE)))
         );
 
         pack();
@@ -723,6 +735,13 @@ public class GUI_VeranoH extends javax.swing.JFrame {
              }
     }//GEN-LAST:event_btnGuardarPescadorActionPerformed
 
+    private void btnAtrasVeranoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVeranoHombreActionPerformed
+        // TODO add your handling code here:
+        InterfazHombre atras = new InterfazHombre();
+        atras.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnAtrasVeranoHombreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -763,6 +782,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btgCamisaLarga;
     private javax.swing.ButtonGroup btgPescador;
     private javax.swing.ButtonGroup btgShort;
+    private javax.swing.JButton btnAtrasVeranoHombre;
     private javax.swing.JButton btnGuardarCamisetaCorta;
     private javax.swing.JButton btnGuardarCamisetaLarga;
     private javax.swing.JButton btnGuardarPescador;
