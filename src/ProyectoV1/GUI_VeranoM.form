@@ -219,7 +219,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+                <Component class="javax.swing.JCheckBox" name="chkConjuntoPliegues">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#xbf;Desea adquirilo?"/>
                   </Properties>
@@ -259,7 +259,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+                <Component class="javax.swing.JCheckBox" name="chkBikini">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#xbf;Desea adquirilo?"/>
                   </Properties>

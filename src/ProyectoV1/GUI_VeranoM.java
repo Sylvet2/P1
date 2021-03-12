@@ -42,11 +42,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        chkConjuntoPliegues = new javax.swing.JCheckBox();
         jCheckBox4 = new javax.swing.JCheckBox();
         jLabel15 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        chkBikini = new javax.swing.JCheckBox();
         jLabel19 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jSpinner4 = new javax.swing.JSpinner();
@@ -109,8 +109,8 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jCheckBox1.setText("¿Desea adquirilo?");
         jPanel3.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, -1, -1));
 
-        jCheckBox3.setText("¿Desea adquirilo?");
-        jPanel3.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, -1, -1));
+        chkConjuntoPliegues.setText("¿Desea adquirilo?");
+        jPanel3.add(chkConjuntoPliegues, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, -1, -1));
 
         jCheckBox4.setText("¿Desea adquirilo?");
         jPanel3.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 390, -1, -1));
@@ -121,8 +121,8 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel18.setText("¿Cuántos desea adquirir?");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 430, -1, -1));
 
-        jCheckBox2.setText("¿Desea adquirilo?");
-        jPanel3.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, -1, -1));
+        chkBikini.setText("¿Desea adquirilo?");
+        jPanel3.add(chkBikini, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, -1, -1));
 
         jLabel19.setText("¿Cuántos desea adquirir?");
         jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, -1, -1));
@@ -236,9 +236,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox chkBikini;
+    private javax.swing.JCheckBox chkConjuntoPliegues;
     private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
