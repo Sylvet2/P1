@@ -709,13 +709,10 @@ public class GUI_VeranoM extends javax.swing.JFrame {
             talla = 'L';
         }
     }
- 
+    //modifoco
     color = cmbVestidoCorto.getSelectedItem().toString();
-    
-    
+ 
     prenda = new Prenda (nombre, precio, cantidad, talla, color);
-    
-    
      }
     }//GEN-LAST:event_btnVestidoCortoActionPerformed
 
