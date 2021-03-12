@@ -37,6 +37,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        btnAtrasInviernoMujer = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
@@ -99,6 +100,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jPanel2.setPreferredSize(new java.awt.Dimension(750, 660));
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAtrasInviernoMujer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAtrasInviernoMujer.setText("Atrás");
+        jPanel4.add(btnAtrasInviernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 620, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 50, 140));
@@ -208,7 +213,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 300, 250));
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 250));
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -315,7 +320,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -424,7 +429,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, 250));
+        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, -1, 250));
 
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -533,12 +538,12 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, -1));
+        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 560));
 
-        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 600));
+        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoMujer.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
@@ -795,6 +800,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btgAbrigoPliegues;
     private javax.swing.ButtonGroup btgChaleco;
     private javax.swing.ButtonGroup btgConjuntoLana;
+    private javax.swing.JButton btnAtrasInviernoMujer;
     private javax.swing.JButton btnGuardarAbrigo;
     private javax.swing.JButton btnGuardarAbrigoPliegues;
     private javax.swing.JButton btnGuardarChaleco;
