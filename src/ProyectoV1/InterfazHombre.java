@@ -113,7 +113,7 @@ public class InterfazHombre extends javax.swing.JFrame {
 
     private void btnAtrasHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasHombreActionPerformed
         // TODO add your handling code here:
-        //12345678
+        
        DatosUsuario atras = new DatosUsuario();
         atras.setVisible(true);
         dispose();
