@@ -38,8 +38,8 @@ public class GU_InviernoH extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        btnAtrasInviernoHombre = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         spnAbrigoHombre = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
@@ -101,11 +101,16 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnAtrasInviernoHombre.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAtrasInviernoHombre.setText("Atrás");
+        btnAtrasInviernoHombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAtrasInviernoHombreActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnAtrasInviernoHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 620, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
-        jLabel3.setText("Invierno");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, -1, -1));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -213,7 +218,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, 250));
+        jPanel3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 250));
 
         jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -321,7 +326,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 280, -1));
+        jPanel3.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 280, -1));
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -429,7 +434,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+        jPanel3.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
 
         jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -532,12 +537,12 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, -1, -1));
+        jPanel3.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 600));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 560));
 
-        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 600));
+        jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoHombre.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -30, 990, 710));
@@ -774,6 +779,13 @@ public class GU_InviernoH extends javax.swing.JFrame {
      }
     }//GEN-LAST:event_btnGuardarBuzoActionPerformed
 
+    private void btnAtrasInviernoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasInviernoHombreActionPerformed
+        // TODO add your handling code here:
+        InterfazHombre atras = new InterfazHombre();
+        atras.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnAtrasInviernoHombreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -814,6 +826,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btgBuzo;
     private javax.swing.ButtonGroup btgBuzoFino;
     private javax.swing.ButtonGroup btgChaqueta;
+    private javax.swing.JButton btnAtrasInviernoHombre;
     private javax.swing.JButton btnGuardarAbrigoHombre;
     private javax.swing.JButton btnGuardarBuzo;
     private javax.swing.JButton btnGuardarBuzoFino;
@@ -829,7 +842,6 @@ public class GU_InviernoH extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
