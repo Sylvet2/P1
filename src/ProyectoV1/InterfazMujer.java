@@ -28,10 +28,10 @@ public class InterfazMujer extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnPrendasBasicasMujer = new javax.swing.JButton();
-        btnVeranoMujer = new javax.swing.JButton();
-        btnInviernoMujer = new javax.swing.JButton();
         btnAtrasMujer = new javax.swing.JButton();
+        btnInViernoMujer = new javax.swing.JButton();
+        btnVeranoMujer = new javax.swing.JButton();
+        btnPrendasBasicasM = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -39,34 +39,49 @@ public class InterfazMujer extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnPrendasBasicasMujer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        btnPrendasBasicasMujer.setForeground(new java.awt.Color(51, 51, 51));
-        btnPrendasBasicasMujer.setText("Atrás ");
-        btnPrendasBasicasMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnPrendasBasicasMujer.addActionListener(new java.awt.event.ActionListener() {
+        btnAtrasMujer.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnAtrasMujer.setForeground(new java.awt.Color(51, 51, 51));
+        btnAtrasMujer.setText("Atrás ");
+        btnAtrasMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAtrasMujer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPrendasBasicasMujerActionPerformed(evt);
+                btnAtrasMujerActionPerformed(evt);
             }
         });
-        jPanel1.add(btnPrendasBasicasMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 70, 30));
+        jPanel1.add(btnAtrasMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 70, 30));
+
+        btnInViernoMujer.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnInViernoMujer.setForeground(new java.awt.Color(51, 51, 51));
+        btnInViernoMujer.setText("INVIERNO");
+        btnInViernoMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnInViernoMujer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnInViernoMujerActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnInViernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 80, 30));
 
         btnVeranoMujer.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         btnVeranoMujer.setForeground(new java.awt.Color(51, 51, 51));
-        btnVeranoMujer.setText("INVIERNO");
+        btnVeranoMujer.setText("VERANO");
         btnVeranoMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btnVeranoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 80, 30));
+        btnVeranoMujer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVeranoMujerActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVeranoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 80, 30));
 
-        btnInviernoMujer.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        btnInviernoMujer.setForeground(new java.awt.Color(51, 51, 51));
-        btnInviernoMujer.setText("VERANO");
-        btnInviernoMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btnInviernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 80, 30));
-
-        btnAtrasMujer.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        btnAtrasMujer.setForeground(new java.awt.Color(51, 51, 51));
-        btnAtrasMujer.setText("PRENDAS BÁSICAS");
-        btnAtrasMujer.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(btnAtrasMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 140, 30));
+        btnPrendasBasicasM.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        btnPrendasBasicasM.setForeground(new java.awt.Color(51, 51, 51));
+        btnPrendasBasicasM.setText("PRENDAS BÁSICAS");
+        btnPrendasBasicasM.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPrendasBasicasM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrendasBasicasMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnPrendasBasicasM, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 140, 30));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
@@ -90,9 +105,34 @@ public class InterfazMujer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPrendasBasicasMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrendasBasicasMujerActionPerformed
+    private void btnAtrasMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasMujerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnPrendasBasicasMujerActionPerformed
+            DatosUsuario atras = new DatosUsuario();
+        atras.setVisible(true);
+        dispose();
+       
+    }//GEN-LAST:event_btnAtrasMujerActionPerformed
+
+    private void btnInViernoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInViernoMujerActionPerformed
+        // TODO add your handling code here:
+          this.setVisible(false);
+        GUI_InviernoM unir = new GUI_InviernoM ();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnInViernoMujerActionPerformed
+
+    private void btnVeranoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVeranoMujerActionPerformed
+        // TODO add your handling code here:
+          this.setVisible(false);
+        GUI_VeranoM unir = new GUI_VeranoM ();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnVeranoMujerActionPerformed
+
+    private void btnPrendasBasicasMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrendasBasicasMActionPerformed
+        // TODO add your handling code here:
+          this.setVisible(false);
+        GUI_PrendasBasicasM unir = new GUI_PrendasBasicasM();
+        unir.setVisible(true);
+    }//GEN-LAST:event_btnPrendasBasicasMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,8 +172,8 @@ public class InterfazMujer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtrasMujer;
-    private javax.swing.JButton btnInviernoMujer;
-    private javax.swing.JButton btnPrendasBasicasMujer;
+    private javax.swing.JButton btnInViernoMujer;
+    private javax.swing.JButton btnPrendasBasicasM;
     private javax.swing.JButton btnVeranoMujer;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
