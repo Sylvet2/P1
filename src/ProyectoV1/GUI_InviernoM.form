@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="btgConjuntoLana">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgChaleco">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgAbrigo">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btgAbrigoPliegues">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -260,16 +270,25 @@
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtSConjuntoLana">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgConjuntoLana"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="S"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtMConjuntoLana">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgConjuntoLana"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="M"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtLConjuntoLana">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgConjuntoLana"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="L"/>
                           </Properties>
                         </Component>
@@ -313,23 +332,23 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spnBikini2" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                      <Component id="spnAbrigo" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                       <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="rbtSBikini2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSAbrigo" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtMBikini2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMAbrigo" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtLBikini2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLAbrigo" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="20" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarBikini2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbBikini2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btnGuardarAbrigo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigo" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
@@ -354,21 +373,21 @@
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnBikini2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="spnAbrigo" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtSBikini2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtMBikini2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtLBikini2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtSAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtMAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtLAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbBikini2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigo" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="btnGuardarBikini2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarAbrigo" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jLabel6" min="-2" pref="190" max="-2" attributes="0"/>
                                   </Group>
@@ -378,14 +397,14 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JSpinner" name="spnBikini2">
+                        <Component class="javax.swing.JSpinner" name="spnAbrigo">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel27">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbBikini2">
+                        <Component class="javax.swing.JComboBox" name="cmbAbrigo">
                           <Properties>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="5">
@@ -399,7 +418,7 @@
                             <Property name="selectedIndex" type="int" value="-1"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbBikini2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoActionPerformed"/>
                           </Events>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -415,12 +434,12 @@
                             <Property name="text" type="java.lang.String" value="Talla:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnGuardarBikini2">
+                        <Component class="javax.swing.JButton" name="btnGuardarAbrigo">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Guardar"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarBikini2ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarAbrigoActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel30">
@@ -428,18 +447,27 @@
                             <Property name="text" type="java.lang.String" value="Color:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtSBikini2">
+                        <Component class="javax.swing.JRadioButton" name="rbtSAbrigo">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigo"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="S"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtMBikini2">
+                        <Component class="javax.swing.JRadioButton" name="rbtMAbrigo">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigo"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="M"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtLBikini2">
+                        <Component class="javax.swing.JRadioButton" name="rbtLAbrigo">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigo"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="L"/>
                           </Properties>
                         </Component>
@@ -488,18 +516,18 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="rbtSBikini1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSChaleco" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtMBikini1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMChaleco" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtLBikini1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLChaleco" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="16" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarBikini1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbBikini1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btnGuardarChaleco" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbChaleco" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
@@ -526,17 +554,17 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="jLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtSBikini1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtMBikini1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtLBikini1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtSChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtMChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtLChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbBikini1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbChaleco" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel26" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="btnGuardarBikini1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarChaleco" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
@@ -558,7 +586,7 @@
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbBikini1">
+                        <Component class="javax.swing.JComboBox" name="cmbChaleco">
                           <Properties>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="5">
@@ -572,7 +600,7 @@
                             <Property name="selectedIndex" type="int" value="-1"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbBikini1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChalecoActionPerformed"/>
                           </Events>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -588,12 +616,12 @@
                             <Property name="text" type="java.lang.String" value="Talla:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnGuardarBikini1">
+                        <Component class="javax.swing.JButton" name="btnGuardarChaleco">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Guardar"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarBikini1ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarChalecoActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel26">
@@ -601,18 +629,27 @@
                             <Property name="text" type="java.lang.String" value="Color:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtSBikini1">
+                        <Component class="javax.swing.JRadioButton" name="rbtSChaleco">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgChaleco"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="S"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtMBikini1">
+                        <Component class="javax.swing.JRadioButton" name="rbtMChaleco">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgChaleco"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="M"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtLBikini1">
+                        <Component class="javax.swing.JRadioButton" name="rbtLChaleco">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgChaleco"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="L"/>
                           </Properties>
                         </Component>
@@ -656,23 +693,23 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="spnBikini3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                      <Component id="spnAbrigoPliegues" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                       <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="rbtSBikini3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtSAbrigoPliegues" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtMBikini3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtMAbrigoPliegues" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rbtLBikini3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtLAbrigoPliegues" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="jLabel34" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="16" max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="btnGuardarBikini3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="cmbBikini3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btnGuardarAbrigoPliegues" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigoPliegues" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                                       </Group>
@@ -697,21 +734,21 @@
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="spnBikini3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="spnAbrigoPliegues" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtSBikini3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtMBikini3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="rbtLBikini3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtSAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtMAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtLAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="cmbBikini3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="cmbAbrigoPliegues" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                          <Component id="btnGuardarBikini3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnGuardarAbrigoPliegues" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
@@ -724,14 +761,14 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JSpinner" name="spnBikini3">
+                        <Component class="javax.swing.JSpinner" name="spnAbrigoPliegues">
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel31">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="&#xbf;Cu&#xe1;ntos desea adquirir?"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JComboBox" name="cmbBikini3">
+                        <Component class="javax.swing.JComboBox" name="cmbAbrigoPliegues">
                           <Properties>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="5">
@@ -745,7 +782,7 @@
                             <Property name="selectedIndex" type="int" value="-1"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbBikini3ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbAbrigoPlieguesActionPerformed"/>
                           </Events>
                           <AuxValues>
                             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -761,12 +798,12 @@
                             <Property name="text" type="java.lang.String" value="Talla:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="btnGuardarBikini3">
+                        <Component class="javax.swing.JButton" name="btnGuardarAbrigoPliegues">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Guardar"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarBikini3ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarAbrigoPlieguesActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel34">
@@ -774,18 +811,27 @@
                             <Property name="text" type="java.lang.String" value="Color:"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtSBikini3">
+                        <Component class="javax.swing.JRadioButton" name="rbtSAbrigoPliegues">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigoPliegues"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="S"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtMBikini3">
+                        <Component class="javax.swing.JRadioButton" name="rbtMAbrigoPliegues">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigoPliegues"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="M"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JRadioButton" name="rbtLBikini3">
+                        <Component class="javax.swing.JRadioButton" name="rbtLAbrigoPliegues">
                           <Properties>
+                            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                              <ComponentRef name="btgAbrigoPliegues"/>
+                            </Property>
                             <Property name="text" type="java.lang.String" value="L"/>
                           </Properties>
                         </Component>

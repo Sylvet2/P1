@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GUI_InviernoM extends javax.swing.JFrame {
+     Prenda prenda;
 
     /**
      * Creates new form GUI_InviernoM
@@ -29,6 +30,10 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btgConjuntoLana = new javax.swing.ButtonGroup();
+        btgChaleco = new javax.swing.ButtonGroup();
+        btgAbrigo = new javax.swing.ButtonGroup();
+        btgAbrigoPliegues = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -48,42 +53,42 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        spnBikini2 = new javax.swing.JSpinner();
+        spnAbrigo = new javax.swing.JSpinner();
         jLabel27 = new javax.swing.JLabel();
-        cmbBikini2 = new javax.swing.JComboBox<>();
+        cmbAbrigo = new javax.swing.JComboBox<>();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        btnGuardarBikini2 = new javax.swing.JButton();
+        btnGuardarAbrigo = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
-        rbtSBikini2 = new javax.swing.JRadioButton();
-        rbtMBikini2 = new javax.swing.JRadioButton();
-        rbtLBikini2 = new javax.swing.JRadioButton();
+        rbtSAbrigo = new javax.swing.JRadioButton();
+        rbtMAbrigo = new javax.swing.JRadioButton();
+        rbtLAbrigo = new javax.swing.JRadioButton();
         jLabel13 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         spnChaleco = new javax.swing.JSpinner();
         jLabel21 = new javax.swing.JLabel();
-        cmbBikini1 = new javax.swing.JComboBox<>();
+        cmbChaleco = new javax.swing.JComboBox<>();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        btnGuardarBikini1 = new javax.swing.JButton();
+        btnGuardarChaleco = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
-        rbtSBikini1 = new javax.swing.JRadioButton();
-        rbtMBikini1 = new javax.swing.JRadioButton();
-        rbtLBikini1 = new javax.swing.JRadioButton();
+        rbtSChaleco = new javax.swing.JRadioButton();
+        rbtMChaleco = new javax.swing.JRadioButton();
+        rbtLChaleco = new javax.swing.JRadioButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        spnBikini3 = new javax.swing.JSpinner();
+        spnAbrigoPliegues = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
-        cmbBikini3 = new javax.swing.JComboBox<>();
+        cmbAbrigoPliegues = new javax.swing.JComboBox<>();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        btnGuardarBikini3 = new javax.swing.JButton();
+        btnGuardarAbrigoPliegues = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        rbtSBikini3 = new javax.swing.JRadioButton();
-        rbtMBikini3 = new javax.swing.JRadioButton();
-        rbtLBikini3 = new javax.swing.JRadioButton();
+        rbtSAbrigoPliegues = new javax.swing.JRadioButton();
+        rbtMAbrigoPliegues = new javax.swing.JRadioButton();
+        rbtLAbrigoPliegues = new javax.swing.JRadioButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -123,10 +128,13 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel23.setText("Color:");
 
+        btgConjuntoLana.add(rbtSConjuntoLana);
         rbtSConjuntoLana.setText("S");
 
+        btgConjuntoLana.add(rbtMConjuntoLana);
         rbtMConjuntoLana.setText("M");
 
+        btgConjuntoLana.add(rbtLConjuntoLana);
         rbtLConjuntoLana.setText("L");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/conjunto calido.png"))); // NOI18N
@@ -201,11 +209,11 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel27.setText("¿Cuántos desea adquirir?");
 
-        cmbBikini2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbBikini2.setSelectedIndex(-1);
-        cmbBikini2.addActionListener(new java.awt.event.ActionListener() {
+        cmbAbrigo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbAbrigo.setSelectedIndex(-1);
+        cmbAbrigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbBikini2ActionPerformed(evt);
+                cmbAbrigoActionPerformed(evt);
             }
         });
 
@@ -213,20 +221,23 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel29.setText("Talla:");
 
-        btnGuardarBikini2.setText("Guardar");
-        btnGuardarBikini2.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarAbrigo.setText("Guardar");
+        btnGuardarAbrigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarBikini2ActionPerformed(evt);
+                btnGuardarAbrigoActionPerformed(evt);
             }
         });
 
         jLabel30.setText("Color:");
 
-        rbtSBikini2.setText("S");
+        btgAbrigo.add(rbtSAbrigo);
+        rbtSAbrigo.setText("S");
 
-        rbtMBikini2.setText("M");
+        btgAbrigo.add(rbtMAbrigo);
+        rbtMAbrigo.setText("M");
 
-        rbtLBikini2.setText("L");
+        btgAbrigo.add(rbtLAbrigo);
+        rbtLAbrigo.setText("L");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel13.setText("Abrigo de cachemir entallado");
@@ -243,22 +254,22 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28)
-                    .addComponent(spnBikini2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel27)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel29)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSBikini2)
+                        .addComponent(rbtSAbrigo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMBikini2)
+                        .addComponent(rbtMAbrigo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLBikini2))
+                        .addComponent(rbtLAbrigo))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarBikini2)
-                            .addComponent(cmbBikini2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnGuardarAbrigo)
+                            .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(24, 24, 24))))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
@@ -277,19 +288,19 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel27)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnBikini2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel29)
-                            .addComponent(rbtSBikini2)
-                            .addComponent(rbtMBikini2)
-                            .addComponent(rbtLBikini2))
+                            .addComponent(rbtSAbrigo)
+                            .addComponent(rbtMAbrigo)
+                            .addComponent(rbtLAbrigo))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbBikini2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbAbrigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel30))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarBikini2))
+                        .addComponent(btnGuardarAbrigo))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
@@ -300,11 +311,11 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel21.setText("¿Cuántos desea adquirir?");
 
-        cmbBikini1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbBikini1.setSelectedIndex(-1);
-        cmbBikini1.addActionListener(new java.awt.event.ActionListener() {
+        cmbChaleco.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbChaleco.setSelectedIndex(-1);
+        cmbChaleco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbBikini1ActionPerformed(evt);
+                cmbChalecoActionPerformed(evt);
             }
         });
 
@@ -312,20 +323,23 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel25.setText("Talla:");
 
-        btnGuardarBikini1.setText("Guardar");
-        btnGuardarBikini1.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarChaleco.setText("Guardar");
+        btnGuardarChaleco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarBikini1ActionPerformed(evt);
+                btnGuardarChalecoActionPerformed(evt);
             }
         });
 
         jLabel26.setText("Color:");
 
-        rbtSBikini1.setText("S");
+        btgChaleco.add(rbtSChaleco);
+        rbtSChaleco.setText("S");
 
-        rbtMBikini1.setText("M");
+        btgChaleco.add(rbtMChaleco);
+        rbtMChaleco.setText("M");
 
-        rbtLBikini1.setText("L");
+        btgChaleco.add(rbtLChaleco);
+        rbtLChaleco.setText("L");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/saco lanudo.png"))); // NOI18N
 
@@ -347,17 +361,17 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSBikini1)
+                        .addComponent(rbtSChaleco)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMBikini1)
+                        .addComponent(rbtMChaleco)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLBikini1))
+                        .addComponent(rbtLChaleco))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel26)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarBikini1)
-                            .addComponent(cmbBikini1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnGuardarChaleco)
+                            .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(24, 24, 24))))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
@@ -378,15 +392,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel25)
-                            .addComponent(rbtSBikini1)
-                            .addComponent(rbtMBikini1)
-                            .addComponent(rbtLBikini1))
+                            .addComponent(rbtSChaleco)
+                            .addComponent(rbtMChaleco)
+                            .addComponent(rbtLChaleco))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbBikini1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbChaleco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel26))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarBikini1))
+                        .addComponent(btnGuardarChaleco))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel10)
@@ -401,11 +415,11 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel31.setText("¿Cuántos desea adquirir?");
 
-        cmbBikini3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
-        cmbBikini3.setSelectedIndex(-1);
-        cmbBikini3.addActionListener(new java.awt.event.ActionListener() {
+        cmbAbrigoPliegues.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Blanco", "Negro ", "Vino", " ", " " }));
+        cmbAbrigoPliegues.setSelectedIndex(-1);
+        cmbAbrigoPliegues.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbBikini3ActionPerformed(evt);
+                cmbAbrigoPlieguesActionPerformed(evt);
             }
         });
 
@@ -413,20 +427,23 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jLabel33.setText("Talla:");
 
-        btnGuardarBikini3.setText("Guardar");
-        btnGuardarBikini3.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardarAbrigoPliegues.setText("Guardar");
+        btnGuardarAbrigoPliegues.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarBikini3ActionPerformed(evt);
+                btnGuardarAbrigoPlieguesActionPerformed(evt);
             }
         });
 
         jLabel34.setText("Color:");
 
-        rbtSBikini3.setText("S");
+        btgAbrigoPliegues.add(rbtSAbrigoPliegues);
+        rbtSAbrigoPliegues.setText("S");
 
-        rbtMBikini3.setText("M");
+        btgAbrigoPliegues.add(rbtMAbrigoPliegues);
+        rbtMAbrigoPliegues.setText("M");
 
-        rbtLBikini3.setText("L");
+        btgAbrigoPliegues.add(rbtLAbrigoPliegues);
+        rbtLAbrigoPliegues.setText("L");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel14.setText("Abrigo con pliegues en V");
@@ -443,22 +460,22 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel32)
-                    .addComponent(spnBikini3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(spnAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel31)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel33)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rbtSBikini3)
+                        .addComponent(rbtSAbrigoPliegues)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtMBikini3)
+                        .addComponent(rbtMAbrigoPliegues)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rbtLBikini3))
+                        .addComponent(rbtLAbrigoPliegues))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel34)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGuardarBikini3)
-                            .addComponent(cmbBikini3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnGuardarAbrigoPliegues)
+                            .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(24, 24, 24))))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
@@ -477,19 +494,19 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(spnBikini3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(spnAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel33)
-                            .addComponent(rbtSBikini3)
-                            .addComponent(rbtMBikini3)
-                            .addComponent(rbtLBikini3))
+                            .addComponent(rbtSAbrigoPliegues)
+                            .addComponent(rbtMAbrigoPliegues)
+                            .addComponent(rbtLAbrigoPliegues))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cmbBikini3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbAbrigoPliegues, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel34))
                         .addGap(23, 23, 23)
-                        .addComponent(btnGuardarBikini3))
+                        .addComponent(btnGuardarAbrigoPliegues))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -569,18 +586,18 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     private void btnGuardarConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLanaActionPerformed
         // TODO add your handling code here:
 
-        String nombre = "Bikini de una pieza";
-        double precio = 15;
+        String nombre = "Conjunto de lana";
+        double precio = 29.99;
         int cantidad;
         char talla;
         String color;
 
-        if (rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false && rbtSConjuntoLana.isSelected() == false){
+        if (rbtSConjuntoLana.isSelected() == false && rbtMConjuntoLana.isSelected() == false && rbtLConjuntoLana.isSelected() == false){
             JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
         }
         else{
 
-            cantidad = Integer.parseInt(spnBikini.getValue().toString());
+            cantidad = Integer.parseInt(spnConjuntoLana.getValue().toString());
 
             if(rbtSConjuntoLana.isSelected()){
                 talla = 'S';
@@ -597,32 +614,128 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             color = cmbConjuntoLana.getSelectedItem().toString();
 
             prenda = new Prenda (nombre, precio, cantidad, talla, color);
+              }
 
     }//GEN-LAST:event_btnGuardarConjuntoLanaActionPerformed
 
-    private void cmbBikini1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBikini1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbBikini1ActionPerformed
+    private void cmbChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChalecoActionPerformed
+     
+    }//GEN-LAST:event_cmbChalecoActionPerformed
 
-    private void btnGuardarBikini1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikini1ActionPerformed
+    private void btnGuardarChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarChalecoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarBikini1ActionPerformed
+           // TODO add your handling code here:
+         String nombre = "Chaleco con Textura";
+        double precio = 20;
+        int cantidad;
+        char talla;
+        String color;
 
-    private void cmbBikini2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBikini2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbBikini2ActionPerformed
+        if (rbtSChaleco.isSelected() == false && rbtMChaleco.isSelected() == false && rbtLChaleco.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+        }
+        else{
 
-    private void btnGuardarBikini2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikini2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarBikini2ActionPerformed
+            cantidad = Integer.parseInt(spnChaleco.getValue().toString());
 
-    private void cmbBikini3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbBikini3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbBikini3ActionPerformed
+            if(rbtSChaleco.isSelected()){
+                talla = 'S';
+            }
+            else{
+                if(rbtMChaleco.isSelected()){
+                    talla = 'M';
+                }
+                else{
+                    talla = 'L';
+                }
+            }
 
-    private void btnGuardarBikini3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarBikini3ActionPerformed
+            color = cmbChaleco.getSelectedItem().toString();
+
+            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+              }
+
+    }//GEN-LAST:event_btnGuardarChalecoActionPerformed
+
+    private void cmbAbrigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarBikini3ActionPerformed
+    }//GEN-LAST:event_cmbAbrigoActionPerformed
+
+    private void btnGuardarAbrigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAbrigoActionPerformed
+        // TODO add your handling code here:
+           // TODO add your handling code here:
+         String nombre = "Abrigo de cachemir entallado";
+        double precio = 60;
+        int cantidad;
+        char talla;
+        String color;
+
+        if (rbtSAbrigo.isSelected() == false && rbtMAbrigo.isSelected() == false && rbtLAbrigo.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+        }
+        else{
+
+            cantidad = Integer.parseInt(spnAbrigo.getValue().toString());
+
+            if(rbtSAbrigo.isSelected()){
+                talla = 'S';
+            }
+            else{
+                if(rbtMAbrigo.isSelected()){
+                    talla = 'M';
+                }
+                else{
+                    talla = 'L';
+                }
+            }
+
+            color = cmbAbrigo.getSelectedItem().toString();
+
+            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+              }
+
+    }//GEN-LAST:event_btnGuardarAbrigoActionPerformed
+
+    private void cmbAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAbrigoPlieguesActionPerformed
+        // TODO add your handling code here:
+       
+
+    }//GEN-LAST:event_cmbAbrigoPlieguesActionPerformed
+
+    private void btnGuardarAbrigoPlieguesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAbrigoPlieguesActionPerformed
+        // TODO add your handling code here:
+            // TODO add your handling code here:
+         String nombre = "Abrigo con pliegues en V";
+        double precio = 40;
+        int cantidad;
+        char talla;
+        String color;
+
+        if (rbtSAbrigoPliegues.isSelected() == false && rbtMAbrigoPliegues.isSelected() == false && rbtLAbrigoPliegues.isSelected() == false){
+            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+        }
+        else{
+
+            cantidad = Integer.parseInt(spnAbrigoPliegues.getValue().toString());
+
+            if(rbtSAbrigoPliegues.isSelected()){
+                talla = 'S';
+            }
+            else{
+                if(rbtMAbrigoPliegues.isSelected()){
+                    talla = 'M';
+                }
+                else{
+                    talla = 'L';
+                }
+            }
+
+            color = cmbAbrigoPliegues.getSelectedItem().toString();
+
+            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+              }
+
+    }//GEN-LAST:event_btnGuardarAbrigoPlieguesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -660,13 +773,17 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGuardarBikini1;
-    private javax.swing.JButton btnGuardarBikini2;
-    private javax.swing.JButton btnGuardarBikini3;
+    private javax.swing.ButtonGroup btgAbrigo;
+    private javax.swing.ButtonGroup btgAbrigoPliegues;
+    private javax.swing.ButtonGroup btgChaleco;
+    private javax.swing.ButtonGroup btgConjuntoLana;
+    private javax.swing.JButton btnGuardarAbrigo;
+    private javax.swing.JButton btnGuardarAbrigoPliegues;
+    private javax.swing.JButton btnGuardarChaleco;
     private javax.swing.JButton btnGuardarConjuntoLana;
-    private javax.swing.JComboBox<String> cmbBikini1;
-    private javax.swing.JComboBox<String> cmbBikini2;
-    private javax.swing.JComboBox<String> cmbBikini3;
+    private javax.swing.JComboBox<String> cmbAbrigo;
+    private javax.swing.JComboBox<String> cmbAbrigoPliegues;
+    private javax.swing.JComboBox<String> cmbChaleco;
     private javax.swing.JComboBox<String> cmbConjuntoLana;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -703,20 +820,20 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JRadioButton rbtLBikini1;
-    private javax.swing.JRadioButton rbtLBikini2;
-    private javax.swing.JRadioButton rbtLBikini3;
+    private javax.swing.JRadioButton rbtLAbrigo;
+    private javax.swing.JRadioButton rbtLAbrigoPliegues;
+    private javax.swing.JRadioButton rbtLChaleco;
     private javax.swing.JRadioButton rbtLConjuntoLana;
-    private javax.swing.JRadioButton rbtMBikini1;
-    private javax.swing.JRadioButton rbtMBikini2;
-    private javax.swing.JRadioButton rbtMBikini3;
+    private javax.swing.JRadioButton rbtMAbrigo;
+    private javax.swing.JRadioButton rbtMAbrigoPliegues;
+    private javax.swing.JRadioButton rbtMChaleco;
     private javax.swing.JRadioButton rbtMConjuntoLana;
-    private javax.swing.JRadioButton rbtSBikini1;
-    private javax.swing.JRadioButton rbtSBikini2;
-    private javax.swing.JRadioButton rbtSBikini3;
+    private javax.swing.JRadioButton rbtSAbrigo;
+    private javax.swing.JRadioButton rbtSAbrigoPliegues;
+    private javax.swing.JRadioButton rbtSChaleco;
     private javax.swing.JRadioButton rbtSConjuntoLana;
-    private javax.swing.JSpinner spnBikini2;
-    private javax.swing.JSpinner spnBikini3;
+    private javax.swing.JSpinner spnAbrigo;
+    private javax.swing.JSpinner spnAbrigoPliegues;
     private javax.swing.JSpinner spnChaleco;
     private javax.swing.JSpinner spnConjuntoLana;
     // End of variables declaration//GEN-END:variables
