@@ -32,80 +32,85 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlFondo = new javax.swing.JPanel();
-        txtNombre = new javax.swing.JTextField();
-        txtApellido = new javax.swing.JTextField();
-        txtDireccion = new javax.swing.JTextField();
-        txtCedula = new javax.swing.JTextField();
-        txtTelefono = new javax.swing.JTextField();
-        txtCorreo = new javax.swing.JTextField();
-        lblCorreo = new javax.swing.JLabel();
-        lblTelefono = new javax.swing.JLabel();
-        lblCedula = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        bntGuardarUsuario = new javax.swing.JButton();
         lblDireccion = new javax.swing.JLabel();
         lblApellido = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        bntGuardarUsuario = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        txtApellido = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        txtCorreo = new javax.swing.JTextField();
+        txtCedula = new javax.swing.JTextField();
+        lblCorreo = new javax.swing.JLabel();
+        txtTelefono = new javax.swing.JTextField();
+        lblTelefono = new javax.swing.JLabel();
+        lblCedula = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        pnlFondo.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 140, -1));
-        pnlFondo.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 140, -1));
-        pnlFondo.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 140, -1));
-        pnlFondo.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, 130, -1));
-        pnlFondo.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 130, -1));
-        pnlFondo.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, 130, -1));
 
-        lblCorreo.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblCorreo.setText("Correo:");
-        pnlFondo.add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, -1, -1));
-
-        lblTelefono.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblTelefono.setText("Teléfono:");
-        pnlFondo.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, -1, -1));
-
-        lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblCedula.setText("Cédula:");
-        pnlFondo.add(lblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
-
-        lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblDireccion.setText("Dirección:");
-        pnlFondo.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
-
-        lblApellido.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblApellido.setText("Apellido:");
-        pnlFondo.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
-
-        lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblNombre.setText("Nombre:");
-        pnlFondo.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel8.setText("D E R R");
-        pnlFondo.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 100, -1));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         bntGuardarUsuario.setText("GUARDAR USUARIO");
-        pnlFondo.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
+        jPanel1.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
+        lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblDireccion.setText("Dirección:");
+        jPanel1.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
 
-        pnlFondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
+        lblApellido.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblApellido.setText("Apellido:");
+        jPanel1.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo rojo y azul.png"))); // NOI18N
-        pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-260, 0, 900, 537));
+        lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblNombre.setText("Nombre:");
+        jPanel1.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
+        jPanel1.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 140, -1));
+        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 140, -1));
+        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 140, -1));
+        jPanel1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 140, -1));
+        jPanel1.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 140, -1));
+
+        lblCorreo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCorreo.setText("Correo:");
+        jPanel1.add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, -1, -1));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 140, -1));
+
+        lblTelefono.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblTelefono.setText("Teléfono:");
+        jPanel1.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
+
+        lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCedula.setText("Cédula:");
+        jPanel1.add(lblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, -1, -1));
+
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 170, 180));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 48)); // NOI18N
+        jLabel3.setText("Datos del Usuario");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 580, 440));
+
+        pnlFondo.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 580, 430));
+
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rojoceleste.png"))); // NOI18N
+        pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-260, 0, 900, 490));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -161,8 +166,11 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntGuardarUsuario;
-    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblCedula;
     private javax.swing.JLabel lblCorreo;

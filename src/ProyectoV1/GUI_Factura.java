@@ -94,7 +94,7 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         pnlFondo.add(pnlBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 690, 610));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple morado celeste.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rosa celeste.png"))); // NOI18N
         pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -27,22 +27,14 @@ public class GUI_Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        btnMasculina = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         btnFemenina = new javax.swing.JButton();
-        btnMasculina = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel9.setText("Seleccione el género de ropa que desea ver ...");
-
-        btnFemenina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        btnFemenina.setText("FEMENINA");
-        btnFemenina.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFemeninaActionPerformed(evt);
-            }
-        });
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnMasculina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         btnMasculina.setText("MASCULINA");
@@ -51,37 +43,32 @@ public class GUI_Principal extends javax.swing.JFrame {
                 btnMasculinaActionPerformed(evt);
             }
         });
+        jPanel1.add(btnMasculina, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel9.setText("Seleccione el género de ropa que desea ver ...");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 320, -1));
+
+        btnFemenina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        btnFemenina.setText("FEMENINA");
+        btnFemenina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFemeninaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnFemenina, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(btnFemenina)
-                        .addGap(42, 42, 42)
-                        .addComponent(btnMasculina)))
-                .addContainerGap(45, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 630, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addComponent(jLabel9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnFemenina)
-                        .addGap(88, 88, 88))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(btnMasculina)
-                        .addContainerGap(102, Short.MAX_VALUE))))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
         );
 
         pack();
@@ -142,5 +129,6 @@ public class GUI_Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnFemenina;
     private javax.swing.JButton btnMasculina;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
