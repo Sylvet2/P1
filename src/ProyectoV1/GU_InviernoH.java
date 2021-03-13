@@ -93,6 +93,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        btrIrPrincipal = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -544,6 +545,15 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
         jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
+        btrIrPrincipal.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btrIrPrincipal.setText("Principal");
+        btrIrPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btrIrPrincipalActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btrIrPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoHombre.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -30, 990, 710));
 
@@ -786,6 +796,14 @@ public class GU_InviernoH extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnAtrasInviernoHombreActionPerformed
 
+    private void btrIrPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btrIrPrincipalActionPerformed
+        // TODO add your handling code here:
+         GUI_Principal irPrincipal = new GUI_Principal();
+        irPrincipal.setVisible(true);
+        dispose();
+                 
+    }//GEN-LAST:event_btrIrPrincipalActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -831,6 +849,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardarBuzo;
     private javax.swing.JButton btnGuardarBuzoFino;
     private javax.swing.JButton btnGuardarChaqueta;
+    private javax.swing.JButton btrIrPrincipal;
     private javax.swing.JComboBox<String> cmbAbrigoHombre;
     private javax.swing.JComboBox<String> cmbBuzo;
     private javax.swing.JComboBox<String> cmbBuzoFino;

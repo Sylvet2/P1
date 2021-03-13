@@ -92,6 +92,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -543,6 +544,15 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
         jPanel4.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jButton1.setText("Principal");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 610, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/FondoVeranoHombreF.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 680));
 
@@ -742,6 +752,12 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnAtrasVeranoHombreActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        GUI_Principal irPrincipal = new GUI_Principal();
+        irPrincipal.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -791,6 +807,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbCamisetaLarga;
     private javax.swing.JComboBox<String> cmbPescador;
     private javax.swing.JComboBox<String> cmbShort;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel15;

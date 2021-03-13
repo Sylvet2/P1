@@ -36,6 +36,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         btnTemporadaVerano = new javax.swing.JButton();
         btnTemporadaInvierno = new javax.swing.JButton();
         btnPrendasBasicas = new javax.swing.JButton();
+        btnFinalizar = new javax.swing.JButton();
         lblBlanco = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -86,6 +87,15 @@ public class GUI_Principal extends javax.swing.JFrame {
         });
         jPanel2.add(btnPrendasBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 180, -1));
 
+        btnFinalizar.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnFinalizar.setText("Finalizar Compra");
+        btnFinalizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFinalizarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnFinalizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, -1, -1));
+
         lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
         jPanel2.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 400));
 
@@ -129,6 +139,13 @@ public class GUI_Principal extends javax.swing.JFrame {
         irMujerBasicas.setVisible(true);
     }//GEN-LAST:event_btnPrendasBasicasActionPerformed
 
+    private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
+        // TODO add your handling code here:
+        GUI_Factura irFactura = new GUI_Factura();
+        irFactura.setVisible(true);
+        
+    }//GEN-LAST:event_btnFinalizarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -165,6 +182,7 @@ public class GUI_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnFinalizar;
     private javax.swing.JButton btnPrendasBasicas;
     private javax.swing.JButton btnTemporadaInvierno;
     private javax.swing.JButton btnTemporadaVerano;

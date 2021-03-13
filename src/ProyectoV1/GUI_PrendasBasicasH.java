@@ -91,6 +91,7 @@ Prenda prenda;
         jLabel9 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        btnIrPrincipal = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -529,6 +530,15 @@ Prenda prenda;
 
         jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, -1));
 
+        btnIrPrincipal.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnIrPrincipal.setText("Principal");
+        btnIrPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIrPrincipalActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnIrPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 610, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Basicos/FondoPrendasBasicasHombre.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
 
@@ -747,6 +757,14 @@ Prenda prenda;
         dispose();
     }//GEN-LAST:event_btnAtrasPrendasBasicasHombreActionPerformed
 
+    private void btnIrPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrPrincipalActionPerformed
+        // TODO add your handling code here:
+         GUI_Principal irPrincipal = new GUI_Principal();
+        irPrincipal.setVisible(true);
+        dispose();
+                    
+    }//GEN-LAST:event_btnIrPrincipalActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -792,6 +810,7 @@ Prenda prenda;
     private javax.swing.JButton btnGuardarCamiseta;
     private javax.swing.JButton btnGuardarLeva;
     private javax.swing.JButton btnGuardarPantalonTela;
+    private javax.swing.JButton btnIrPrincipal;
     private javax.swing.JComboBox<String> cmbCamisaCuadros;
     private javax.swing.JComboBox<String> cmbCamiseta;
     private javax.swing.JComboBox<String> cmbLeva;

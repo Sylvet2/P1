@@ -65,6 +65,11 @@ public class GUI_Factura extends javax.swing.JFrame {
         pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, 25));
 
         jButton1.setText("Nuevo Cliente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         pnlBlanco.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
 
         tblInformacion.setModel(new javax.swing.table.DefaultTableModel(
@@ -87,6 +92,11 @@ public class GUI_Factura extends javax.swing.JFrame {
         pnlBlanco.add(txtNúmeroFactura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
 
         btnGuardarFactura.setText("Guardar");
+        btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarFacturaActionPerformed(evt);
+            }
+        });
         pnlBlanco.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 540, -1, -1));
 
         lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
@@ -110,6 +120,16 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarFacturaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
+        irUsuario.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
