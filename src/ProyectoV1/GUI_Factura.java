@@ -80,7 +80,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblInformacion);
 
-        pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 190, 620, 310));
+        pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 620, 310));
 
         txtNúmeroFactura1.setForeground(new java.awt.Color(255, 0, 0));
         txtNúmeroFactura1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);

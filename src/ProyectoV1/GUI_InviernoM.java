@@ -5,6 +5,7 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,6 +14,8 @@ import javax.swing.JOptionPane;
  */
 public class GUI_InviernoM extends javax.swing.JFrame {
      Prenda prenda;
+      ArrayList <Prenda> prendas = new ArrayList<>();
+     
 
     /**
      * Creates new form GUI_InviernoM
@@ -93,6 +96,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         cmbAbrigoPliegues = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
+        btnSiguienteIH = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -550,6 +554,15 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
         jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
+        btnSiguienteIH.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnSiguienteIH.setText("Siguiente");
+        btnSiguienteIH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteIHActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnSiguienteIH, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoMujer.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
 
@@ -638,10 +651,11 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbConjuntoLana.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+   prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+   //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
+     
     }//GEN-LAST:event_btnGuardarConjuntoLanaActionPerformed
 
     private void btnGuardarChalecoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarChalecoActionPerformed
@@ -673,8 +687,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbChaleco.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+ prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+      //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
     }//GEN-LAST:event_btnGuardarChalecoActionPerformed
@@ -708,8 +722,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigo.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+ prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+          //  prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
     }//GEN-LAST:event_btnGuardarAbrigoActionPerformed
@@ -743,8 +757,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigoPliegues.getSelectedItem().toString();
-
-            prenda = new Prenda (nombre, precio, cantidad, talla, color);
+ prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+         //   prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
     }//GEN-LAST:event_btnGuardarAbrigoPlieguesActionPerformed
@@ -767,10 +781,17 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
     private void btnAtrasInviernoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasInviernoMujerActionPerformed
         // TODO add your handling code here:
-        InterfazMujer atras = new InterfazMujer();
-        atras.setVisible(true);
+        GUI_Principal atrasPrincipal = new GUI_Principal();
+        atrasPrincipal.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasInviernoMujerActionPerformed
+
+    private void btnSiguienteIHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteIHActionPerformed
+        // TODO add your handling code here:
+        GU_InviernoH inviernoH = new GU_InviernoH();
+        inviernoH.setVisible(true);
+        
+    }//GEN-LAST:event_btnSiguienteIHActionPerformed
 
     /**
      * @param args the command line arguments
@@ -817,6 +838,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardarAbrigoPliegues;
     private javax.swing.JButton btnGuardarChaleco;
     private javax.swing.JButton btnGuardarConjuntoLana;
+    private javax.swing.JButton btnSiguienteIH;
     private javax.swing.JComboBox<String> cmbAbrigo;
     private javax.swing.JComboBox<String> cmbAbrigoPliegues;
     private javax.swing.JComboBox<String> cmbChaleco;

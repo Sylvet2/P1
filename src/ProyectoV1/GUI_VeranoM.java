@@ -92,6 +92,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         cmbVestidoCorto = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btnSiguienteVH = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -529,6 +530,15 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 570));
 
+        btnSiguienteVH.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnSiguienteVH.setText("Siguiente");
+        btnSiguienteVH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguienteVHActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnSiguienteVH, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 620, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/FondoVeranoMujerF.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 830, 670));
 
@@ -719,11 +729,18 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbBikiniActionPerformed
 
     private void btnAtrasVeranoMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVeranoMujerActionPerformed
-        // TODO add your handling code here:
-        InterfazMujer atras = new InterfazMujer();
+        GUI_Principal atras = new GUI_Principal();
         atras.setVisible(true);
-        dispose();
+        dispose();// TODO add your handling code here:
+       
     }//GEN-LAST:event_btnAtrasVeranoMujerActionPerformed
+
+    private void btnSiguienteVHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteVHActionPerformed
+        // TODO add your handling code here:
+        this.setVisible (false);
+        GUI_VeranoH irVeranoH = new GUI_VeranoH();
+        irVeranoH.setVisible(true);
+    }//GEN-LAST:event_btnSiguienteVHActionPerformed
 
     /**
      * @param args the command line arguments
@@ -768,6 +785,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     private javax.swing.JButton btnAtrasVeranoMujer;
     private javax.swing.JButton btnConjuntoPliegues;
     private javax.swing.JButton btnGuardarBikini;
+    private javax.swing.JButton btnSiguienteVH;
     private javax.swing.JButton btnVestidoCorto;
     private javax.swing.JButton btnVestidoLargo;
     private javax.swing.JComboBox<String> cmbBikini;

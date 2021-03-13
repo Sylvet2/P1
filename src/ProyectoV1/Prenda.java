@@ -28,7 +28,13 @@ public class Prenda {
         this.color = color;
     }
     
+    
     //ArrayList <Hombre> prendaHombres = new ArrayList<>();
     //ArrayList <Mujer> prendasMujeres = new ArrayList<>();      
+
+    @Override
+    public String toString() {
+        return "Prenda{" + "nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + ", talla=" + talla + ", color=" + color + '}';
+    }
  
 }

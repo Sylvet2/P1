@@ -1,5 +1,9 @@
 package ProyectoV1;
 
+import java.awt.event.ActionEvent;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,6 +16,7 @@ package ProyectoV1;
  * @author USUARIO
  */
 public class GUI_DatosUsuario extends javax.swing.JFrame {
+     ArrayList <Usuario> Usuarios = new ArrayList<>();
 
     /**
      * Creates new form DatosUsuario
@@ -59,7 +64,12 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
 
         bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         bntGuardarUsuario.setText("GUARDAR USUARIO");
-        jPanel1.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, -1, -1));
+        bntGuardarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntGuardarUsuarioActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, -1, -1));
 
         lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         lblDireccion.setText("Dirección:");
@@ -121,6 +131,97 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void bntGuardarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntGuardarUsuarioActionPerformed
+        // TODO add your handling code here:
+         if (txtNombre.getText().isEmpty()|| txtApellido.getText().isEmpty() || txtDireccion.getText().isEmpty() || txtCedula.getText().isEmpty()
+          ||  txtTelefono.getText().isEmpty()|| txtCorreo.getText().isEmpty()){  
+         JOptionPane.showMessageDialog(null, "Estimado Usuario, porfavor debe ingresar todos sus datos");
+         }
+           try{
+                 String nombre;
+        String apellido;
+        String direccion;
+        String cedula;
+        String telefono;
+        String correo;
+        
+        nombre = txtNombre.getText();
+        apellido = txtApellido.getText();
+        direccion = txtDireccion.getText();
+        cedula = txtCedula.getText();
+        telefono = txtTelefono.getText();
+        correo = txtCorreo.getText();
+          int verificador = 0;
+        
+        int[] digito = new int[10];
+        
+            if (cedula.length() == 10 ){
+            //Asignación de los digitos de la cedula a un array de tipo int
+                for (int i = 0; i < 10; i++) {
+                    digito[i] = Integer.parseInt(cedula.substring(i,i+1));   
+                }
+
+            //Suma de los dígitos pares
+                int sumaPares = 0;
+        
+                for (int i = 1; i < 9; i=i+2) {
+                    sumaPares = sumaPares+digito[i] ;
+                }
+
+            //Suma de los dígitos pares
+                int sumaImpares = 0;
+        
+                for (int i = 0; i < 10; i=i+2) {
+                    digito[i] = digito[i] * 2;
+                    if (digito[i] > 9){
+                        digito[i] = digito[i] - 9;
+                    }
+                    sumaImpares = sumaImpares + digito[i] ;  
+                }
+            
+            //Suma Total
+                int sumaTotal = sumaPares +sumaImpares;
+            
+            //Digito verificador
+                verificador = 10-sumaTotal%10 ;
+            
+        
+                if (verificador == digito [9]){
+                    //Crea la instancia
+                    Usuario DatosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula) {
+                      
+                };
+                 }   
+                else {
+                    //Cedula no valida
+                    JOptionPane.showMessageDialog(null, "Lo sentimos,la cédula ingresada no es válida\nPor favor ingresar de nuevo los datos");
+                    txtCedula.setText(null);                            
+                }
+            }
+            else {
+                //No tiene 10 digitos
+                JOptionPane.showMessageDialog(null, "Estiamdo usuario, la cédula debe contener 10 digitos\nPor favor volver a ingresar sus datos");
+                txtCedula.setText(null);
+            }
+           Usuarios.add(new Usuario(nombre,apellido,direccion,correo,telefono,cedula));
+     
+          
+       
+           } catch (NumberFormatException nfe){
+            JOptionPane.showMessageDialog(rootPane,"Sólo se puede colocar números en Telefóno y Cédula");
+
+            txtTelefono.setText(null);
+            txtCedula.setText(null);
+
+        }
+      
+      
+         
+    }//GEN-LAST:event_bntGuardarUsuarioActionPerformed
+       
+        
+    
+    
     /**
      * @param args the command line arguments
      */

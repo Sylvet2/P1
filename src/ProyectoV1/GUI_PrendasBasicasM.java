@@ -93,6 +93,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         cmbCamisaManga = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
+        btnSiguientesBasicaH = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -559,6 +560,15 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
 
         jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 560));
 
+        btnSiguientesBasicaH.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnSiguientesBasicaH.setText("Siguiente");
+        btnSiguientesBasicaH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSiguientesBasicaHActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnSiguientesBasicaH, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Basicos/FondoPrendasBasicasMujer.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-180, 0, 950, 660));
 
@@ -767,10 +777,16 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
 
     private void btnAtrasPrendasBasicasMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasPrendasBasicasMujerActionPerformed
         // TODO add your handling code here:
-        InterfazMujer atras = new InterfazMujer();
+       GUI_Principal atras = new GUI_Principal();
         atras.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPrendasBasicasMujerActionPerformed
+
+    private void btnSiguientesBasicaHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguientesBasicaHActionPerformed
+        // TODO add your handling code here:
+        GUI_PrendasBasicasH irBasicasH = new GUI_PrendasBasicasH();
+        irBasicasH.setVisible(true);
+    }//GEN-LAST:event_btnSiguientesBasicaHActionPerformed
 
     /**
      * @param args the command line arguments
@@ -817,6 +833,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardarCamiseta;
     private javax.swing.JButton btnGuardarLapiz;
     private javax.swing.JButton btnGuardarPantalon;
+    private javax.swing.JButton btnSiguientesBasicaH;
     private javax.swing.JComboBox<String> cmbCamisaManga;
     private javax.swing.JComboBox<String> cmbCamiseta;
     private javax.swing.JComboBox<String> cmbLapiz;

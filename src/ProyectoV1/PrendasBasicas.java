@@ -9,6 +9,6 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class NewClass {
-    
+public class PrendasBasicas  {
+
 }

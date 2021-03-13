@@ -742,7 +742,7 @@ Prenda prenda;
 
     private void btnAtrasPrendasBasicasHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasPrendasBasicasHombreActionPerformed
         // TODO add your handling code here:
-        InterfazHombre atras = new InterfazHombre();
+      GUI_PrendasBasicasM atras = new GUI_PrendasBasicasM();
         atras.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPrendasBasicasHombreActionPerformed

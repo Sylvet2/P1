@@ -737,8 +737,8 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
     private void btnAtrasVeranoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasVeranoHombreActionPerformed
         // TODO add your handling code here:
-        InterfazHombre atras = new InterfazHombre();
-        atras.setVisible(true);
+        GUI_VeranoM irVeranoM = new GUI_VeranoM();
+        irVeranoM.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasVeranoHombreActionPerformed
 

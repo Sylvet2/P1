@@ -781,7 +781,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
 
     private void btnAtrasInviernoHombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasInviernoHombreActionPerformed
         // TODO add your handling code here:
-        InterfazHombre atras = new InterfazHombre();
+        GUI_InviernoM atras = new GUI_InviernoM();
         atras.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasInviernoHombreActionPerformed

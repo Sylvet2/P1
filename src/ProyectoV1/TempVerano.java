@@ -9,13 +9,8 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class PrendasBasicasM extends Mujer {
-    @Override
-    public double descuentoNumPrendas(){
-    return 0.0;
-    }
-    @Override
-    public double descuenoPorTemporadas(){
-    return 0.0;
-    }
+public class TempVerano {
+    
+   
+    
 }

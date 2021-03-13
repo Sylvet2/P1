@@ -9,14 +9,9 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class TempVeranoH extends Hombre{
+public class TempInvierno  {
     
-    @Override
-    public double descuentoNumPrendas(){
-    return 0.0;
-    }
-    @Override
-    public double descuenoPorTemporadas(){
-    return 0.0;
-    }
+    
+  
+    
 }

@@ -33,8 +33,9 @@ public class GUI_Principal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        btnFemenina = new javax.swing.JButton();
-        btnMasculina = new javax.swing.JButton();
+        btnTemporadaVerano = new javax.swing.JButton();
+        btnTemporadaInvierno = new javax.swing.JButton();
+        btnPrendasBasicas = new javax.swing.JButton();
         lblBlanco = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -58,23 +59,32 @@ public class GUI_Principal extends javax.swing.JFrame {
         jLabel9.setText("Seleccione el género de ropa que desea ver ...");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 320, -1));
 
-        btnFemenina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        btnFemenina.setText("FEMENINA");
-        btnFemenina.addActionListener(new java.awt.event.ActionListener() {
+        btnTemporadaVerano.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        btnTemporadaVerano.setText("TEMPORADA VERANO");
+        btnTemporadaVerano.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFemeninaActionPerformed(evt);
+                btnTemporadaVeranoActionPerformed(evt);
             }
         });
-        jPanel2.add(btnFemenina, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
+        jPanel2.add(btnTemporadaVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, -1, -1));
 
-        btnMasculina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        btnMasculina.setText("MASCULINA");
-        btnMasculina.addActionListener(new java.awt.event.ActionListener() {
+        btnTemporadaInvierno.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        btnTemporadaInvierno.setText("TEMPORADA INVIERNO");
+        btnTemporadaInvierno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMasculinaActionPerformed(evt);
+                btnTemporadaInviernoActionPerformed(evt);
             }
         });
-        jPanel2.add(btnMasculina, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
+        jPanel2.add(btnTemporadaInvierno, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 170, -1));
+
+        btnPrendasBasicas.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        btnPrendasBasicas.setText("PRENDAS BASICAS");
+        btnPrendasBasicas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPrendasBasicasActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnPrendasBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 180, -1));
 
         lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
         jPanel2.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 400));
@@ -98,20 +108,26 @@ public class GUI_Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnFemeninaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFemeninaActionPerformed
+    private void btnTemporadaVeranoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTemporadaVeranoActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        InterfazMujer irMujer = new InterfazMujer();
-        irMujer.setVisible(true);
-    }//GEN-LAST:event_btnFemeninaActionPerformed
+        GUI_VeranoM veranoM = new GUI_VeranoM ();
+        veranoM.setVisible(true);
+    }//GEN-LAST:event_btnTemporadaVeranoActionPerformed
 
-    private void btnMasculinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMasculinaActionPerformed
+    private void btnTemporadaInviernoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTemporadaInviernoActionPerformed
+        // TODO add your handling code here:
+       this.setVisible(false);
+        GUI_InviernoM inviernoM = new GUI_InviernoM ();
+        inviernoM.setVisible(true);
+    }//GEN-LAST:event_btnTemporadaInviernoActionPerformed
+
+    private void btnPrendasBasicasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrendasBasicasActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        InterfazHombre irHombre = new InterfazHombre();
-        irHombre.setVisible(true);
-        //interface
-    }//GEN-LAST:event_btnMasculinaActionPerformed
+        GUI_PrendasBasicasM irMujerBasicas = new GUI_PrendasBasicasM();
+        irMujerBasicas.setVisible(true);
+    }//GEN-LAST:event_btnPrendasBasicasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,8 +165,9 @@ public class GUI_Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnFemenina;
-    private javax.swing.JButton btnMasculina;
+    private javax.swing.JButton btnPrendasBasicas;
+    private javax.swing.JButton btnTemporadaInvierno;
+    private javax.swing.JButton btnTemporadaVerano;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
