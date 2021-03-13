@@ -37,6 +37,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInformacion = new javax.swing.JTable();
         txtNúmeroFactura1 = new javax.swing.JTextField();
+        btnGuardarFactura = new javax.swing.JButton();
         lblBlanco = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
@@ -85,12 +86,15 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtNúmeroFactura1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         pnlBlanco.add(txtNúmeroFactura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
 
+        btnGuardarFactura.setText("Guardar");
+        pnlBlanco.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 540, -1, -1));
+
         lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
         pnlBlanco.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 610));
 
         pnlFondo.add(pnlBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 690, 610));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo rojo y negro.png"))); // NOI18N
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple morado celeste.png"))); // NOI18N
         pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -143,6 +147,7 @@ public class GUI_Factura extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGuardarFactura;
     private javax.swing.JComboBox<String> cmbClientes;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

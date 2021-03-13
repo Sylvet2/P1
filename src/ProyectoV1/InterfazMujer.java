@@ -107,7 +107,7 @@ public class InterfazMujer extends javax.swing.JFrame {
 
     private void btnAtrasMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasMujerActionPerformed
         // TODO add your handling code here:
-            DatosUsuario atras = new DatosUsuario();
+            GUI_DatosUsuario atras = new GUI_DatosUsuario();
         atras.setVisible(true);
         dispose();
        
