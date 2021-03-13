@@ -10,5 +10,8 @@ package ProyectoV1;
  * @author Richard
  */
 public class PrendasBasicas  {
+    
+    private String Nombre ="Prendas Basicas";
+    private 
 
 }
