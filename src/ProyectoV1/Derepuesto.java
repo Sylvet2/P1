@@ -42,7 +42,8 @@ public class Derepuesto extends javax.swing.JFrame {
         lblNombre = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         bntGuardarUsuario = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -86,8 +87,12 @@ public class Derepuesto extends javax.swing.JFrame {
         bntGuardarUsuario.setText("GUARDAR USUARIO");
         pnlFondo.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Img_Datos_Usuario.jpg"))); // NOI18N
-        pnlFondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 620, 537));
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel9.setText("Seleccione el género de ropa que desea ver ...");
+        pnlFondo.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 320, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta mediano.png"))); // NOI18N
+        pnlFondo.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 170, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,8 +151,9 @@ public class Derepuesto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntGuardarUsuario;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblCedula;
     private javax.swing.JLabel lblCorreo;

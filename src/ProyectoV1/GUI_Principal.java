@@ -28,28 +28,35 @@ public class GUI_Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnMasculina = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         btnFemenina = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        btnMasculina = new javax.swing.JButton();
+        lblBlanco = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnMasculina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        btnMasculina.setText("MASCULINA");
-        btnMasculina.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMasculinaActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnMasculina, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta mediano.png"))); // NOI18N
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 100, 110));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hoja negra.png"))); // NOI18N
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 130));
+
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 130));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel9.setText("Seleccione el género de ropa que desea ver ...");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 320, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 320, -1));
 
         btnFemenina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         btnFemenina.setText("FEMENINA");
@@ -58,12 +65,23 @@ public class GUI_Principal extends javax.swing.JFrame {
                 btnFemeninaActionPerformed(evt);
             }
         });
-        jPanel1.add(btnFemenina, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
+        jPanel2.add(btnFemenina, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 170, -1));
+        btnMasculina.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        btnMasculina.setText("MASCULINA");
+        btnMasculina.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMasculinaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnMasculina, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
+        lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
+        jPanel2.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 400));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 550, 400));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple morado celeste.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 490));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -93,7 +111,6 @@ public class GUI_Principal extends javax.swing.JFrame {
         InterfazHombre irHombre = new InterfazHombre();
         irHombre.setVisible(true);
         //interface
-
     }//GEN-LAST:event_btnMasculinaActionPerformed
 
     /**
@@ -136,7 +153,11 @@ public class GUI_Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnMasculina;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lblBlanco;
     // End of variables declaration//GEN-END:variables
 }
