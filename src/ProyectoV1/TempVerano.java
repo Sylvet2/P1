@@ -14,10 +14,10 @@ import java.util.ArrayList;
 public class TempVerano extends TipoPrenda{
     
     
-    public TempVerano(  ArrayList <Prenda> vendedores) {
+    public TempVerano(  ArrayList <Prenda> lista) {
         
         this.nombre = "Temporada Verano";
-        this.listaDePrendas = vendedores;
+        this.listaDePrendas = lista;
         
     }
     

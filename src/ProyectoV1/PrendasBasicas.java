@@ -17,10 +17,10 @@ public class PrendasBasicas extends TipoPrenda  {
     private double descuentoCantidad;
     
     
-    public PrendasBasicas( ArrayList <Prenda> vendedores) {
+    public PrendasBasicas( ArrayList <Prenda> lista) {
         
         this.nombre = "Prendas Basicas";
-        this.listaDePrendas = vendedores;
+        this.listaDePrendas = lista;
     }
     
     

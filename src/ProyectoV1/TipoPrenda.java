@@ -20,7 +20,7 @@ public class TipoPrenda {
     //private double descuentoTemporada;
     //  private double descuentoCantidad;
     //metodo
-   // protected double pago;
+    // protected double pago;
     
      public void addPrenda(Prenda p){
         listaDePrendas.add(p);

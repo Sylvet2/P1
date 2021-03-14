@@ -15,10 +15,10 @@ public class TempInvierno extends TipoPrenda  {
     
     
     
-    public TempInvierno( ArrayList <Prenda> vendedores) {
+    public TempInvierno( ArrayList <Prenda> lista) {
         
         this.nombre = "Temporada Invierno";
-        this.listaDePrendas = vendedores;
+        this.listaDePrendas = lista;
     }
     
     
