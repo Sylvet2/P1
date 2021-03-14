@@ -6,6 +6,7 @@
 package ProyectoV1;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,13 +16,15 @@ public class TipoPrenda {
     
     protected String nombre;
     //implementar la relacion de composición con Vendedor
-    ArrayList <Prenda> vendedores = new ArrayList <> ();
+    List <Prenda> listaDePrendas = new ArrayList <> ();
     //private double descuentoTemporada;
     //  private double descuentoCantidad;
     //metodo
    // protected double pago;
     
-    
+     public void addPrenda(Prenda p){
+        listaDePrendas.add(p);
+    }
    // public abstract void calcularPago();
     
 

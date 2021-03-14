@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GUI_InviernoM extends javax.swing.JFrame {
-     Prenda prenda;
+      Prenda prenda;
       ArrayList <Prenda> prendasInvierno = new ArrayList<>();
      
 
@@ -178,7 +178,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(jLabel23)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardarConjuntoLana)
                                 .addGap(24, 24, 24))
                             .addGroup(jPanel5Layout.createSequentialGroup()
@@ -219,7 +219,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(btnGuardarConjuntoLana))
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 300, 250));
@@ -285,7 +285,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(jLabel30)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardarAbrigo)
                                 .addGap(24, 24, 24))
                             .addGroup(jPanel7Layout.createSequentialGroup()
@@ -329,7 +329,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 270));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -392,7 +392,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(jLabel26)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardarChaleco)
                                 .addGap(24, 24, 24))
                             .addGroup(jPanel6Layout.createSequentialGroup()
@@ -435,7 +435,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(jLabel10)
                         .addGap(3, 3, 3)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, -1, 250));
@@ -501,7 +501,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                         .addComponent(jLabel34)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardarAbrigoPliegues)
                                 .addGap(24, 24, 24))
                             .addGroup(jPanel8Layout.createSequentialGroup()
@@ -624,7 +624,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
     private void btnGuardarConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarConjuntoLanaActionPerformed
         // TODO add your handling code here:
-
+        
         String nombre = "Conjunto de lana";
         double precio = 29.99;
         int cantidad;
@@ -651,7 +651,8 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbConjuntoLana.getSelectedItem().toString();
-   prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
+            prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
+           prenda.listaInviernoMujer(prenda);
    //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
