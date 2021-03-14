@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class GUI_InviernoM extends javax.swing.JFrame {
      Prenda prenda;
-      ArrayList <Prenda> prendas = new ArrayList<>();
+      ArrayList <Prenda> prendasInvierno = new ArrayList<>();
      
 
     /**
@@ -651,7 +651,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbConjuntoLana.getSelectedItem().toString();
-   prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+   prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
    //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -687,7 +687,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbChaleco.getSelectedItem().toString();
- prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+ prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
       //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -722,7 +722,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigo.getSelectedItem().toString();
- prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+ prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
           //  prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -757,12 +757,13 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigoPliegues.getSelectedItem().toString();
- prendas.add(new Prenda(nombre, precio, cantidad,talla,color));
+ prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
+ 
          //   prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
     }//GEN-LAST:event_btnGuardarAbrigoPlieguesActionPerformed
-
+ 
     private void cmbConjuntoLanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbConjuntoLanaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmbConjuntoLanaActionPerformed

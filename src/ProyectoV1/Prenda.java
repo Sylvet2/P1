@@ -27,6 +27,27 @@ public class Prenda {
         this.talla = talla;
         this.color = color;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public char getTalla() {
+        return talla;
+    }
+
+    public String getColor() {
+        return color;
+    }
+    
     
     
     //ArrayList <Hombre> prendaHombres = new ArrayList<>();
@@ -36,5 +57,7 @@ public class Prenda {
     public String toString() {
         return "Prenda{" + "nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + ", talla=" + talla + ", color=" + color + '}';
     }
+
+  
  
 }

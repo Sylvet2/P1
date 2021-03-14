@@ -9,9 +9,13 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class TempInvierno  {
+public class TempInvierno extends Temporadas  {
+    private String nombre = "Temporada Invierno";
     
-    
-  
-    
+
+    @Override
+    public void calcularPago() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+ 
 }

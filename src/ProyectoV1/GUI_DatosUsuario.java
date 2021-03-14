@@ -2,6 +2,7 @@ package ProyectoV1;
 
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 
 /*
@@ -23,8 +24,8 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
      */
     public GUI_DatosUsuario() {
         initComponents();
-        //cambios
-        //interfaces
+      
+     
     }
 
     /**
@@ -203,7 +204,12 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Estiamdo usuario, la cédula debe contener 10 digitos\nPor favor volver a ingresar sus datos");
                 txtCedula.setText(null);
             }
+            
            Usuarios.add(new Usuario(nombre,apellido,direccion,correo,telefono,cedula));
+       //    lista = new DefaultComboBoxModel(Usuarios);
+      
+       
+       
      
           
        
@@ -213,6 +219,10 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
             txtTelefono.setText(null);
             txtCedula.setText(null);
 
+           
+            
+            
+            
         }
       
       

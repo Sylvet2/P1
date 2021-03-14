@@ -57,7 +57,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 130));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel9.setText("Seleccione el género de ropa que desea ver ...");
+        jLabel9.setText("Seleccione el tipo de ropa que desea ver ...");
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 320, -1));
 
         btnTemporadaVerano.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
@@ -67,7 +67,7 @@ public class GUI_Principal extends javax.swing.JFrame {
                 btnTemporadaVeranoActionPerformed(evt);
             }
         });
-        jPanel2.add(btnTemporadaVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, -1, -1));
+        jPanel2.add(btnTemporadaVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 190, -1));
 
         btnTemporadaInvierno.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         btnTemporadaInvierno.setText("TEMPORADA INVIERNO");
@@ -76,7 +76,7 @@ public class GUI_Principal extends javax.swing.JFrame {
                 btnTemporadaInviernoActionPerformed(evt);
             }
         });
-        jPanel2.add(btnTemporadaInvierno, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 170, -1));
+        jPanel2.add(btnTemporadaInvierno, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 190, -1));
 
         btnPrendasBasicas.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         btnPrendasBasicas.setText("PRENDAS BASICAS");
@@ -85,7 +85,7 @@ public class GUI_Principal extends javax.swing.JFrame {
                 btnPrendasBasicasActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPrendasBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 180, -1));
+        jPanel2.add(btnPrendasBasicas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 210, -1));
 
         btnFinalizar.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnFinalizar.setText("Finalizar Compra");

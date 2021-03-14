@@ -33,7 +33,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtPagoFinal = new javax.swing.JTextField();
         txtFecha = new javax.swing.JTextField();
         cmbClientes = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        btnCliente = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInformacion = new javax.swing.JTable();
         txtNúmeroFactura1 = new javax.swing.JTextField();
@@ -62,15 +62,20 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         cmbClientes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmbClientes.setSelectedIndex(-1);
-        pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, 25));
-
-        jButton1.setText("Nuevo Cliente");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        cmbClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                cmbClientesActionPerformed(evt);
             }
         });
-        pnlBlanco.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
+        pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, 25));
+
+        btnCliente.setText("Nuevo Cliente");
+        btnCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClienteActionPerformed(evt);
+            }
+        });
+        pnlBlanco.add(btnCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
 
         tblInformacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,15 +126,22 @@ public class GUI_Factura extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarFacturaActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteActionPerformed
         // TODO add your handling code here:
         GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
         irUsuario.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+       
+    }//GEN-LAST:event_btnClienteActionPerformed
+
+    private void cmbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClientesActionPerformed
+        // TODO add your handling code here:
+         
+    }//GEN-LAST:event_cmbClientesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,9 +179,9 @@ public class GUI_Factura extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCliente;
     private javax.swing.JButton btnGuardarFactura;
-    private javax.swing.JComboBox<String> cmbClientes;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JComboBox<String> cmbClientes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBlanco;

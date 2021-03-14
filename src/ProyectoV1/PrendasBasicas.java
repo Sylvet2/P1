@@ -12,6 +12,5 @@ package ProyectoV1;
 public class PrendasBasicas  {
     
     private String Nombre ="Prendas Basicas";
-    private 
-
+ private double descuentoCantidad;
 }
