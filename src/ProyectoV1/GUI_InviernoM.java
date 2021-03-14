@@ -652,7 +652,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
             color = cmbConjuntoLana.getSelectedItem().toString();
             prendasInvierno.add(new Prenda(nombre, precio, cantidad,talla,color));
-           prenda.listaInviernoMujer(prenda);
+           //prenda.listaInviernoMujer(prenda);
    //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 

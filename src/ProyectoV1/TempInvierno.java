@@ -18,7 +18,7 @@ public class TempInvierno extends TipoPrenda  {
     public TempInvierno( ArrayList <Prenda> vendedores) {
         
         this.nombre = "Temporada Invierno";
-        this.vendedores = vendedores;
+        this.listaDePrendas = vendedores;
     }
     
     
