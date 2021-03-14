@@ -20,6 +20,8 @@ public class GUI_VeranoH extends javax.swing.JFrame {
      */
     public GUI_VeranoH() {
         initComponents();
+        
+        //tabla
     }
 
     /**
