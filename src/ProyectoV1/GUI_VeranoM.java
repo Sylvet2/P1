@@ -5,6 +5,8 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
@@ -14,6 +16,7 @@ import javax.swing.JOptionPane;
 public class GUI_VeranoM extends javax.swing.JFrame {
     
     Prenda prenda;
+    List<Prenda> lista = new ArrayList<Prenda>();
     /**
      * Creates new form GUI_VeranoM
      */
@@ -173,7 +176,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                             .addComponent(cmbConjuntoPliegues, 0, 1, Short.MAX_VALUE)))
                     .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 5, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,7 +204,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(btnConjuntoPliegues))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 290, 250));
@@ -252,7 +255,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel6Layout.createSequentialGroup()
                                 .addComponent(jLabel18)
-                                .addContainerGap(29, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jLabel29)
@@ -307,7 +310,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                             .addComponent(cmbVestidoLargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addComponent(btnVestidoLargo)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 290, 250));
@@ -412,7 +415,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addComponent(btnGuardarBikini))
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 290, 250));

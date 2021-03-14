@@ -22,6 +22,7 @@ public class TempInvierno extends TipoPrenda  {
     }
     
     
+    @Override
     public void calcularPago() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

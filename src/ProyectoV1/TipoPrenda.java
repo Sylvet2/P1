@@ -12,20 +12,22 @@ import java.util.List;
  *
  * @author USUARIO
  */
-public class TipoPrenda {
+public abstract class TipoPrenda {
     
     protected String nombre;
     //implementar la relacion de composición con Vendedor
     List <Prenda> listaDePrendas = new ArrayList <> ();
-    //private double descuentoTemporada;
-    //  private double descuentoCantidad;
+   // private double descuentoTemporada;
+    //private double descuentoCantidad;
     //metodo
-    // protected double pago;
+    protected double pago;
     
      public void addPrenda(Prenda p){
         listaDePrendas.add(p);
-    }
-   // public abstract void calcularPago();
+    
+     }
+     
+    public abstract void calcularPago();
     
 
 }

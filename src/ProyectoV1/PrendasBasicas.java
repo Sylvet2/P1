@@ -24,6 +24,7 @@ public class PrendasBasicas extends TipoPrenda  {
     }
     
     
+    @Override
     public void calcularPago(){
         
     }
