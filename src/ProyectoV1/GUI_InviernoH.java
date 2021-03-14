@@ -6,6 +6,7 @@
 package ProyectoV1;
 
 import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,7 +14,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GUI_InviernoH extends javax.swing.JFrame {
-    ArrayList <Prenda> listaInviernoHombre = new ArrayList<>();
+    List <Prenda> listaInviernoHombre = new ArrayList<>();
 
 
     /**
