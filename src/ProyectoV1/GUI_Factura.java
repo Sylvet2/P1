@@ -218,13 +218,6 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
         
         
-        
-        
-        
-        
-        
-        
-        
     }//GEN-LAST:event_formWindowOpened
 
     private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
@@ -246,9 +239,9 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         try{
 
-            if (txtNombre.getText().isEmpty()|| txtApellido.getText().isEmpty() || txtDireccion.getText().isEmpty() || txtCedula.getText().isEmpty()
-                ||  txtTelefono.getText().isEmpty()|| txtCorreo.getText().isEmpty()){
-                JOptionPane.showMessageDialog(null, "Estimado Usuario, porfavor debe ingresar todos sus datos");
+            if (txtNombre.getText().isEmpty()) {
+                JOptionPane.showMessageDialog(null, txtNombre.getText().isEmpty());
+                JOptionPane.showMessageDialog(null, "Estimado Usuario, por favor debe ingresar todos sus datos");
             }
             else{
 
@@ -310,10 +303,11 @@ public class GUI_Factura extends javax.swing.JFrame {
 
                         GUI_Principal.usuarios.add(datosUsuario);
                         
-                        for (i)
-                        modeloTabla.addRow(new Object []{congreso1.getCongreso(), congreso1.getApellido().toUpperCase()+","+congreso1.getNombre().toUpperCase(), 
-                congreso1.getCiudad(),congreso1.getCodigo(),congreso1.toString(),congreso1.getFrecuencia(),congreso1.getCiclo()});
-            
+                        for (int i = 0; i < 3; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(i).listaDePrendas.get(0).getNombre()});
+             
+                        }
+                        
                         
                         
                         

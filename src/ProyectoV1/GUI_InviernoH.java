@@ -511,7 +511,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
                             .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jLabel36, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel35, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(0, 6, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(jLabel16)
@@ -563,7 +563,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
         jPanel4.add(btrIrPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoHombre.png"))); // NOI18N
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 830, 650));
+        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -10, 830, 650));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -582,7 +582,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 787, Short.MAX_VALUE)
+            .addGap(0, 795, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
