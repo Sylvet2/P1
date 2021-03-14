@@ -212,6 +212,11 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
            Usuarios.add(new Usuario(nombre,apellido,direccion,correo,telefono,cedula));
        //    lista = new DefaultComboBoxModel(Usuarios);
       
+            
+            dispose();
+       
+       
+       
            }
      
            } catch (NumberFormatException nfe){

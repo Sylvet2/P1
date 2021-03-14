@@ -143,6 +143,7 @@ public class GUI_Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         GUI_Factura irFactura = new GUI_Factura();
         irFactura.setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_btnFinalizarActionPerformed
 
