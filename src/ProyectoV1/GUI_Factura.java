@@ -9,12 +9,14 @@ import static java.lang.String.format;
 import static java.lang.String.format;
 import static java.text.MessageFormat.format;
 import java.util.Date;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author Dayana
  */
 public class GUI_Factura extends javax.swing.JFrame {
+   // DefaultTableModel modeloTabla;
     
     int contador = 1;
     
@@ -23,6 +25,7 @@ public class GUI_Factura extends javax.swing.JFrame {
      */
     public GUI_Factura() {
         initComponents();
+  
     }
 
     /**
