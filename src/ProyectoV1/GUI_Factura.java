@@ -22,6 +22,7 @@ import javax.swing.table.DefaultTableModel;
 public class GUI_Factura extends javax.swing.JFrame {
     DefaultTableModel modeloTabla;
     int contador = 1;
+    public Usuario datosUsuario;
     
     /**
      * Creates new form GUI_Factura
@@ -54,12 +55,24 @@ public class GUI_Factura extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtPagoFinal = new javax.swing.JTextField();
         txtFecha = new javax.swing.JTextField();
-        cmbClientes = new javax.swing.JComboBox<>();
-        btnCliente = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInformacion = new javax.swing.JTable();
         txtNumeroFactura = new javax.swing.JTextField();
         btnGuardarFactura = new javax.swing.JButton();
+        lblNombre = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        lblDireccion = new javax.swing.JLabel();
+        lblCedula = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblCorreo = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        txtCedula = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtCorreo = new javax.swing.JTextField();
+        bntGuardarUsuario = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         lblBlanco = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
@@ -78,7 +91,7 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Número");
-        pnlBlanco.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
+        pnlBlanco.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
         txtPagoFinal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtPagoFinal.setForeground(new java.awt.Color(255, 0, 0));
@@ -86,34 +99,14 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtPagoFinal.setCaretColor(new java.awt.Color(255, 255, 204));
         txtPagoFinal.setDisabledTextColor(new java.awt.Color(255, 255, 204));
         txtPagoFinal.setSelectionColor(new java.awt.Color(255, 255, 204));
-        pnlBlanco.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 120, 25));
+        pnlBlanco.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 620, 120, 25));
 
         txtFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFechaActionPerformed(evt);
             }
         });
-        pnlBlanco.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 80, 20));
-
-        cmbClientes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cmbClientesMouseClicked(evt);
-            }
-        });
-        cmbClientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbClientesActionPerformed(evt);
-            }
-        });
-        pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 300, 25));
-
-        btnCliente.setText("Nuevo Cliente");
-        btnCliente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClienteActionPerformed(evt);
-            }
-        });
-        pnlBlanco.add(btnCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, -1, -1));
+        pnlBlanco.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 80, 20));
 
         tblInformacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -128,7 +121,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblInformacion);
 
-        pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 620, 310));
+        pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 620, 310));
 
         txtNumeroFactura.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
@@ -139,7 +132,7 @@ public class GUI_Factura extends javax.swing.JFrame {
                 txtNumeroFacturaActionPerformed(evt);
             }
         });
-        pnlBlanco.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
+        pnlBlanco.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 120, 25));
 
         btnGuardarFactura.setText("Guardar");
         btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -147,15 +140,57 @@ public class GUI_Factura extends javax.swing.JFrame {
                 btnGuardarFacturaActionPerformed(evt);
             }
         });
-        pnlBlanco.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 540, -1, -1));
+        pnlBlanco.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 620, -1, -1));
+
+        lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblNombre.setText("Nombre:");
+        pnlBlanco.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+
+        lblApellido.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblApellido.setText("Apellido:");
+        pnlBlanco.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
+
+        lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblDireccion.setText("Dirección:");
+        pnlBlanco.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+
+        lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCedula.setText("Cédula:");
+        pnlBlanco.add(lblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, -1, -1));
+
+        lblTelefono.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblTelefono.setText("Teléfono:");
+        pnlBlanco.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
+
+        lblCorreo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCorreo.setText("Correo:");
+        pnlBlanco.add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, -1));
+        pnlBlanco.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 140, -1));
+        pnlBlanco.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
+        pnlBlanco.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 140, -1));
+        pnlBlanco.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 140, -1));
+        pnlBlanco.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 140, -1));
+        pnlBlanco.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 140, -1));
+
+        bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        bntGuardarUsuario.setText("GUARDAR USUARIO");
+        bntGuardarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntGuardarUsuarioActionPerformed(evt);
+            }
+        });
+        pnlBlanco.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta mediano.png"))); // NOI18N
+        pnlBlanco.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 100));
 
         lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        pnlBlanco.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 610));
+        pnlBlanco.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 670));
 
-        pnlFondo.add(pnlBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 690, 610));
+        pnlFondo.add(pnlBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 690, 670));
 
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rosa celeste.png"))); // NOI18N
-        pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 10, 950, 680));
+        pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 10, 950, 710));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -165,7 +200,9 @@ public class GUI_Factura extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -175,19 +212,6 @@ public class GUI_Factura extends javax.swing.JFrame {
     private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarFacturaActionPerformed
-
-    private void btnClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteActionPerformed
-                        
-        // TODO add your handling code here:
-        GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
-        irUsuario.setVisible(true);
-
-        contador ++;
-                
-    }//GEN-LAST:event_btnClienteActionPerformed
-
-    private void cmbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClientesActionPerformed
-    }//GEN-LAST:event_cmbClientesActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
@@ -217,12 +241,116 @@ public class GUI_Factura extends javax.swing.JFrame {
         //hola
     }//GEN-LAST:event_txtNumeroFacturaActionPerformed
 
-    private void cmbClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cmbClientesMouseClicked
+    private void bntGuardarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntGuardarUsuarioActionPerformed
         // TODO add your handling code here:
-        // TODO add your handling code here:
-                    
-        cmbClientes.addItem(GUI_Principal.usuarios.get(GUI_Principal.usuarios.size()-1).getApellido().toString());
-    }//GEN-LAST:event_cmbClientesMouseClicked
+
+        try{
+
+            if (txtNombre.getText().isEmpty()|| txtApellido.getText().isEmpty() || txtDireccion.getText().isEmpty() || txtCedula.getText().isEmpty()
+                ||  txtTelefono.getText().isEmpty()|| txtCorreo.getText().isEmpty()){
+                JOptionPane.showMessageDialog(null, "Estimado Usuario, porfavor debe ingresar todos sus datos");
+            }
+            else{
+
+                String nombre;
+                String apellido;
+                String direccion;
+                String cedula;
+                long telefono;
+                String correo;
+
+                nombre = txtNombre.getText();
+                apellido = txtApellido.getText();
+                direccion = txtDireccion.getText();
+                cedula = txtCedula.getText();
+                telefono = Long.parseLong(txtTelefono.getText());
+                correo = txtCorreo.getText();
+
+                int verificador = 0;
+
+                int[] digito = new int[10];
+
+                if (cedula.length() == 10 ){
+                    //Asignación de los digitos de la cedula a un array de tipo int
+                    for (int i = 0; i < 10; i++) {
+                        digito[i] = Integer.parseInt(cedula.substring(i,i+1));
+                    }
+
+                    //Suma de los dígitos pares
+                    int sumaPares = 0;
+
+                    for (int i = 1; i < 9; i=i+2) {
+                        sumaPares = sumaPares+digito[i] ;
+                    }
+
+                    //Suma de los dígitos pares
+                    int sumaImpares = 0;
+
+                    for (int i = 0; i < 10; i=i+2) {
+                        digito[i] = digito[i] * 2;
+                        if (digito[i] > 9){
+                            digito[i] = digito[i] - 9;
+                        }
+                        sumaImpares = sumaImpares + digito[i] ;
+                    }
+
+                    //Suma Total
+                    int sumaTotal = sumaPares +sumaImpares;
+
+                    //Digito verificador
+                    verificador = 10-sumaTotal%10 ;
+
+                    if (verificador == digito [9]){
+                        //Crea la instancia
+
+                        datosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
+                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaBasico));
+                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaInvierno));
+                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaVerano));
+
+                        GUI_Principal.usuarios.add(datosUsuario);
+                        
+                        for (i)
+                        modeloTabla.addRow(new Object []{congreso1.getCongreso(), congreso1.getApellido().toUpperCase()+","+congreso1.getNombre().toUpperCase(), 
+                congreso1.getCiudad(),congreso1.getCodigo(),congreso1.toString(),congreso1.getFrecuencia(),congreso1.getCiclo()});
+            
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+                    }
+                    else {
+                        //Cedula no valida
+                        JOptionPane.showMessageDialog(null, "Lo sentimos,la cédula ingresada no es válida\nPor favor ingresar de nuevo los datos");
+                        txtCedula.setText(null);
+                    }
+                }
+                else {
+                    //No tiene 10 digitos
+                    JOptionPane.showMessageDialog(null, "Estiamdo usuario, la cédula debe contener 10 digitos\nPor favor volver a ingresar sus datos");
+                    txtCedula.setText(null);
+                }
+
+                //    lista = new DefaultComboBoxModel(Usuarios);
+
+                dispose();
+
+            }
+
+        } catch (NumberFormatException nfe){
+            JOptionPane.showMessageDialog(rootPane,"Sólo se puede colocar números en Telefóno y Cédula");
+
+            txtTelefono.setText(null);
+            txtCedula.setText(null);
+
+        }
+
+    }//GEN-LAST:event_bntGuardarUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -260,18 +388,30 @@ public class GUI_Factura extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCliente;
+    private javax.swing.JButton bntGuardarUsuario;
     private javax.swing.JButton btnGuardarFactura;
-    public javax.swing.JComboBox<String> cmbClientes;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblApellido;
     private javax.swing.JLabel lblBlanco;
+    private javax.swing.JLabel lblCedula;
+    private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblFondo;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblTelefono;
     private javax.swing.JPanel pnlBlanco;
     private javax.swing.JPanel pnlFondo;
     private javax.swing.JTable tblInformacion;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtCedula;
+    private javax.swing.JTextField txtCorreo;
+    private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtFecha;
+    private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNumeroFactura;
     private javax.swing.JTextField txtPagoFinal;
+    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
