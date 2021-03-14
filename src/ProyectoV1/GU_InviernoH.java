@@ -109,7 +109,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
                 btnAtrasInviernoHombreActionPerformed(evt);
             }
         });
-        jPanel4.add(btnAtrasInviernoHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 620, -1, -1));
+        jPanel4.add(btnAtrasInviernoHombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 610, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

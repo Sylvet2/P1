@@ -212,20 +212,13 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
            Usuarios.add(new Usuario(nombre,apellido,direccion,correo,telefono,cedula));
        //    lista = new DefaultComboBoxModel(Usuarios);
       
-       
            }
      
-          
-       
            } catch (NumberFormatException nfe){
             JOptionPane.showMessageDialog(rootPane,"Sólo se puede colocar números en Telefóno y Cédula");
 
             txtTelefono.setText(null);
-            txtCedula.setText(null);
-
-           
-            
-            
+            txtCedula.setText(null);  
             
         }
       

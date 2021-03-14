@@ -18,10 +18,10 @@ public class Usuario{
     private String apellido;
     private String direccion;
     private String correo;
-    private String telefono;
+    private long telefono;
     private String cedula;
 
-    public Usuario( String nombre, String apellido, String direccion, String correo, String telefono, String cedula) {
+    public Usuario( String nombre, String apellido, String direccion, String correo, long telefono, String cedula) {
        
         this.nombre = nombre;
         this.apellido = apellido;

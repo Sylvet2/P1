@@ -5,6 +5,11 @@
  */
 package ProyectoV1;
 
+import static java.lang.String.format;
+import static java.lang.String.format;
+import static java.text.MessageFormat.format;
+import java.util.Date;
+
 /**
  *
  * @author Dayana
@@ -65,6 +70,12 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtPagoFinal.setDisabledTextColor(new java.awt.Color(255, 255, 204));
         txtPagoFinal.setSelectionColor(new java.awt.Color(255, 255, 204));
         pnlBlanco.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 120, 25));
+
+        txtFecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaActionPerformed(evt);
+            }
+        });
         pnlBlanco.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 80, 20));
 
         cmbClientes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -103,6 +114,11 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
         txtNumeroFactura.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtNumeroFactura.setText("0");
+        txtNumeroFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumeroFacturaActionPerformed(evt);
+            }
+        });
         pnlBlanco.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
 
         btnGuardarFactura.setText("Guardar");
@@ -144,38 +160,28 @@ public class GUI_Factura extends javax.swing.JFrame {
         // TODO add your handling code here:
         GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
         irUsuario.setVisible(true);
-        
-        
-        
-        
-        
-        
         contador ++;
-       
     }//GEN-LAST:event_btnClienteActionPerformed
 
     private void cmbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClientesActionPerformed
         // TODO add your handling code here:
-        
-        
-        
-        
-        
-        
-         
+  
     }//GEN-LAST:event_cmbClientesActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         
         txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
-        
-        
-        
-        
-        
-        
     }//GEN-LAST:event_formWindowOpened
+
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaActionPerformed
+
+    private void txtNumeroFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroFacturaActionPerformed
+        // TODO add your handling code here:
+  
+    }//GEN-LAST:event_txtNumeroFacturaActionPerformed
 
     /**
      * @param args the command line arguments

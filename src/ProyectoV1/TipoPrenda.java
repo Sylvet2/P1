@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author USUARIO
  */
-public abstract class TipoPrenda {
+public class TipoPrenda {
     
     protected String nombre;
     //implementar la relacion de composición con Vendedor
@@ -19,10 +19,10 @@ public abstract class TipoPrenda {
     //private double descuentoTemporada;
     //  private double descuentoCantidad;
     //metodo
-    protected double pago;
+   // protected double pago;
     
     
-    public abstract void calcularPago();
+   // public abstract void calcularPago();
     
 
 }

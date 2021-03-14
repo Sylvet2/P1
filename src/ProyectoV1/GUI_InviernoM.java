@@ -112,7 +112,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 btnAtrasInviernoMujerActionPerformed(evt);
             }
         });
-        jPanel4.add(btnAtrasInviernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 620, -1, -1));
+        jPanel4.add(btnAtrasInviernoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 600, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 50, 140));
@@ -561,7 +561,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
                 btnSiguienteIHActionPerformed(evt);
             }
         });
-        jPanel4.add(btnSiguienteIH, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
+        jPanel4.add(btnSiguienteIH, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 600, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Invierno/FondoInviernoMujer.png"))); // NOI18N
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 660));
@@ -785,6 +785,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         GUI_Principal atrasPrincipal = new GUI_Principal();
         atrasPrincipal.setVisible(true);
         dispose();
+        
     }//GEN-LAST:event_btnAtrasInviernoMujerActionPerformed
 
     private void btnSiguienteIHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteIHActionPerformed
