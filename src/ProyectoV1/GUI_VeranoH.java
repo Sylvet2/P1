@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GUI_VeranoH extends javax.swing.JFrame {
-    List<Prenda> listaVeranoHombre = new ArrayList<Prenda>();
+    //public static ArrayList<Prenda> listaVeranoHombre = new ArrayList<Prenda>();
 
 
     /**
@@ -631,7 +631,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
             color = cmbCamisetaCorta.getSelectedItem().toString();
 
-            listaVeranoHombre.add(new Prenda (nombre, precio, cantidad, talla, color));
+            GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
              }
     }//GEN-LAST:event_btnGuardarCamisetaCortaActionPerformed
 
@@ -669,7 +669,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
             color = cmbCamisetaLarga.getSelectedItem().toString();
 
-            listaVeranoHombre.add(new Prenda (nombre, precio, cantidad, talla, color));
+            GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
              }
     }//GEN-LAST:event_btnGuardarCamisetaLargaActionPerformed
 
@@ -707,7 +707,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
             color = cmbShort.getSelectedItem().toString();
 
-            listaVeranoHombre.add(new Prenda (nombre, precio, cantidad, talla, color));
+            GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
              }
     }//GEN-LAST:event_btnGuardarShortActionPerformed
 
@@ -745,7 +745,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
 
             color = cmbPescador.getSelectedItem().toString();
 
-            listaVeranoHombre.add(new Prenda (nombre, precio, cantidad, talla, color));
+            GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
              }
     }//GEN-LAST:event_btnGuardarPescadorActionPerformed
 

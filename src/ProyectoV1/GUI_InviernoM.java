@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  */
 public class GUI_InviernoM extends javax.swing.JFrame {
       
-    List <Prenda> listaInviernoMujer = new ArrayList<>();
+    //public static ArrayList <Prenda> listaInviernoMujer = new ArrayList<>();
      
 
     /**
@@ -654,7 +654,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbConjuntoLana.getSelectedItem().toString();
-            listaInviernoMujer.add(new Prenda(nombre, precio, cantidad,talla,color));
+            GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
            //prenda.listaInviernoMujer(prenda);
    //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
@@ -691,7 +691,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbChaleco.getSelectedItem().toString();
-            listaInviernoMujer.add(new Prenda(nombre, precio, cantidad,talla,color));
+            GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
       //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -726,7 +726,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigo.getSelectedItem().toString();
-            listaInviernoMujer.add(new Prenda(nombre, precio, cantidad,talla,color));
+            GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
           //  prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -761,7 +761,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
             }
 
             color = cmbAbrigoPliegues.getSelectedItem().toString();
-            listaInviernoMujer.add(new Prenda(nombre, precio, cantidad,talla,color));
+            GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
  
          //   prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }

@@ -17,7 +17,8 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GUI_DatosUsuario extends javax.swing.JFrame {
-     ArrayList <Usuario> Usuarios = new ArrayList<>();
+     //ArrayList <Usuario> Usuarios = new ArrayList<>();
+    public Usuario datosUsuario;
 
     /**
      * Creates new form DatosUsuario
@@ -202,8 +203,15 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
                 if (verificador == digito [9]){
                     //Crea la instancia
                     
-                    Usuario DatosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
-                 }   
+                     datosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
+                     datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaBasico));
+                     datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaInvierno));
+                     datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaVerano));
+                     
+                     
+                     GUI_Principal.usuarios.add(datosUsuario);
+                                          
+                }   
                 else {
                     //Cedula no valida
                     JOptionPane.showMessageDialog(null, "Lo sentimos,la cédula ingresada no es válida\nPor favor ingresar de nuevo los datos");
@@ -216,7 +224,7 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
                 txtCedula.setText(null);
             }
             
-           Usuarios.add(new Usuario(nombre,apellido,direccion,correo,telefono,cedula));
+           
        //    lista = new DefaultComboBoxModel(Usuarios);
       
             

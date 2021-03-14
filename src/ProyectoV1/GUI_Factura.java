@@ -8,8 +8,11 @@ package ProyectoV1;
 import static java.lang.String.format;
 import static java.lang.String.format;
 import static java.text.MessageFormat.format;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -92,14 +95,17 @@ public class GUI_Factura extends javax.swing.JFrame {
         });
         pnlBlanco.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 80, 20));
 
-        cmbClientes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        cmbClientes.setSelectedIndex(-1);
+        cmbClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cmbClientesMouseClicked(evt);
+            }
+        });
         cmbClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbClientesActionPerformed(evt);
             }
         });
-        pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, 25));
+        pnlBlanco.add(cmbClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 300, 25));
 
         btnCliente.setText("Nuevo Cliente");
         btnCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -171,20 +177,30 @@ public class GUI_Factura extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGuardarFacturaActionPerformed
 
     private void btnClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClienteActionPerformed
+                        
         // TODO add your handling code here:
         GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
         irUsuario.setVisible(true);
+
         contador ++;
+                
     }//GEN-LAST:event_btnClienteActionPerformed
 
     private void cmbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClientesActionPerformed
-        // TODO add your handling code here:
-  
     }//GEN-LAST:event_cmbClientesActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_formWindowOpened
 
     private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
@@ -200,6 +216,13 @@ public class GUI_Factura extends javax.swing.JFrame {
         String annio = Integer.toString(c1.get(Calendar.YEAR));
         //hola
     }//GEN-LAST:event_txtNumeroFacturaActionPerformed
+
+    private void cmbClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cmbClientesMouseClicked
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+                    
+        cmbClientes.addItem(GUI_Principal.usuarios.get(GUI_Principal.usuarios.size()-1).getApellido().toString());
+    }//GEN-LAST:event_cmbClientesMouseClicked
 
     /**
      * @param args the command line arguments

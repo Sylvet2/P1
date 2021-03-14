@@ -5,12 +5,22 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Dayana
  */
 public class GUI_Principal extends javax.swing.JFrame {
-
+        
+    
+    public static List <Usuario> usuarios = new ArrayList<>();
+    
+    public static ArrayList <Prenda> listaInvierno = new ArrayList<>();
+    public static ArrayList <Prenda> listaVerano = new ArrayList<>();
+    public static ArrayList <Prenda> listaBasico = new ArrayList<>();
+    
     /**
      * Creates new form GUI_Principal
      */

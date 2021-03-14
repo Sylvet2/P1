@@ -5,6 +5,9 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Richard
@@ -20,6 +23,8 @@ public class Usuario{
     private String correo;
     private long telefono;
     private String cedula;
+    
+    List <TipoPrenda> tipoPrenda = new ArrayList<>();
 
     public Usuario( String nombre, String apellido, String direccion, String correo, long telefono, String cedula) {
        
@@ -30,6 +35,17 @@ public class Usuario{
         this.telefono = telefono;
         this.cedula = cedula;
     }
+    public void agregarTipoPrenda (TempInvierno v ) {
+        tipoPrenda.add (v);
+    }
+    
+    public void agregarTipoPrenda (TempVerano v ) {
+        tipoPrenda.add (v);
+    }
+    public void agregarTipoPreanda (PrendasBasicas v ) {
+        tipoPrenda.add (v);
+    }
+    
 
     @Override
     public String toString() {

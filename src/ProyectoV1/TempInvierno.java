@@ -6,6 +6,7 @@
 package ProyectoV1;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -15,7 +16,7 @@ public class TempInvierno extends TipoPrenda  {
     
     
     
-    public TempInvierno( ArrayList <Prenda> lista) {
+    public TempInvierno( List <Prenda> lista) {
         
         this.nombre = "Temporada Invierno";
         this.listaDePrendas = lista;
