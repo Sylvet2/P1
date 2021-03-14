@@ -16,7 +16,9 @@ import javax.swing.table.DefaultTableModel;
  * @author Dayana
  */
 public class GUI_Factura extends javax.swing.JFrame {
-   // DefaultTableModel modeloTabla;
+    DefaultTableModel modeloTabla;
+    
+    
     
     int contador = 1;
     
