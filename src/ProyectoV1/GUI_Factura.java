@@ -10,7 +10,9 @@ package ProyectoV1;
  * @author Dayana
  */
 public class GUI_Factura extends javax.swing.JFrame {
-
+    
+    int contador = 1;
+    
     /**
      * Creates new form GUI_Factura
      */
@@ -36,12 +38,17 @@ public class GUI_Factura extends javax.swing.JFrame {
         btnCliente = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblInformacion = new javax.swing.JTable();
-        txtNúmeroFactura1 = new javax.swing.JTextField();
+        txtNumeroFactura = new javax.swing.JTextField();
         btnGuardarFactura = new javax.swing.JButton();
         lblBlanco = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -92,9 +99,11 @@ public class GUI_Factura extends javax.swing.JFrame {
 
         pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 620, 310));
 
-        txtNúmeroFactura1.setForeground(new java.awt.Color(255, 0, 0));
-        txtNúmeroFactura1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        pnlBlanco.add(txtNúmeroFactura1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
+        txtNumeroFactura.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
+        txtNumeroFactura.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtNumeroFactura.setText("0");
+        pnlBlanco.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, 120, 25));
 
         btnGuardarFactura.setText("Guardar");
         btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -135,13 +144,38 @@ public class GUI_Factura extends javax.swing.JFrame {
         // TODO add your handling code here:
         GUI_DatosUsuario irUsuario = new GUI_DatosUsuario();
         irUsuario.setVisible(true);
+        
+        
+        
+        
+        
+        
+        contador ++;
        
     }//GEN-LAST:event_btnClienteActionPerformed
 
     private void cmbClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbClientesActionPerformed
         // TODO add your handling code here:
+        
+        
+        
+        
+        
+        
          
     }//GEN-LAST:event_cmbClientesActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        
+        txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -190,7 +224,7 @@ public class GUI_Factura extends javax.swing.JFrame {
     private javax.swing.JPanel pnlFondo;
     private javax.swing.JTable tblInformacion;
     private javax.swing.JTextField txtFecha;
-    private javax.swing.JTextField txtNúmeroFactura1;
+    private javax.swing.JTextField txtNumeroFactura;
     private javax.swing.JTextField txtPagoFinal;
     // End of variables declaration//GEN-END:variables
 }

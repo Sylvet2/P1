@@ -134,25 +134,30 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
 
     private void bntGuardarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntGuardarUsuarioActionPerformed
         // TODO add your handling code here:
-         if (txtNombre.getText().isEmpty()|| txtApellido.getText().isEmpty() || txtDireccion.getText().isEmpty() || txtCedula.getText().isEmpty()
+        
+        try{
+            
+        if (txtNombre.getText().isEmpty()|| txtApellido.getText().isEmpty() || txtDireccion.getText().isEmpty() || txtCedula.getText().isEmpty()
           ||  txtTelefono.getText().isEmpty()|| txtCorreo.getText().isEmpty()){  
          JOptionPane.showMessageDialog(null, "Estimado Usuario, porfavor debe ingresar todos sus datos");
          }
-           try{
-                 String nombre;
+         else{
+           
+        String nombre;
         String apellido;
         String direccion;
         String cedula;
-        String telefono;
+        long telefono;
         String correo;
         
         nombre = txtNombre.getText();
         apellido = txtApellido.getText();
         direccion = txtDireccion.getText();
         cedula = txtCedula.getText();
-        telefono = txtTelefono.getText();
+        telefono = Long.parseLong(txtTelefono.getText());
         correo = txtCorreo.getText();
-          int verificador = 0;
+        
+        int verificador = 0;
         
         int[] digito = new int[10];
         
@@ -189,9 +194,8 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
         
                 if (verificador == digito [9]){
                     //Crea la instancia
-                    Usuario DatosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula) {
-                      
-                };
+                    
+                    Usuario DatosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
                  }   
                 else {
                     //Cedula no valida
@@ -209,7 +213,7 @@ public class GUI_DatosUsuario extends javax.swing.JFrame {
        //    lista = new DefaultComboBoxModel(Usuarios);
       
        
-       
+           }
      
           
        
