@@ -18,9 +18,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class GUI_Factura extends javax.swing.JFrame {
     DefaultTableModel modeloTabla;
-    
-    
-    
     int contador = 1;
     
     /**
@@ -28,7 +25,16 @@ public class GUI_Factura extends javax.swing.JFrame {
      */
     public GUI_Factura() {
         initComponents();
-  
+      initComponents();
+       modeloTabla = new DefaultTableModel();
+        modeloTabla.addColumn("Modelo");
+        modeloTabla.addColumn("Precio Unitario");
+        modeloTabla.addColumn("Cantidad");
+      modeloTabla.addColumn("Talla");
+        modeloTabla.addColumn("Color");
+        modeloTabla.addColumn("Tipo");
+        modeloTabla.addColumn("Valor a pagar");
+        tblInformacion.setModel(modeloTabla);
     }
 
     /**
