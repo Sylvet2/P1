@@ -9,8 +9,27 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class PrendasBasicas  {
+public class PrendasBasicas extends TipoPrenda  {
     
-    private String Nombre ="Prendas Basicas";
- private double descuentoCantidad;
+    
+    private double descuentoCantidad;
+    
+    
+    public PrendasBasicas( String nombre, String apellido, String direccion, String correo, String telefono, String cedula) {
+        
+        this.nombre = "Prendas Basicas";
+        
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.cedula = cedula;
+    }
+    
+    @Override
+    public void calcularPago(){
+        
+    }
+    
+    
 }

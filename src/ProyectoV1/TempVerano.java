@@ -9,9 +9,22 @@ package ProyectoV1;
  *
  * @author Richard
  */
-public class TempVerano extends Temporadas{
-    private String nombre = "Temporada Verano";
-
+public class TempVerano extends TipoPrenda{
+    
+    
+    public TempVerano( String nombre, String apellido, String direccion, String correo, String telefono, String cedula) {
+        
+        this.nombre = "Temporada Verano";
+        
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.cedula = cedula;
+    }
+    
+    
+    
     @Override
     public void calcularPago() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
