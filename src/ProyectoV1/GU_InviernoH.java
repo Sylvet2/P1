@@ -5,6 +5,7 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -12,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author USUARIO
  */
 public class GU_InviernoH extends javax.swing.JFrame {
-    Prenda prenda;
+    ArrayList <Prenda> listaInviernoHombre = new ArrayList<>();
 
 
     /**
@@ -651,7 +652,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     color = cmbAbrigoHombre.getSelectedItem().toString();
     
     
-    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    listaInviernoHombre.add(new Prenda(nombre, precio, cantidad,talla,color));
     
     
      }
@@ -695,7 +696,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     color = cmbChaqueta.getSelectedItem().toString();
     
     
-    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    listaInviernoHombre.add(new Prenda(nombre, precio, cantidad,talla,color));
     
     
      }
@@ -739,7 +740,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     color = cmbBuzoFino.getSelectedItem().toString();
     
     
-    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    listaInviernoHombre.add(new Prenda(nombre, precio, cantidad,talla,color));
     
     
      }
@@ -783,7 +784,7 @@ public class GU_InviernoH extends javax.swing.JFrame {
     color = cmbBuzo.getSelectedItem().toString();
     
     
-    prenda = new Prenda (nombre, precio, cantidad, talla, color);
+    listaInviernoHombre.add(new Prenda(nombre, precio, cantidad,talla,color));
     
     
      }
