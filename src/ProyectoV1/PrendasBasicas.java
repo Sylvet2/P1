@@ -5,6 +5,8 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Richard
@@ -15,18 +17,13 @@ public class PrendasBasicas extends TipoPrenda  {
     private double descuentoCantidad;
     
     
-    public PrendasBasicas( String nombre, String apellido, String direccion, String correo, String telefono, String cedula) {
+    public PrendasBasicas( ArrayList <Prenda> vendedores) {
         
         this.nombre = "Prendas Basicas";
-        
-        this.apellido = apellido;
-        this.direccion = direccion;
-        this.correo = correo;
-        this.telefono = telefono;
-        this.cedula = cedula;
+        this.vendedores = vendedores;
     }
     
-    @Override
+    
     public void calcularPago(){
         
     }

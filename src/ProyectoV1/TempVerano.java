@@ -5,6 +5,8 @@
  */
 package ProyectoV1;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Richard
@@ -12,16 +14,14 @@ package ProyectoV1;
 public class TempVerano extends TipoPrenda{
     
     
-    public TempVerano( String nombre, String apellido, String direccion, String correo, String telefono, String cedula) {
+    public TempVerano(  ArrayList <Prenda> vendedores) {
         
         this.nombre = "Temporada Verano";
-        this.apellido = apellido;
-        this.direccion = direccion;
-        this.correo = correo;
-        this.telefono = telefono;
-        this.cedula = cedula;
+        this.vendedores = vendedores;
+        
     }
-    @Override
+    
+    
     public void calcularPago() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
