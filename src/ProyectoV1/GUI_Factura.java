@@ -8,6 +8,7 @@ package ProyectoV1;
 import static java.lang.String.format;
 import static java.lang.String.format;
 import static java.text.MessageFormat.format;
+import java.util.Calendar;
 import java.util.Date;
 import javax.swing.table.DefaultTableModel;
 
@@ -175,7 +176,6 @@ public class GUI_Factura extends javax.swing.JFrame {
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        
         txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
     }//GEN-LAST:event_formWindowOpened
 
@@ -185,7 +185,12 @@ public class GUI_Factura extends javax.swing.JFrame {
 
     private void txtNumeroFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroFacturaActionPerformed
         // TODO add your handling code here:
-  
+  Calendar c1 = Calendar.getInstance();
+        
+        String dia = Integer.toString(c1.get(Calendar.DATE));
+        String mes = Integer.toString(c1.get(Calendar.MONTH));
+        String annio = Integer.toString(c1.get(Calendar.YEAR));
+        //hola
     }//GEN-LAST:event_txtNumeroFacturaActionPerformed
 
     /**
