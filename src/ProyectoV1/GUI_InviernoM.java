@@ -794,6 +794,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         // TODO add your handling code here:
         GUI_InviernoH inviernoH = new GUI_InviernoH();
         inviernoH.setVisible(true);
+        dispose();
         
     }//GEN-LAST:event_btnSiguienteIHActionPerformed
 

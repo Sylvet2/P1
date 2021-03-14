@@ -800,7 +800,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
 
     private void btrIrPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btrIrPrincipalActionPerformed
         // TODO add your handling code here:
-         GUI_Principal irPrincipal = new GUI_Principal();
+        GUI_Principal irPrincipal = new GUI_Principal();
         irPrincipal.setVisible(true);
         dispose();
                  

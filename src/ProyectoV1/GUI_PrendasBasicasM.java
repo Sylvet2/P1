@@ -779,7 +779,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
 
     private void btnAtrasPrendasBasicasMujerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasPrendasBasicasMujerActionPerformed
         // TODO add your handling code here:
-       GUI_Principal atras = new GUI_Principal();
+        GUI_Principal atras = new GUI_Principal();
         atras.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnAtrasPrendasBasicasMujerActionPerformed
@@ -788,6 +788,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         // TODO add your handling code here:
         GUI_PrendasBasicasH irBasicasH = new GUI_PrendasBasicasH();
         irBasicasH.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnSiguientesBasicaHActionPerformed
 
     /**
