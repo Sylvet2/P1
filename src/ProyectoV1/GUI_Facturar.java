@@ -5,13 +5,7 @@
  */
 package ProyectoV1;
 
-import static java.lang.String.format;
-import static java.lang.String.format;
-import static java.text.MessageFormat.format;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -19,18 +13,17 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Dayana
  */
-public class GUI_Factura extends javax.swing.JFrame {
+public class GUI_Facturar extends javax.swing.JFrame {
     DefaultTableModel modeloTabla;
     int contador = 1;
     public Usuario datosUsuario;
     
     /**
-     * Creates new form GUI_Factura
+     * Creates new form GUI_Facturar
      */
-    public GUI_Factura() {
+    public GUI_Facturar() {
         initComponents();
-      initComponents();
-       modeloTabla = new DefaultTableModel();
+        modeloTabla = new DefaultTableModel();
         modeloTabla.addColumn("Modelo");
         modeloTabla.addColumn("Precio Unitario");
         modeloTabla.addColumn("Cantidad");
@@ -50,21 +43,12 @@ public class GUI_Factura extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pnlFondo = new javax.swing.JPanel();
-        pnlBlanco = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        txtPagoFinal = new javax.swing.JTextField();
-        txtFecha = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tblInformacion = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         txtNumeroFactura = new javax.swing.JTextField();
-        btnGuardarFactura = new javax.swing.JButton();
-        lblNombre = new javax.swing.JLabel();
-        lblApellido = new javax.swing.JLabel();
-        lblDireccion = new javax.swing.JLabel();
-        lblCedula = new javax.swing.JLabel();
-        lblTelefono = new javax.swing.JLabel();
-        lblCorreo = new javax.swing.JLabel();
+        txtFecha = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
         txtApellido = new javax.swing.JTextField();
         txtDireccion = new javax.swing.JTextField();
@@ -72,42 +56,93 @@ public class GUI_Factura extends javax.swing.JFrame {
         txtTelefono = new javax.swing.JTextField();
         txtCorreo = new javax.swing.JTextField();
         bntGuardarUsuario = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        lblBlanco = new javax.swing.JLabel();
-        lblFondo = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblApellido = new javax.swing.JLabel();
+        lblDireccion = new javax.swing.JLabel();
+        lblCedula = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblCorreo = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblInformacion = new javax.swing.JTable();
+        btnGuardarFactura = new javax.swing.JButton();
+        txtPagoFinal = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(475, 200));
-        setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
         });
 
-        pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlBlanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setText("Número");
-        pnlBlanco.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta mediano.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 100));
 
-        txtPagoFinal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        txtPagoFinal.setForeground(new java.awt.Color(255, 0, 0));
-        txtPagoFinal.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtPagoFinal.setCaretColor(new java.awt.Color(255, 255, 204));
-        txtPagoFinal.setDisabledTextColor(new java.awt.Color(255, 255, 204));
-        txtPagoFinal.setSelectionColor(new java.awt.Color(255, 255, 204));
-        pnlBlanco.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 620, 120, 25));
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel4.setText("Número");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+
+        txtNumeroFactura.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
+        txtNumeroFactura.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtNumeroFactura.setText("0");
+        txtNumeroFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumeroFacturaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 120, 25));
 
         txtFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFechaActionPerformed(evt);
             }
         });
-        pnlBlanco.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 80, 20));
+        jPanel2.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 80, 20));
+        jPanel2.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 140, -1));
+        jPanel2.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
+        jPanel2.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 140, -1));
+        jPanel2.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 140, -1));
+        jPanel2.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 140, -1));
+        jPanel2.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 140, -1));
+
+        bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
+        bntGuardarUsuario.setText("GUARDAR USUARIO");
+        bntGuardarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntGuardarUsuarioActionPerformed(evt);
+            }
+        });
+        jPanel2.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
+
+        lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblNombre.setText("Nombre:");
+        jPanel2.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+
+        lblApellido.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblApellido.setText("Apellido:");
+        jPanel2.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
+
+        lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblDireccion.setText("Dirección:");
+        jPanel2.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+
+        lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCedula.setText("Cédula:");
+        jPanel2.add(lblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, -1, -1));
+
+        lblTelefono.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblTelefono.setText("Teléfono:");
+        jPanel2.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
+
+        lblCorreo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        lblCorreo.setText("Correo:");
+        jPanel2.add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, -1));
 
         tblInformacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -122,18 +157,7 @@ public class GUI_Factura extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblInformacion);
 
-        pnlBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 620, 310));
-
-        txtNumeroFactura.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
-        txtNumeroFactura.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtNumeroFactura.setText("0");
-        txtNumeroFactura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNumeroFacturaActionPerformed(evt);
-            }
-        });
-        pnlBlanco.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 120, 25));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 620, 310));
 
         btnGuardarFactura.setText("Guardar");
         btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -141,107 +165,51 @@ public class GUI_Factura extends javax.swing.JFrame {
                 btnGuardarFacturaActionPerformed(evt);
             }
         });
-        pnlBlanco.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 620, -1, -1));
+        jPanel2.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 620, -1, -1));
 
-        lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblNombre.setText("Nombre:");
-        pnlBlanco.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+        txtPagoFinal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtPagoFinal.setForeground(new java.awt.Color(255, 0, 0));
+        txtPagoFinal.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtPagoFinal.setCaretColor(new java.awt.Color(255, 255, 204));
+        txtPagoFinal.setDisabledTextColor(new java.awt.Color(255, 255, 204));
+        txtPagoFinal.setSelectionColor(new java.awt.Color(255, 255, 204));
+        jPanel2.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 620, 120, 25));
 
-        lblApellido.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblApellido.setText("Apellido:");
-        pnlBlanco.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 670));
 
-        lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblDireccion.setText("Dirección:");
-        pnlBlanco.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 680, 670));
 
-        lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblCedula.setText("Cédula:");
-        pnlBlanco.add(lblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, -1, -1));
-
-        lblTelefono.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblTelefono.setText("Teléfono:");
-        pnlBlanco.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, -1, -1));
-
-        lblCorreo.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblCorreo.setText("Correo:");
-        pnlBlanco.add(lblCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, -1, -1));
-        pnlBlanco.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 140, -1));
-        pnlBlanco.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
-        pnlBlanco.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 140, -1));
-        pnlBlanco.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 140, -1));
-        pnlBlanco.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 140, -1));
-        pnlBlanco.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 140, -1));
-
-        bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        bntGuardarUsuario.setText("GUARDAR USUARIO");
-        bntGuardarUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bntGuardarUsuarioActionPerformed(evt);
-            }
-        });
-        pnlBlanco.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logotipo circular  recta mediano.png"))); // NOI18N
-        pnlBlanco.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 100));
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        pnlBlanco.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, -1, -1));
-
-        lblBlanco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        pnlBlanco.add(lblBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 670));
-
-        pnlFondo.add(pnlBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 690, 670));
-
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rosa celeste.png"))); // NOI18N
-        pnlFondo.add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 10, 950, 710));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rosa celeste.png"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 730));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnlFondo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
-    private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarFacturaActionPerformed
-
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        // TODO add your handling code here:
-        txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
-        
-        
-    }//GEN-LAST:event_formWindowOpened
-
-    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFechaActionPerformed
-
     private void txtNumeroFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroFacturaActionPerformed
         // TODO add your handling code here:
-  Calendar c1 = Calendar.getInstance();
-        
+        Calendar c1 = Calendar.getInstance();
+
         String dia = Integer.toString(c1.get(Calendar.DATE));
         String mes = Integer.toString(c1.get(Calendar.MONTH));
         String annio = Integer.toString(c1.get(Calendar.YEAR));
         //hola
     }//GEN-LAST:event_txtNumeroFacturaActionPerformed
+
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaActionPerformed
 
     private void bntGuardarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntGuardarUsuarioActionPerformed
         // TODO add your handling code here:
@@ -311,20 +279,11 @@ public class GUI_Factura extends javax.swing.JFrame {
                         datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaVerano));
 
                         GUI_Principal.usuarios.add(datosUsuario);
-                        
+
                         for (int i = 0; i < 3; ++i) {
                            modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(i).listaDePrendas.get(0).getNombre()});
-             
+
                         }
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
 
                     }
                     else {
@@ -352,22 +311,17 @@ public class GUI_Factura extends javax.swing.JFrame {
             txtCedula.setText(null);
 
         }
-
     }//GEN-LAST:event_bntGuardarUsuarioActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
         // TODO add your handling code here:
-        if (txtNombre.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(null, txtNombre.getText());
-                JOptionPane.showMessageDialog(null, "Estimado Usuario, por favor debe ingresar todos sus datos");
-            }
-            else{
-            
-        }
+    }//GEN-LAST:event_btnGuardarFacturaActionPerformed
 
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        // TODO add your handling code here:
+        txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
         
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
@@ -386,20 +340,20 @@ public class GUI_Factura extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GUI_Factura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Facturar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GUI_Factura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Facturar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GUI_Factura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Facturar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GUI_Factura.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GUI_Facturar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GUI_Factura().setVisible(true);
+                new GUI_Facturar().setVisible(true);
             }
         });
     }
@@ -407,20 +361,19 @@ public class GUI_Factura extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntGuardarUsuario;
     private javax.swing.JButton btnGuardarFactura;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblApellido;
-    private javax.swing.JLabel lblBlanco;
     private javax.swing.JLabel lblCedula;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblDireccion;
-    private javax.swing.JLabel lblFondo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblTelefono;
-    private javax.swing.JPanel pnlBlanco;
-    private javax.swing.JPanel pnlFondo;
     private javax.swing.JTable tblInformacion;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCedula;

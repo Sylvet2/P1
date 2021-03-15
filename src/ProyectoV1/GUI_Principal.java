@@ -153,7 +153,7 @@ public class GUI_Principal extends javax.swing.JFrame {
 
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
         // TODO add your handling code here:
-        GUI_Factura irFactura = new GUI_Factura();
+        GUI_Facturar irFactura = new GUI_Facturar();
         irFactura.setVisible(true);
         dispose();
         
