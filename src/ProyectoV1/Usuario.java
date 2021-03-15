@@ -23,6 +23,8 @@ public class Usuario{
     private String correo;
     private long telefono;
     private String cedula;
+    private double subTotales []= new  double[3];
+    private double pagoTotal;
     
     List <TipoPrenda> tipoPrenda = new ArrayList<>();
 
@@ -35,6 +37,17 @@ public class Usuario{
         this.telefono = telefono;
         this.cedula = cedula;
     }
+    
+    public void calcularPagoTotal (){
+        pagoTotal = subTotales [0]+subTotales [1]+subTotales [2];
+    }
+
+    public double getPagoTotal() {
+        return pagoTotal;
+    }
+    
+    
+    
     public void agregarTipoPrenda (TempInvierno v ) {
         tipoPrenda.add (v);
     }
@@ -45,7 +58,18 @@ public class Usuario{
     public void agregarTipoPrenda (PrendasBasicas v ) {
         tipoPrenda.add (v);
     }
+
+    public void setSubTotales(double[] subTotales) {
+        this.subTotales = subTotales;
+    }
+
+    public double[] getSubTotales() {
+        return subTotales;
+    }
     
+
+    
+        
 
     @Override
     public String toString() {

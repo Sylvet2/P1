@@ -24,9 +24,6 @@ public class PrendasBasicas extends TipoPrenda  {
     }
     
   
-    
-
-    
     public void calcularDescuento() {
         
         if(this.listaDePrendas.size() == 10) {
@@ -40,12 +37,12 @@ public class PrendasBasicas extends TipoPrenda  {
     }
 
     @Override
-    public void calcularSubPago() {
+    public double calcularSubPago() {
         for (int i = 0; i <= listaDePrendas.size()-1; ++i) {
         subTotal = subTotal+ this.listaDePrendas.get(i).getPago();
         }
         subTotal =subTotal*descuentoCantidad;
-        
+        return subTotal;
     }
 
    

@@ -22,10 +22,11 @@ public class TempVerano extends TipoPrenda{
     }
 
     @Override
-    public void calcularSubPago() {
+    public double calcularSubPago() {
         for (int i = 0; i <= listaDePrendas.size()-1; ++i) {
         subTotal = subTotal+ this.listaDePrendas.get(i).getPago();
         }
+        return subTotal;
     }
 
     

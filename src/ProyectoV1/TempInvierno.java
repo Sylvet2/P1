@@ -14,8 +14,7 @@ import java.util.List;
  */
 public class TempInvierno extends TipoPrenda  {
     
-    
-    
+        
     public TempInvierno( List <Prenda> lista) {
         
         this.nombre = "Temporada Invierno";
@@ -24,10 +23,16 @@ public class TempInvierno extends TipoPrenda  {
 
    
     @Override
-    public void calcularSubPago() {
+    public double calcularSubPago() {
        for (int i = 0; i <= listaDePrendas.size()-1; ++i) {
-        subTotal = subTotal+ this.listaDePrendas.get(i).getPago();
+            subTotal = subTotal+ this.listaDePrendas.get(i).getPago();
         }
+       
+       if(subTotal >= 200) {
+            subTotal = subTotal-20;
+        }
+       return subTotal;
+       
     }
     
     

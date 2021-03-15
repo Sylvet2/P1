@@ -18,6 +18,8 @@ public class GUI_Facturar extends javax.swing.JFrame {
     int contador = 1;
     public Usuario datosUsuario;
     
+    double subTotales []= new  double[3];
+    
     /**
      * Creates new form GUI_Facturar
      */
@@ -30,7 +32,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
       modeloTabla.addColumn("Talla");
         modeloTabla.addColumn("Color");
         modeloTabla.addColumn("Tipo");
-        //modeloTabla.addColumn("Valor a pagar");
+        modeloTabla.addColumn("Valor a pagar");
         tblInformacion.setModel(modeloTabla);
     }
 
@@ -66,6 +68,13 @@ public class GUI_Facturar extends javax.swing.JFrame {
         tblInformacion = new javax.swing.JTable();
         btnGuardarFactura = new javax.swing.JButton();
         txtPagoFinal = new javax.swing.JTextField();
+        lblSubtotalInvierno = new javax.swing.JLabel();
+        lblSubtotalBasico = new javax.swing.JLabel();
+        lblSubtotalVerano = new javax.swing.JLabel();
+        lblTotal = new javax.swing.JLabel();
+        txtSubtotalBasico = new javax.swing.JTextField();
+        txtSubtotalVerano = new javax.swing.JTextField();
+        txtSubtotalInvierno = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -129,7 +138,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(lblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
         lblDireccion.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        lblDireccion.setText("Dirección:");
+        lblDireccion.setText("Dirección");
         jPanel2.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
         lblCedula.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
@@ -157,7 +166,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tblInformacion);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 620, 310));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 630, 260));
 
         btnGuardarFactura.setText("Guardar");
         btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +174,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
                 btnGuardarFacturaActionPerformed(evt);
             }
         });
-        jPanel2.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 620, -1, -1));
+        jPanel2.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 700, -1, -1));
 
         txtPagoFinal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtPagoFinal.setForeground(new java.awt.Color(255, 0, 0));
@@ -173,15 +182,56 @@ public class GUI_Facturar extends javax.swing.JFrame {
         txtPagoFinal.setCaretColor(new java.awt.Color(255, 255, 204));
         txtPagoFinal.setDisabledTextColor(new java.awt.Color(255, 255, 204));
         txtPagoFinal.setSelectionColor(new java.awt.Color(255, 255, 204));
-        jPanel2.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 620, 120, 25));
+        jPanel2.add(txtPagoFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 700, 120, 25));
+
+        lblSubtotalInvierno.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblSubtotalInvierno.setText("Subtotal (Invierno):");
+        jPanel2.add(lblSubtotalInvierno, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 610, -1, -1));
+
+        lblSubtotalBasico.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblSubtotalBasico.setText("Subtotal (Básico):");
+        jPanel2.add(lblSubtotalBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 640, -1, -1));
+
+        lblSubtotalVerano.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblSubtotalVerano.setText("Subtotal (Verano):");
+        jPanel2.add(lblSubtotalVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, -1, -1));
+
+        lblTotal.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        lblTotal.setForeground(new java.awt.Color(255, 0, 0));
+        lblTotal.setText("Total");
+        jPanel2.add(lblTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 700, -1, -1));
+
+        txtSubtotalBasico.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtSubtotalBasico.setForeground(new java.awt.Color(255, 0, 0));
+        txtSubtotalBasico.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtSubtotalBasico.setCaretColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalBasico.setDisabledTextColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalBasico.setSelectionColor(new java.awt.Color(255, 255, 204));
+        jPanel2.add(txtSubtotalBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 120, 25));
+
+        txtSubtotalVerano.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtSubtotalVerano.setForeground(new java.awt.Color(255, 0, 0));
+        txtSubtotalVerano.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtSubtotalVerano.setCaretColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalVerano.setDisabledTextColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalVerano.setSelectionColor(new java.awt.Color(255, 255, 204));
+        jPanel2.add(txtSubtotalVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 580, 120, 25));
+
+        txtSubtotalInvierno.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtSubtotalInvierno.setForeground(new java.awt.Color(255, 0, 0));
+        txtSubtotalInvierno.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtSubtotalInvierno.setCaretColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalInvierno.setDisabledTextColor(new java.awt.Color(255, 255, 204));
+        txtSubtotalInvierno.setSelectionColor(new java.awt.Color(255, 255, 204));
+        jPanel2.add(txtSubtotalInvierno, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 610, 120, 25));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 670));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 760));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 680, 670));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 680, 760));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo simple rosa celeste.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 730));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-200, 0, 950, 830));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -191,7 +241,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 833, Short.MAX_VALUE)
         );
 
         pack();
@@ -275,7 +325,12 @@ public class GUI_Facturar extends javax.swing.JFrame {
                         datosUsuario.agregarTipoPrenda(new TempInvierno(GUI_Principal.listaInvierno));
                         datosUsuario.agregarTipoPrenda(new PrendasBasicas(GUI_Principal.listaBasico));
                         
+                        subTotales [0] =new TempVerano(GUI_Principal.listaVerano).calcularSubPago();
+                        subTotales [1] =new TempInvierno(GUI_Principal.listaInvierno).calcularSubPago();
+                        subTotales [2] =new PrendasBasicas(GUI_Principal.listaBasico).calcularSubPago();
                         
+                        datosUsuario.setSubTotales(subTotales);
+                        datosUsuario.calcularPagoTotal();
 
                         GUI_Principal.usuarios.add(datosUsuario);
                                                                         
@@ -285,7 +340,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
                            datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getCantidad(),
                            datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getTalla(),
                            datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getColor(),"Verano",
-                           //datosUsuario.tipoPrenda.get(0).pago
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getPago()
                            });
                         }
                         for (int i = 0; i <= datosUsuario.tipoPrenda.get(1).listaDePrendas.size()-1; ++i) {
@@ -294,7 +349,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
                            datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getCantidad(),
                            datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getTalla(),
                            datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getColor(),"Invierno",
-                          // datosUsuario.tipoPrenda.get(1).pago
+                           datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getPago()
                            });
                         }
                         for (int i = 0; i <= datosUsuario.tipoPrenda.get(2).listaDePrendas.size()-1; ++i) {
@@ -303,10 +358,14 @@ public class GUI_Facturar extends javax.swing.JFrame {
                            datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getCantidad(),
                            datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getTalla(),
                            datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getColor(),"Basicas",
-                           //datosUsuario.tipoPrenda.get(2).pago
+                           datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getPago()
                            });
                         }
-
+                        txtSubtotalVerano.setText(Double.toString(subTotales [0]));
+                        txtSubtotalInvierno.setText(Double.toString(subTotales [1]));
+                        txtSubtotalBasico.setText(Double.toString(subTotales [2]));
+                        
+                        txtSubtotalBasico.setText(Double.toString(datosUsuario.getPagoTotal()));
                     }
                     else {
                         //Cedula no valida
@@ -403,7 +462,11 @@ public class GUI_Facturar extends javax.swing.JFrame {
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblSubtotalBasico;
+    private javax.swing.JLabel lblSubtotalInvierno;
+    private javax.swing.JLabel lblSubtotalVerano;
     private javax.swing.JLabel lblTelefono;
+    private javax.swing.JLabel lblTotal;
     private javax.swing.JTable tblInformacion;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCedula;
@@ -413,6 +476,9 @@ public class GUI_Facturar extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNumeroFactura;
     private javax.swing.JTextField txtPagoFinal;
+    private javax.swing.JTextField txtSubtotalBasico;
+    private javax.swing.JTextField txtSubtotalInvierno;
+    private javax.swing.JTextField txtSubtotalVerano;
     private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
