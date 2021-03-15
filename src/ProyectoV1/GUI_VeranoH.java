@@ -596,7 +596,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         String color;
 
         if (rbtSCamisetaCorta.isSelected() == false && rbtMCamisetaCorta.isSelected() == false && rbtLCamisetaCorta.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -635,7 +635,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         String color;
 
         if (rbtSCamisetaLarga.isSelected() == false && rbtMCamisetaLarga.isSelected() == false && rbtLCamisetaLarga.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -674,7 +674,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         String color;
 
         if (rbtSShort.isSelected() == false && rbtMShort.isSelected() == false && rbtLShort.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -713,7 +713,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
         String color;
 
         if (rbtSPescador.isSelected() == false && rbtMPescador.isSelected() == false && rbtLPescador.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 

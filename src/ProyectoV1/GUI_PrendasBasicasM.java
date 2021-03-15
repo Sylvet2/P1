@@ -595,7 +595,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         String color;
 
         if (rbtSCamisaManga.isSelected() == false && rbtMCamisaManga.isSelected() == false && rbtLCamisaManga.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -629,7 +629,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         String color;
 
         if (rbtSPantalon.isSelected() == false && rbtMPantalon.isSelected() == false &&rbtLPantalon.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -664,7 +664,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         String color;
 
         if (rbtSLapiz.isSelected() == false && rbtMLapiz.isSelected() == false && rbtLLapiz.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -699,7 +699,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
         String color;
 
         if (rbtSCamiseta.isSelected() == false && rbtMCamiseta.isSelected() == false && rbtLCamiseta.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 

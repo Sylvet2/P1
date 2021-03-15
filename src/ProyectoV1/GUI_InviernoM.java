@@ -635,7 +635,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         String color;
 
         if (rbtSConjuntoLana.isSelected() == false && rbtMConjuntoLana.isSelected() == false && rbtLConjuntoLana.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -673,7 +673,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         String color;
 
         if (rbtSChaleco.isSelected() == false && rbtMChaleco.isSelected() == false && rbtLChaleco.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -709,7 +709,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         String color;
 
         if (rbtSAbrigo.isSelected() == false && rbtMAbrigo.isSelected() == false && rbtLAbrigo.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
@@ -745,7 +745,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         String color;
 
         if (rbtSAbrigoPliegues.isSelected() == false && rbtMAbrigoPliegues.isSelected() == false && rbtLAbrigoPliegues.isSelected() == false){
-            JOptionPane.showMessageDialog(null, "Porfavor, debe escoger una talla");
+            JOptionPane.showMessageDialog(null, "Por favor, debe escoger una talla");
         }
         else{
 
