@@ -20,13 +20,13 @@ public abstract class TipoPrenda {
    // private double descuentoTemporada;
     //private double descuentoCantidad;
     //metodo
-    protected double pago;
+    protected double subPago = 0;
     
-     public void addPrenda(Prenda p){
+    public void addPrenda(Prenda p){
         listaDePrendas.add(p);
-     }
+    }
      
-    public abstract void calcularPago(int indice);
+    public abstract void calcularSubPago();
     
 
 }

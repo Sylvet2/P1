@@ -20,6 +20,7 @@ public class Prenda {
     private int cantidad;
     private char talla;
     private String color;
+    private double pago;
     
      
     public Prenda (String nombre, double precio, int cantidad, char talla, String color){
@@ -28,7 +29,14 @@ public class Prenda {
         this.cantidad = cantidad;
         this.talla = talla;
         this.color = color;
+        this.pago = precio*cantidad;
     }
+
+    public double getPago() {
+        return pago;
+    }
+    
+    
 
     public String getNombre() {
         return nombre;

@@ -23,20 +23,34 @@ public class PrendasBasicas extends TipoPrenda  {
         this.listaDePrendas = lista;
     }
     
-    public void calcularDescuento(int indice){
+    /*public void calcularDescuento(int indice){
         if(this.listaDePrendas.get(indice).getCantidad() == 4) {
             descuentoCantidad = 0.1;
         }
         if(this.listaDePrendas.get(indice).getCantidad() == 8) {
             descuentoCantidad = 0.25;
         }
-    }
+    }*/
     
-    @Override
-    public void calcularPago(int indice){
+
+    
+    public void calcularDescuento() {
         
-        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
+        if(this.listaDePrendas.size() == 10) {
+            descuentoCantidad = 0.1;
+        }
+        if(this.listaDePrendas.size() == 15) {
+            descuentoCantidad = 0.20;
+        }
         
+        
+    }
+
+    
+    public void calcularSubPago() {
+        for (int i = 0; i <= listaDePrendas.size()-1; ++i) {
+        subPago = subPago + this.listaDePrendas.get(i).getPago();
+        }
         
     }
     

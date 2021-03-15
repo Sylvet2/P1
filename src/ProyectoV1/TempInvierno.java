@@ -21,13 +21,15 @@ public class TempInvierno extends TipoPrenda  {
         this.nombre = "Temporada Invierno";
         this.listaDePrendas = lista;
     }
-    
-    
+
+   
     @Override
-    public void calcularPago(int indice) {
-        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio();
+    public void calcularSubPago() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    
+   
     
     
  

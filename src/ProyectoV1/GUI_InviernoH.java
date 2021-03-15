@@ -622,7 +622,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
     GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
     
     
-     }
+    }
     }//GEN-LAST:event_btnGuardarAbrigoHombreActionPerformed
 
     private void cmbChaquetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbChaquetaActionPerformed
