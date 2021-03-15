@@ -24,7 +24,6 @@ public abstract class TipoPrenda {
     
      public void addPrenda(Prenda p){
         listaDePrendas.add(p);
-    
      }
      
     public abstract void calcularPago();

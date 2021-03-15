@@ -216,8 +216,8 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
         try{
 
-            if (txtNombre.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(null, txtNombre.getText());
+            if (txtNombre.getText().isEmpty() || txtApellido.getText().isEmpty() ||txtDireccion.getText().isEmpty() ||
+                    txtCedula.getText().isEmpty() ||txtTelefono.getText().isEmpty() ||txtCorreo.getText().isEmpty() ) {
                 JOptionPane.showMessageDialog(null, "Estimado Usuario, por favor debe ingresar todos sus datos");
             }
             else{
@@ -270,19 +270,26 @@ public class GUI_Facturar extends javax.swing.JFrame {
                     //Digito verificador
                     verificador = 10-sumaTotal%10 ;
 
-                    if (verificador == digito [9]){
+                    if (verificador == digito[9]){
                         //Crea la instancia
 
                         datosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
-                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaBasico));
-                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaInvierno));
-                        datosUsuario.agregarTipoPreanda(new PrendasBasicas(GUI_Principal.listaVerano));
+                        datosUsuario.agregarTipoPrenda(new PrendasBasicas(GUI_Principal.listaBasico));
+                        datosUsuario.agregarTipoPrenda(new TempInvierno(GUI_Principal.listaInvierno));
+                        datosUsuario.agregarTipoPrenda(new TempVerano(GUI_Principal.listaVerano));
 
                         GUI_Principal.usuarios.add(datosUsuario);
-
-                        for (int i = 0; i < 3; ++i) {
-                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(i).listaDePrendas.get(0).getNombre()});
-
+                                                                        
+                        for (int i = 0; i < datosUsuario.tipoPrenda.get(0).listaDePrendas.size()-1; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getNombre(),
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getPrecio(),
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getCantidad(),});
+                        }
+                        for (int i = 0; i < datosUsuario.tipoPrenda.get(1).listaDePrendas.size()-1; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getNombre()});
+                        }
+                        for (int i = 0; i < datosUsuario.tipoPrenda.get(2).listaDePrendas.size()-1; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getNombre()});
                         }
 
                     }
@@ -300,7 +307,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
                 //    lista = new DefaultComboBoxModel(Usuarios);
 
-                dispose();
+                //dispose();
 
             }
 

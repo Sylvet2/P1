@@ -20,36 +20,7 @@ public class Prenda {
     private int cantidad;
     private char talla;
     private String color;
-    
-    /*List<Prenda> listaInviernoMujer = new ArrayList<Prenda>();
-    List<Prenda> listaVeranoMujer = new ArrayList<Prenda>();
-    List<Prenda> listaVeranoHombre = new ArrayList<Prenda>();
-    List<Prenda> listaInviernoHombre = new ArrayList<Prenda>();
-    List<Prenda> listaBasicaHombre = new ArrayList<Prenda>();
-    List<Prenda> listaBasicaMujer = new ArrayList<Prenda>();
-    public void listaInviernoMujer(Prenda p){
-        listaInviernoMujer.add(p);
-    }
-    
-    public void listaVeranoMujer(Prenda p){
-        listaVeranoMujer.add(p);
-    }
-    
-    public void listaVeranoHombre(Prenda p){
-        listaVeranoHombre.add(p);
-    }
-    
-    public void listaInviernoHombre(Prenda p){
-        listaInviernoHombre.add(p);
-    }
-
-    public void listaBasicaHombre(Prenda p){
-        listaBasicaHombre.add(p);
-    }
-    public void listaBasicaMujer(Prenda p){
-        listaBasicaMujer.add(p);
-    }*/
-  
+     
     public Prenda (String nombre, double precio, int cantidad, char talla, String color){
         this.nombre = nombre;
         this.precio = precio;

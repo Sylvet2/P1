@@ -42,7 +42,7 @@ public class Usuario{
     public void agregarTipoPrenda (TempVerano v ) {
         tipoPrenda.add (v);
     }
-    public void agregarTipoPreanda (PrendasBasicas v ) {
+    public void agregarTipoPrenda (PrendasBasicas v ) {
         tipoPrenda.add (v);
     }
     
