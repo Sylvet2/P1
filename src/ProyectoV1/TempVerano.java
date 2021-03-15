@@ -23,7 +23,9 @@ public class TempVerano extends TipoPrenda{
 
     @Override
     public void calcularSubPago() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i <= listaDePrendas.size()-1; ++i) {
+        subTotal = subTotal+ this.listaDePrendas.get(i).getPago();
+        }
     }
 
     
