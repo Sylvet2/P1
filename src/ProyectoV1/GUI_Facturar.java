@@ -20,6 +20,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
     
     double subTotales []= new  double[3];
     
+    
     /**
      * Creates new form GUI_Facturar
      */
@@ -49,7 +50,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        txtNumeroFactura = new javax.swing.JTextField();
         txtFecha = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
         txtApellido = new javax.swing.JTextField();
@@ -93,26 +93,15 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, 100));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel4.setText("Número");
+        jLabel4.setText("Fecha");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
-
-        txtNumeroFactura.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        txtNumeroFactura.setForeground(new java.awt.Color(255, 0, 0));
-        txtNumeroFactura.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtNumeroFactura.setText("0");
-        txtNumeroFactura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNumeroFacturaActionPerformed(evt);
-            }
-        });
-        jPanel2.add(txtNumeroFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 120, 25));
 
         txtFecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFechaActionPerformed(evt);
             }
         });
-        jPanel2.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 80, 20));
+        jPanel2.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, 80, 30));
         jPanel2.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 140, -1));
         jPanel2.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
         jPanel2.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 140, -1));
@@ -120,14 +109,14 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 140, -1));
         jPanel2.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 140, -1));
 
-        bntGuardarUsuario.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        bntGuardarUsuario.setText("GUARDAR USUARIO");
+        bntGuardarUsuario.setFont(new java.awt.Font("Tahoma", 3, 10)); // NOI18N
+        bntGuardarUsuario.setText("Guardar  datos");
         bntGuardarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntGuardarUsuarioActionPerformed(evt);
             }
         });
-        jPanel2.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
+        jPanel2.add(bntGuardarUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, -1, -1));
 
         lblNombre.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         lblNombre.setText("Nombre:");
@@ -168,13 +157,14 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 630, 260));
 
-        btnGuardarFactura.setText("Guardar");
+        btnGuardarFactura.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        btnGuardarFactura.setText("FINALIZAR COMPRA");
         btnGuardarFactura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarFacturaActionPerformed(evt);
             }
         });
-        jPanel2.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 700, -1, -1));
+        jPanel2.add(btnGuardarFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 700, -1, -1));
 
         txtPagoFinal.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtPagoFinal.setForeground(new java.awt.Color(255, 0, 0));
@@ -202,7 +192,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(lblTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 700, -1, -1));
 
         txtSubtotalBasico.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        txtSubtotalBasico.setForeground(new java.awt.Color(255, 0, 0));
         txtSubtotalBasico.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtSubtotalBasico.setCaretColor(new java.awt.Color(255, 255, 204));
         txtSubtotalBasico.setDisabledTextColor(new java.awt.Color(255, 255, 204));
@@ -210,7 +199,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(txtSubtotalBasico, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 120, 25));
 
         txtSubtotalVerano.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        txtSubtotalVerano.setForeground(new java.awt.Color(255, 0, 0));
         txtSubtotalVerano.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtSubtotalVerano.setCaretColor(new java.awt.Color(255, 255, 204));
         txtSubtotalVerano.setDisabledTextColor(new java.awt.Color(255, 255, 204));
@@ -218,7 +206,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
         jPanel2.add(txtSubtotalVerano, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 580, 120, 25));
 
         txtSubtotalInvierno.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        txtSubtotalInvierno.setForeground(new java.awt.Color(255, 0, 0));
         txtSubtotalInvierno.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtSubtotalInvierno.setCaretColor(new java.awt.Color(255, 255, 204));
         txtSubtotalInvierno.setDisabledTextColor(new java.awt.Color(255, 255, 204));
@@ -246,12 +233,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtNumeroFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroFacturaActionPerformed
-        // TODO add your handling code here:
-        
-        //hola
-    }//GEN-LAST:event_txtNumeroFacturaActionPerformed
 
     private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
         // TODO add your handling code here:
@@ -325,14 +306,18 @@ public class GUI_Facturar extends javax.swing.JFrame {
                         datosUsuario.agregarTipoPrenda(new TempInvierno(GUI_Principal.listaInvierno));
                         datosUsuario.agregarTipoPrenda(new PrendasBasicas(GUI_Principal.listaBasico));
                         
+                        
                         subTotales [0] =new TempVerano(GUI_Principal.listaVerano).calcularSubPago();
                         subTotales [1] =new TempInvierno(GUI_Principal.listaInvierno).calcularSubPago();
                         subTotales [2] =new PrendasBasicas(GUI_Principal.listaBasico).calcularSubPago();
                         
                         datosUsuario.setSubTotales(subTotales);
                         datosUsuario.calcularPagoTotal();
+                        
+                        
 
-                        GUI_Principal.usuarios.add(datosUsuario);
+                                             
+                        
                                                                         
                         for (int i = 0; i <= datosUsuario.tipoPrenda.get(0).listaDePrendas.size()-1; ++i) {
                            modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getNombre(),
@@ -365,7 +350,9 @@ public class GUI_Facturar extends javax.swing.JFrame {
                         txtSubtotalInvierno.setText(Double.toString(subTotales [1]));
                         txtSubtotalBasico.setText(Double.toString(subTotales [2]));
                         
-                        txtSubtotalBasico.setText(Double.toString(datosUsuario.getPagoTotal()));
+                        txtPagoFinal.setText(Double.toString(datosUsuario.getPagoTotal()));
+                        
+                        
                     }
                     else {
                         //Cedula no valida
@@ -396,16 +383,38 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
     private void btnGuardarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarFacturaActionPerformed
         // TODO add your handling code here:
+        contador++;
+        GUI_Principal.usuarios.add(datosUsuario);
+        JOptionPane.showMessageDialog(null, "Se ha finalizado exitosamente su compra");
+        txtTelefono.setText(null);
+        txtNombre.setText(null);
+        txtCedula.setText(null);
+        txtApellido.setText(null);
+        txtDireccion.setText(null);
+        txtCorreo.setText(null);
+        txtSubtotalVerano.setText(null);
+        txtSubtotalInvierno.setText(null);
+        txtSubtotalBasico.setText(null);
+        txtPagoFinal.setText(null);
+        int numDatos = modeloTabla.getRowCount();
+        for (int i = 0; i < numDatos; i++) {
+        modeloTabla.removeRow(0);
+        }
+        this.setVisible(false);
+        GUI_Principal irPrincipal = new GUI_Principal();
+        irPrincipal.setVisible(true);
+        
     }//GEN-LAST:event_btnGuardarFacturaActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
-        txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
+        //txtNumeroFactura.setText(Integer.toString(contador));
+       //txtNumeroFactura.setText(Integer.toString(datosUsuario.getNumFactura()+1));
         
         Calendar c1 = Calendar.getInstance();
 
         String dia = Integer.toString(c1.get(Calendar.DATE));
-        String mes = Integer.toString(c1.get(Calendar.MONTH));
+        String mes = Integer.toString(c1.get(Calendar.MONTH)+1);
         String annio = Integer.toString(c1.get(Calendar.YEAR));
         
         txtFecha.setText(dia+"/"+mes+"/"+annio);
@@ -474,7 +483,6 @@ public class GUI_Facturar extends javax.swing.JFrame {
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtFecha;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtNumeroFactura;
     private javax.swing.JTextField txtPagoFinal;
     private javax.swing.JTextField txtSubtotalBasico;
     private javax.swing.JTextField txtSubtotalInvierno;

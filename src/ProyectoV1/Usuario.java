@@ -26,6 +26,9 @@ public class Usuario{
     private double subTotales []= new  double[3];
     private double pagoTotal;
     
+    
+    
+    
     List <TipoPrenda> tipoPrenda = new ArrayList<>();
 
     public Usuario( String nombre, String apellido, String direccion, String correo, long telefono, String cedula) {

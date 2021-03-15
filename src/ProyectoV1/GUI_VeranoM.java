@@ -5,6 +5,7 @@
  */
 package ProyectoV1;
 
+import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -92,13 +93,18 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         btnVestidoCorto = new javax.swing.JButton();
         cmbVestidoCorto = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         btnSiguienteVH = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(250, 0));
         setPreferredSize(new java.awt.Dimension(750, 660));
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -109,7 +115,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 btnAtrasVeranoMujerActionPerformed(evt);
             }
         });
-        jPanel2.add(btnAtrasVeranoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, -1, -1));
+        jPanel2.add(btnAtrasVeranoMujer, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -206,7 +212,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 30, 290, 250));
+        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, 290, 250));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -312,7 +318,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 290, 250));
+        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 290, 250));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -423,7 +429,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         spnBikini.getAccessibleContext().setAccessibleName("");
         spnBikini.getAccessibleContext().setAccessibleDescription("");
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 290, 250));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 290, 250));
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -530,13 +536,12 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 300, 250));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 280, 300, 250));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hoja en blanco.png"))); // NOI18N
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 570));
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 570));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 550));
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 650, 570));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 650, 550));
 
         btnSiguienteVH.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnSiguienteVH.setText("Siguiente");
@@ -545,10 +550,11 @@ public class GUI_VeranoM extends javax.swing.JFrame {
                 btnSiguienteVHActionPerformed(evt);
             }
         });
-        jPanel2.add(btnSiguienteVH, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 620, -1, -1));
+        jPanel2.add(btnSiguienteVH, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 580, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Verano/FondoVeranoMujerF.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 0, 850, 720));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 650, 570));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -611,6 +617,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
      }
     
    
+   
     
         
     }//GEN-LAST:event_btnGuardarBikiniActionPerformed
@@ -650,6 +657,9 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     color = cmbConjuntoPliegues.getSelectedItem().toString();
 
     GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+    
+    spnConjuntoPliegues.setValue(1);
+    
      }
     }//GEN-LAST:event_btnConjuntoPlieguesActionPerformed
 
@@ -735,6 +745,12 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         GUI_VeranoH irVeranoH = new GUI_VeranoH();
         irVeranoH.setVisible(true);
     }//GEN-LAST:event_btnSiguienteVHActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        
+        
+        
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments
