@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class TempInvierno extends TipoPrenda  {
     
-    
+    private double descuentoTemporada = 0.10;
     
     public TempInvierno( List <Prenda> lista) {
         
@@ -24,8 +24,8 @@ public class TempInvierno extends TipoPrenda  {
     
     
     @Override
-    public void calcularPago() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void calcularPago(int indice) {
+        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoTemporada;
     }
     
     

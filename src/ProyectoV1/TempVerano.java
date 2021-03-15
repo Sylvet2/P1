@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 public class TempVerano extends TipoPrenda{
     
+    private double descuentoTemporada;
     
     public TempVerano(  ArrayList <Prenda> lista) {
         
@@ -23,10 +24,10 @@ public class TempVerano extends TipoPrenda{
     
     
     @Override
-    public void calcularPago() {
+    public void calcularPago(int indice) {
         
         
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoTemporada;
     }
 }
 

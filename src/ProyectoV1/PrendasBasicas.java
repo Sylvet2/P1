@@ -25,9 +25,28 @@ public class PrendasBasicas extends TipoPrenda  {
     
     
     @Override
-    public void calcularPago(){
+    public void calcularPago(int indice){
+        if(this.listaDePrendas.get(indice).getCantidad() == 4) {
+            descuentoCantidad = 0.1;
+            pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
+        }
+        if(this.listaDePrendas.get(indice).getCantidad() == 8) {
+            descuentoCantidad = 0.25;
+            pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
+            
+        }
+
+    
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
