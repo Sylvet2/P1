@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class PrendasBasicas extends TipoPrenda  {
     
     
-    private double descuentoCantidad;
+    private double descuentoCantidad = 0;
     
     
     public PrendasBasicas( ArrayList <Prenda> lista) {
@@ -23,20 +23,20 @@ public class PrendasBasicas extends TipoPrenda  {
         this.listaDePrendas = lista;
     }
     
-    
-    @Override
-    public void calcularPago(int indice){
+    public void calcularDescuento(int indice){
         if(this.listaDePrendas.get(indice).getCantidad() == 4) {
             descuentoCantidad = 0.1;
-            pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
         }
         if(this.listaDePrendas.get(indice).getCantidad() == 8) {
             descuentoCantidad = 0.25;
-            pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
-            
         }
-
+    }
     
+    @Override
+    public void calcularPago(int indice){
+        
+        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoCantidad;
+        
         
     }
     

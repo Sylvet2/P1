@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class TempInvierno extends TipoPrenda  {
     
-    private double descuentoTemporada = 0.10;
+    
     
     public TempInvierno( List <Prenda> lista) {
         
@@ -25,7 +25,7 @@ public class TempInvierno extends TipoPrenda  {
     
     @Override
     public void calcularPago(int indice) {
-        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoTemporada;
+        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio();
     }
     
     

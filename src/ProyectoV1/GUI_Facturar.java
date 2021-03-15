@@ -199,11 +199,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
 
     private void txtNumeroFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroFacturaActionPerformed
         // TODO add your handling code here:
-        Calendar c1 = Calendar.getInstance();
-
-        String dia = Integer.toString(c1.get(Calendar.DATE));
-        String mes = Integer.toString(c1.get(Calendar.MONTH));
-        String annio = Integer.toString(c1.get(Calendar.YEAR));
+        
         //hola
     }//GEN-LAST:event_txtNumeroFacturaActionPerformed
 
@@ -346,6 +342,14 @@ public class GUI_Facturar extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
         txtNumeroFactura.setText(Integer.toString((Integer.parseInt(txtNumeroFactura.getText())+ 1)));
+        
+        Calendar c1 = Calendar.getInstance();
+
+        String dia = Integer.toString(c1.get(Calendar.DATE));
+        String mes = Integer.toString(c1.get(Calendar.MONTH));
+        String annio = Integer.toString(c1.get(Calendar.YEAR));
+        
+        txtFecha.setText(dia+"/"+mes+"/"+annio);
         
     }//GEN-LAST:event_formWindowOpened
 

@@ -13,8 +13,7 @@ import java.util.ArrayList;
  */
 public class TempVerano extends TipoPrenda{
     
-    private double descuentoTemporada;
-    
+       
     public TempVerano(  ArrayList <Prenda> lista) {
         
         this.nombre = "Temporada Verano";
@@ -27,7 +26,7 @@ public class TempVerano extends TipoPrenda{
     public void calcularPago(int indice) {
         
         
-        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio()*descuentoTemporada;
+        pago = listaDePrendas.get(indice).getCantidad() * listaDePrendas.get(indice).getPrecio();
     }
 }
 
