@@ -30,7 +30,7 @@ public class GUI_Facturar extends javax.swing.JFrame {
       modeloTabla.addColumn("Talla");
         modeloTabla.addColumn("Color");
         modeloTabla.addColumn("Tipo");
-        modeloTabla.addColumn("Valor a pagar");
+        //modeloTabla.addColumn("Valor a pagar");
         tblInformacion.setModel(modeloTabla);
     }
 
@@ -274,22 +274,41 @@ public class GUI_Facturar extends javax.swing.JFrame {
                         //Crea la instancia
 
                         datosUsuario = new Usuario (nombre, apellido , direccion, correo, telefono, cedula);
-                        datosUsuario.agregarTipoPrenda(new PrendasBasicas(GUI_Principal.listaBasico));
-                        datosUsuario.agregarTipoPrenda(new TempInvierno(GUI_Principal.listaInvierno));
+                        
                         datosUsuario.agregarTipoPrenda(new TempVerano(GUI_Principal.listaVerano));
+                        datosUsuario.agregarTipoPrenda(new TempInvierno(GUI_Principal.listaInvierno));
+                        datosUsuario.agregarTipoPrenda(new PrendasBasicas(GUI_Principal.listaBasico));
+                        
+                        
 
                         GUI_Principal.usuarios.add(datosUsuario);
                                                                         
-                        for (int i = 0; i < datosUsuario.tipoPrenda.get(0).listaDePrendas.size()-1; ++i) {
+                        for (int i = 0; i <= datosUsuario.tipoPrenda.get(0).listaDePrendas.size()-1; ++i) {
                            modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getNombre(),
                            datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getPrecio(),
-                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getCantidad(),});
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getCantidad(),
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getTalla(),
+                           datosUsuario.tipoPrenda.get(0).listaDePrendas.get(i).getColor(),"Verano",
+                           //datosUsuario.tipoPrenda.get(0).pago
+                           });
                         }
-                        for (int i = 0; i < datosUsuario.tipoPrenda.get(1).listaDePrendas.size()-1; ++i) {
-                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getNombre()});
+                        for (int i = 0; i <= datosUsuario.tipoPrenda.get(1).listaDePrendas.size()-1; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getNombre(),
+                           datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getPrecio(),
+                           datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getCantidad(),
+                           datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getTalla(),
+                           datosUsuario.tipoPrenda.get(1).listaDePrendas.get(i).getColor(),"Invierno",
+                          // datosUsuario.tipoPrenda.get(1).pago
+                           });
                         }
-                        for (int i = 0; i < datosUsuario.tipoPrenda.get(2).listaDePrendas.size()-1; ++i) {
-                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getNombre()});
+                        for (int i = 0; i <= datosUsuario.tipoPrenda.get(2).listaDePrendas.size()-1; ++i) {
+                           modeloTabla.addRow(new Object []{datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getNombre(),
+                           datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getPrecio(),
+                           datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getCantidad(),
+                           datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getTalla(),
+                           datosUsuario.tipoPrenda.get(2).listaDePrendas.get(i).getColor(),"Basicas",
+                           //datosUsuario.tipoPrenda.get(2).pago
+                           });
                         }
 
                     }

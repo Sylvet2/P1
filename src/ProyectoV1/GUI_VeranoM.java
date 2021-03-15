@@ -98,6 +98,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(0, 0));
         setPreferredSize(new java.awt.Dimension(750, 660));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

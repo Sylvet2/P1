@@ -101,7 +101,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(475, 200));
+        setLocation(new java.awt.Point(250, 0));
         setResizable(false);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(750, 660));

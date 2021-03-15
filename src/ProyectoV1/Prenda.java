@@ -20,6 +20,7 @@ public class Prenda {
     private int cantidad;
     private char talla;
     private String color;
+    
      
     public Prenda (String nombre, double precio, int cantidad, char talla, String color){
         this.nombre = nombre;
