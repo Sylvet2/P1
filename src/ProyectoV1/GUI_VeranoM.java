@@ -614,6 +614,8 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
     GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
     
+    
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
      }
     
    
@@ -658,7 +660,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
 
     GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
     
-    spnConjuntoPliegues.setValue(1);
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
     
      }
     }//GEN-LAST:event_btnConjuntoPlieguesActionPerformed
@@ -691,6 +693,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     }
     color = cmbVestidoLargo.getSelectedItem().toString();
     GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
      }
     }//GEN-LAST:event_btnVestidoLargoActionPerformed
 
@@ -725,6 +728,7 @@ public class GUI_VeranoM extends javax.swing.JFrame {
     color = cmbVestidoCorto.getSelectedItem().toString();
  
     GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
      }
     }//GEN-LAST:event_btnVestidoCortoActionPerformed
 

@@ -616,6 +616,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
             color = cmbCamisaManga.getSelectedItem().toString();
 
             GUI_Principal.listaBasico.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
               }
     }//GEN-LAST:event_btnGuardaCamisaMangaActionPerformed
 
@@ -649,6 +650,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
             color = cmbPantalon.getSelectedItem().toString();
 
             GUI_Principal.listaBasico.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
       
     }//GEN-LAST:event_btnGuardarPantalonActionPerformed
@@ -683,6 +685,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
             color = cmbLapiz.getSelectedItem().toString();
 
             GUI_Principal.listaBasico.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
     }//GEN-LAST:event_btnGuardarLapizActionPerformed
 
@@ -717,6 +720,7 @@ public class GUI_PrendasBasicasM extends javax.swing.JFrame {
             color = cmbCamiseta.getSelectedItem().toString();
 
             GUI_Principal.listaBasico.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
               }
     }//GEN-LAST:event_btnGuardarCamisetaActionPerformed
 

@@ -617,6 +617,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
             color = cmbCamisetaCorta.getSelectedItem().toString();
 
             GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
     }//GEN-LAST:event_btnGuardarCamisetaCortaActionPerformed
 
@@ -655,6 +656,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
             color = cmbCamisetaLarga.getSelectedItem().toString();
 
             GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
     }//GEN-LAST:event_btnGuardarCamisetaLargaActionPerformed
 
@@ -693,6 +695,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
             color = cmbShort.getSelectedItem().toString();
 
             GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
     }//GEN-LAST:event_btnGuardarShortActionPerformed
 
@@ -731,6 +734,7 @@ public class GUI_VeranoH extends javax.swing.JFrame {
             color = cmbPescador.getSelectedItem().toString();
 
             GUI_Principal.listaVerano.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
              }
     }//GEN-LAST:event_btnGuardarPescadorActionPerformed
 

@@ -655,6 +655,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
             color = cmbConjuntoLana.getSelectedItem().toString();
             GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
            //prenda.listaInviernoMujer(prenda);
    //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
@@ -692,6 +693,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
             color = cmbChaleco.getSelectedItem().toString();
             GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
       //prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -727,6 +729,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
             color = cmbAbrigo.getSelectedItem().toString();
             GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
           //  prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }
 
@@ -762,6 +765,7 @@ public class GUI_InviernoM extends javax.swing.JFrame {
 
             color = cmbAbrigoPliegues.getSelectedItem().toString();
             GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
+            JOptionPane.showMessageDialog(null, "Prenda guardada");
  
          //   prenda = new Prenda (nombre, precio, cantidad, talla, color);
               }

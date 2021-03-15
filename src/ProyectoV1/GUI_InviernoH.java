@@ -620,7 +620,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
     
     
     GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
-    
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
     
     }
     }//GEN-LAST:event_btnGuardarAbrigoHombreActionPerformed
@@ -664,7 +664,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
     
     
     GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
-    
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
     
      }
     }//GEN-LAST:event_btnGuardarChaquetaActionPerformed
@@ -708,7 +708,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
     
     
     GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
-    
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
     
      }
     }//GEN-LAST:event_btnGuardarBuzoFinoActionPerformed
@@ -752,7 +752,7 @@ public class GUI_InviernoH extends javax.swing.JFrame {
     
     
     GUI_Principal.listaInvierno.add(new Prenda (nombre, precio, cantidad, talla, color));
-    
+    JOptionPane.showMessageDialog(null, "Prenda guardada");
     
      }
     }//GEN-LAST:event_btnGuardarBuzoActionPerformed
